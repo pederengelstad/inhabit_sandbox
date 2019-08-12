@@ -1,5 +1,6 @@
 ---
-title: "INHABIT - Sandbox"
+# title: "INHABIT - Sandbox"
+logo: usgs.png
 resource_files:
 - mgmt
 - states
@@ -16,6 +17,15 @@ img {
     max-width: 100%;
     min-height: 100%;
     height: auto;
+}
+
+.navbar {
+  height: 7%;
+  padding: 10px
+}
+
+body {
+  padding-top: 25px
 }
 
 </style>
@@ -165,10 +175,10 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
       addLegend(position = "topright"
                 , colors = c('#4b0000','#7f0000','#b30000','#d7301f'
                              ,'#ef6548','#fc8d59','#fdbb84'
-                             ,'#fdd49e','#fee8c8','#fff7ec','','#363636'),
-                labels = c("High","","","","","","","","", "Low",'','Unsuitable'), 
+                             ,'#fdd49e','#fee8c8','#fff7ec','','#505CA3','','#9DBFD6','','#A0ADB2'),
+                labels = c("High","","","","","","","","", "Low",'','Zero Agreement','','Env. Dissimilar','','No Data'), 
                 title = "Model Agreement", 
-                opacity = 1,
+                opacity = 1.5,
                 labFormat = ) %>%
       addLegend(position = "bottomright" 
             , colors = c('#00E30B','#000066','#0F3FEB')
@@ -182,7 +192,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     if(!is.null(conus_tile_url)){
       leafletProxy("map") %>%
         clearGroup('conus') %>%
-        addTiles(urlTemplate = tilesURL(), options = tileOptions(tms = T), group = 'conus', layerId = 'conus')
+        addTiles(urlTemplate = tilesURL(), options = tileOptions(tms = T, opacity=0.8), group = 'conus', layerId = 'conus')
     } else {
       leafletProxy("map") %>%
         # Resets map back to default view upon deselection
