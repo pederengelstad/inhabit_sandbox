@@ -19,15 +19,6 @@ img {
     height: auto;
 }
 
-.navbar {
-  height: 7%;
-  padding: 10px
-}
-
-body {
-  padding-top: 25px
-}
-
 </style>
 
 ```{r setup, include=FALSE}
@@ -41,6 +32,7 @@ library(DT)
 library(magrittr)
 library(knitr)
 library(kableExtra)
+library(shinyBS)
 
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
 pred.info = read.csv(file = "predictorInformation.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
@@ -85,14 +77,12 @@ tilesURL = reactive(
     paste0("http://pederengelstad.github.io/",gsub(' ','',tolower(input$sp_select)),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
 ```
 
-Inputs {.sidebar}
+Inputs {.sidebar width=200px}
 =======================================================================
 <img class="img-responsive" src="logo.png" max-width=100%>
 <br />
 
 #### **DRAFT**
-##### This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
-
 
 ```{r}
 sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
@@ -110,15 +100,27 @@ sliderTextInput(inputId = "slider", label = "Choose your model threshold:"
                 , grid = T, hide_min_max = F, force_edges = T, width = '100%')
 ```
 
+-----
+
+<!-- <div class="tooltip"><img src="ibutton.png" width=20px/> -->
+<!--   <span class="tooltiptext">If 'yes', the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></span> -->
+<!-- </div> -->
+
 ``` {r}
-radioButtons(inputId = "mess",choices=c("yes","no"), selected = "yes", label='Restrict model extrapolation?', width = '100%')
+## From ui.R: Adds a tooltip to element with inputId = "someInput" 
+## with text, "This is an input.", that appears to the left on hover.
+bsTooltip(id = "someInput", title = "This is an input", 
+          placement = "left", trigger = "hover")
+
+## From server.R: Add the same tooltip as above
+addTooltip(session, id = "someInput", title = "This is an input.",
+           placement = "left", trigger = "hover")
+
+radioButtons(inputId = "mess",choices=c("yes","no"), selected = "yes", label=NULL)
 ```
 
-###### <span style="color: grey"> If 'yes', the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></span>
-
-<br />
-
-###### Choose your agency of interest, then select from the drop down:
+-----
+Choose your agency of interest, then select from the drop down:
 ```{r}
 
 checkboxGroupButtons(inputId = "mgmt.admin", direction = 'vertical', 
@@ -129,7 +131,7 @@ checkboxGroupButtons(inputId = "mgmt.admin", direction = 'vertical',
 )
 
 selectInput(inputId = 'mgmt'
-           , label = 'Start typing the name of a management area'
+           , label = NULL
            , choices = character()
            , width = 'auto'
            , selected = NULL
@@ -173,9 +175,9 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
       fitBounds(lat1 = 48.808461, lng1 = -123.967893, lat2 = 24.848766, lng2 = -68.816526) %>%
       addPolygons(data = states, fill = 0, weight = 1.35, group = "states", color = 'white') %>%
       addLegend(position = "topright"
-                , colors = c('#4b0000','#7f0000','#b30000','#d7301f'
-                             ,'#ef6548','#fc8d59','#fdbb84'
-                             ,'#fdd49e','#fee8c8','#fff7ec','','#505CA3','','#9DBFD6','','#A0ADB2'),
+                , colors = c('#6e001c','#800026','#bd0026','#e31a1c'
+                             ,'#fc4e2a','#fd8d3c','#feb24c'
+                             ,'#fed976','#ffeda0','#fffFcc','','#505CA3','','#9DBFD6','','#A0ADB2'),
                 labels = c("High","","","","","","","","", "Low",'','Zero Agreement','','Env. Dissimilar','','No Data'), 
                 title = "Model Agreement", 
                 opacity = 1.5,
@@ -331,6 +333,8 @@ fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','
 
 About/F.A.Q.
 =====================================
+
+##### This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
 
 About/F.A.Q.
 =====================================
