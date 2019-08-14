@@ -87,7 +87,7 @@ states = readOGR("states/cb_2017_us_state_500k_conus_simple.shp", GDAL1_integer6
 
 #Reactive elements
 distro_shp = reactive({if(input$known_distro=="yes"){
-  kde_poly = readOGR(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/kde.shp',sep=''), verbose = F)
+  kde_poly = readOGR(paste0("species/",species(),'/kde.shp',sep=''), verbose = F)
 } else {
     kde_poly = NULL
   }})
@@ -112,7 +112,7 @@ model = reactive(
   })
 
 pres_pts = reactive({if(input$pres_button=="yes"){
-  kde_poly = readOGR(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/pts.sqlite',sep=''), verbose = F)
+  species_pts = readOGR(paste0("species/",species(),'/pts.sqlite',sep=''), verbose = F)
 } else {
     species_pts = NULL
   }
