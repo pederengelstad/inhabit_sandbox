@@ -1,379 +1,379 @@
 "","Species","Park_Name","est_suit_area_acre","total_area_acre","perc_suit","Known_Presences","min_dist_miles"
-"1","amurpeppervine","Steamtown National Historic Site",55,55,1,"0",50
-"2","amurpeppervine","Manassas National Battlefield Park",5132,5125,1,"0",6
-"3","amurpeppervine","Wolf Trap National Park for the Performing Arts",137,134,1,"Yes (5)",0
-"4","amurpeppervine","Monocacy National Battlefield",1615,1622,1,"Yes (1)",0
-"5","amurpeppervine","Ford's Theatre National Historic Site",2,0,1,"0",1
-"6","amurpeppervine","Andrew Johnson National Historic Site",17,16,1,"0",19
-"7","amurpeppervine","Boston African American National Historic Site",2,1,1,"0",1
-"8","amurpeppervine","White House",19,18,1,"0",0
-"9","amurpeppervine","William Howard Taft National Historic Site",7,4,1,"0",1
-"10","amurpeppervine","Fort Scott National Historic Site",17,17,1,"0",215
-"11","amurpeppervine","World War II Memorial",10,9,1,"0",0
-"12","amurpeppervine","Vietnam Veterans Memorial",2,2,1,"0",1
-"13","amurpeppervine","Korean War Veterans Memorial",2,2,1,"0",0
-"14","amurpeppervine","Martin Luther King, Jr., Memorial",5,3,1,"0",0
-"15","amurpeppervine","Lincoln Memorial",10,7,1,"0",0
-"16","amurpeppervine","Maggie L. Walker National Historic Site",2,1,1,"0",4
-"17","amurpeppervine","Johnstown Flood National Memorial",182,180,1,"0",55
-"18","amurpeppervine","Ronald Reagan Boyhood Home National Historic Site",2,1,1,"0",92
-"19","amurpeppervine","Saugus Iron Works National Historic Site",14,13,1,"0",10
-"20","amurpeppervine","Gettysburg National Military Park",6136,6136,1,"0",31
-"21","amurpeppervine","Boston National Historical Park",46,44,1,"0",2
-"22","amurpeppervine","First State National Historical Park",1162,1155,1,"Yes (3)",0
-"23","amurpeppervine","Paterson Great Falls National Historical Park",55,51,1,"0",4
-"24","amurpeppervine","Frederick Law Olmsted National Historic Site",7,7,1,"Yes (2)",0
-"25","amurpeppervine","Hamilton Grange National Memorial",2,2,1,"0",0
-"26","amurpeppervine","Hampton National Historic Site",65,62,1,"Yes (1)",0
-"27","amurpeppervine","Tuskegee Institute National Historic Site",62,62,1,"0",35
-"28","amurpeppervine","Pullman National Monument",2,0,1,"0",110
-"29","amurpeppervine","World War I Memorial",2,2,1,"0",0
-"30","amurpeppervine","Lincoln Home National Historic Site",14,14,1,"0",92
-"31","amurpeppervine","Cuyahoga Valley National Park",32744,32745,1,"Yes (2)",0
-"32","amurpeppervine","Rock Creek Park",1759,1749,1,"Yes (35)",0
-"33","amurpeppervine","Independence National Historical Park",43,43,1,"0",1
-"34","amurpeppervine","Freedom Riders National Monument",10,8,1,"0",39
-"35","amurpeppervine","Minute Man National Historical Park",1037,1024,1,"Yes (7)",0
-"36","amurpeppervine","Valley Forge National Historical Park",3445,3451,1,"0",5
-"37","amurpeppervine","Little Rock Central High School National Historic Site",29,29,1,"0",196
-"38","amurpeppervine","President William Jefferson Clinton Birthplace Home National Historic Site",2,1,1,"0",300
-"39","amurpeppervine","Greenbelt Park",1138,1149,0.99,"0",0
-"40","amurpeppervine","Kennesaw Mountain National Battlefield Park",2882,2899,0.99,"0",15
-"41","amurpeppervine","Martin Luther King, Jr., National Historic Site",38,39,0.99,"0",0
-"42","amurpeppervine","Piscataway Park",4500,4606,0.98,"0",3
-"43","amurpeppervine","George Rogers Clark National Historical Park",24,24,0.98,"0",54
-"44","amurpeppervine","Ulysses S. Grant National Historic Site",10,10,0.97,"0",6
-"45","amurpeppervine","Tuskegee Airmen National Historic Site",86,89,0.97,"0",37
-"46","amurpeppervine","National Mall",168,173,0.97,"0",0
-"47","amurpeppervine","Dayton Aviation Heritage National Historical Park",110,114,0.97,"0",37
-"48","amurpeppervine","Guilford Courthouse National Military Park",218,224,0.97,"0",4
-"49","amurpeppervine","Lincoln Boyhood National Memorial",194,200,0.97,"0",59
-"50","amurpeppervine","Keweenaw National Historical Park",1814,1862,0.97,"0",297
-"51","amurpeppervine","National Capital Parks",7008,7233,0.97,"Yes (61)",0
-"52","amurpeppervine","River Raisin National Battlefield Park",41,42,0.97,"0",32
-"53","amurpeppervine","Chattahoochee River National Recreation Area",8302,8696,0.95,"0",5
-"54","amurpeppervine","Constitution Gardens",41,43,0.95,"0",0
-"55","amurpeppervine","Charles Young Buffalo Soldiers National Monument",58,60,0.95,"0",44
-"56","amurpeppervine","Washington Monument",98,104,0.94,"0",0
-"57","amurpeppervine","Carl Sandburg Home National Historic Site",249,266,0.94,"0",20
-"58","amurpeppervine","Springfield Armory National Historic Site",50,54,0.93,"0",20
-"59","amurpeppervine","Thomas Edison National Historical Park",19,21,0.92,"0",2
-"60","amurpeppervine","James A. Garfield National Historic Site",7,8,0.92,"0",4
-"61","amurpeppervine","Weir Farm National Historic Site",62,69,0.91,"0",4
-"62","amurpeppervine","Indiana Dunes National Lakeshore",14426,15931,0.91,"0",104
-"63","amurpeppervine","Booker T. Washington National Monument",220,244,0.9,"0",74
-"64","amurpeppervine","Arlington House, The Robert E. Lee Memorial",14,16,0.88,"0",1
-"65","amurpeppervine","Fort Washington Park",302,344,0.88,"0",2
-"66","amurpeppervine","Adams National Historical Park",12,14,0.88,"0",4
-"67","amurpeppervine","Franklin Delano Roosevelt Memorial",7,8,0.88,"0",0
-"68","amurpeppervine","Morristown National Historical Park",1488,1691,0.88,"Yes (1)",0
-"69","amurpeppervine","Stones River National Battlefield",637,721,0.88,"0",161
-"70","amurpeppervine","George Washington Memorial Parkway",5856,6716,0.87,"Yes (54)",0
-"71","amurpeppervine","Eisenhower National Historic Site",604,693,0.87,"0",32
-"72","amurpeppervine","Fort Stanwix National Monument",14,17,0.86,"0",73
-"73","amurpeppervine","Eleanor Roosevelt National Historic Site",153,177,0.86,"0",4
-"74","amurpeppervine","Thomas Stone National Historic Site",278,328,0.85,"0",7
-"75","amurpeppervine","Gateway Arch National Park",165,194,0.85,"0",4
-"76","amurpeppervine","Appomattox Court House National Historical Park",1454,1779,0.82,"0",45
-"77","amurpeppervine","Theodore Roosevelt Island National Memorial",81,100,0.81,"Yes (6)",0
-"78","amurpeppervine","Fort Smith National Historic Site",58,71,0.81,"0",276
-"79","amurpeppervine","Vicksburg National Military Park",1313,1649,0.8,"0",239
-"80","amurpeppervine","Lyndon Baines Johnson Memorial Grove on the Potomac",14,18,0.8,"0",0
-"81","amurpeppervine","Fort Raleigh National Historic Site",125,158,0.79,"0",89
-"82","amurpeppervine","Lowell National Historical Park",149,189,0.78,"0",12
-"83","amurpeppervine","Saint Paul's Church National Historic Site",5,6,0.77,"0",1
-"84","amurpeppervine","Harry S Truman National Historic Site",10,12,0.77,"0",196
-"85","amurpeppervine","Hot Springs National Park",4095,5466,0.75,"0",235
-"86","amurpeppervine","Thomas Jefferson Memorial",14,20,0.73,"0",0
-"87","amurpeppervine","Cowpens National Battlefield",616,846,0.73,"0",37
-"88","amurpeppervine","Hopewell Culture National Historical Park",1301,1790,0.73,"0",41
-"89","amurpeppervine","Cedar Creek and Belle Grove National Historical Park",2487,3469,0.72,"0",32
-"90","amurpeppervine","Colonial National Historical Park",6163,8520,0.72,"0",17
-"91","amurpeppervine","Women's Rights National Historical Park",5,8,0.64,"0",37
-"92","amurpeppervine","Martin Van Buren National Historic Site",182,297,0.61,"0",20
-"93","amurpeppervine","Clara Barton National Historic Site",5,8,0.58,"0",0
-"94","amurpeppervine","Fort Donelson National Battlefield",748,1301,0.57,"0",71
-"95","amurpeppervine","Frederick Douglass National Historic Site",5,8,0.57,"0",0
-"96","amurpeppervine","Home of Franklin D. Roosevelt National Historic Site",498,899,0.55,"0",3
-"97","amurpeppervine","Roger Williams National Memorial",2,5,0.53,"0",2
-"98","amurpeppervine","Ice Age National Scenic Trail",81,158,0.52,"0",8
-"99","amurpeppervine","Petersburg National Battlefield",1452,2783,0.52,"0",22
-"100","amurpeppervine","Chickamauga and Chattanooga National Military Park",4164,8229,0.51,"0",91
-"101","amurpeppervine","Allegheny Portage Railroad National Historic Site",654,1311,0.5,"0",51
-"102","amurpeppervine","Richmond National Battlefield Park",4128,8204,0.5,"0",1
-"103","amurpeppervine","Herbert Hoover National Historic Site",91,188,0.48,"0",139
-"104","amurpeppervine","Manhattan Project National Historical Park",55,114,0.48,"0",57
-"105","amurpeppervine","Prince William Forest Park",6637,13813,0.48,"0",8
-"106","amurpeppervine","Fort McHenry National Monument and Historic Shrine",22,47,0.46,"0",5
-"107","amurpeppervine","Cape Cod National Seashore",19008,44310,0.43,"Yes (1)",0
-"108","amurpeppervine","Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park",3812,9265,0.41,"0",25
-"109","amurpeppervine","Pennsylvania Avenue National Historic Site",7,19,0.39,"0",0
-"110","amurpeppervine","Abraham Lincoln Birthplace National Historical Park",110,339,0.33,"0",44
-"111","amurpeppervine","Chesapeake and Ohio Canal National Historical Park",6474,20882,0.31,"Yes (7)",0
-"112","amurpeppervine","Sagamore Hill National Historic Site",24,83,0.29,"Yes (3)",0
-"113","amurpeppervine","Harpers Ferry National Historical Park",1081,3713,0.29,"0",14
-"114","amurpeppervine","Ocmulgee National Monument",192,690,0.28,"0",78
-"115","amurpeppervine","Boston Harbor Islands National Recreation Area",415,1595,0.26,"0",1
-"116","amurpeppervine","Antietam National Battlefield",635,3253,0.2,"0",12
-"117","amurpeppervine","Gateway National Recreation Area",5300,27159,0.2,"Yes (10)",0
-"118","amurpeppervine","Saratoga National Historical Park",688,3554,0.19,"0",24
-"119","amurpeppervine","Blue Ridge Parkway",16446,90527,0.18,"0",1
-"120","amurpeppervine","Natchez Trace Parkway",8997,52841,0.17,"0",109
-"121","amurpeppervine","Catoctin Mountain Park",875,5742,0.15,"0",19
-"122","amurpeppervine","Acadia National Park",4850,38791,0.13,"0",168
-"123","amurpeppervine","Wright Brothers National Memorial",46,429,0.11,"0",86
-"124","amurpeppervine","Delaware Water Gap National Recreation Area",7634,71041,0.11,"0",22
-"125","amurpeppervine","New River Gorge National River",7183,70388,0.1,"0",102
-"126","amurpeppervine","Arkansas Post National Memorial",77,763,0.1,"0",202
-"127","amurpeppervine","Pea Ridge National Military Park",410,4276,0.1,"0",232
-"128","amurpeppervine","Jimmy Carter National Historic Site",7,72,0.1,"0",110
-"129","amurpeppervine","Appalachian National Scenic Trail",21272,234414,0.09,"Yes (1)",0
-"130","amurpeppervine","New Bedford Whaling National Historical Park",2,31,0.08,"0",2
-"131","amurpeppervine","Fire Island National Seashore",1416,19658,0.07,"0",12
-"132","amurpeppervine","Cape Hatteras National Seashore",1831,31093,0.06,"0",95
-"133","amurpeppervine","Cumberland Gap National Historical Park",1416,24856,0.06,"0",29
-"134","amurpeppervine","Vanderbilt Mansion National Historic Site",12,211,0.06,"0",6
-"135","amurpeppervine","Wilson's Creek National Battlefield",151,2426,0.06,"0",177
-"136","amurpeppervine","George Washington Birthplace National Monument",34,658,0.05,"0",31
-"137","amurpeppervine","Glacier National Park",45927,1008117,0.05,"0",1148
-"138","amurpeppervine","Assateague Island National Seashore",2180,48738,0.04,"0",25
-"139","amurpeppervine","Fort Necessity National Battlefield",24,916,0.03,"0",16
-"140","amurpeppervine","Upper Delaware Scenic and Recreational River",1440,57157,0.03,"0",13
-"141","amurpeppervine","Shenandoah National Park",1071,193280,0.01,"0",14
-"142","amurpeppervine","Sleeping Bear Dunes National Lakeshore",743,70225,0.01,"0",128
-"143","amurpeppervine","Little River Canyon National Preserve",93,15416,0.01,"0",69
-"144","amurpeppervine","Ebey's Landing National Historical Reserve",0,18134,0,"0",1550
-"145","amurpeppervine","Lake Roosevelt National Recreation Area",0,100628,0,"0",1342
-"146","amurpeppervine","Lewis and Clark National Historical Park",0,3674,0,"0",1602
-"147","amurpeppervine","Olympic National Park",0,914822,0,"0",1570
-"148","amurpeppervine","Santa Monica Mountains National Recreation Area",0,153809,0,"0",1491
-"149","amurpeppervine","Amistad National Recreation Area",0,57567,0,"0",801
-"150","amurpeppervine","Big Cypress National Preserve",0,729526,0,"0",528
-"151","amurpeppervine","Big South Fork National River and Recreation Area",0,122507,0,"0",69
-"152","amurpeppervine","Bluestone National Scenic River",0,4340,0,"0",107
-"153","amurpeppervine","Cape Lookout National Seashore",69,27945,0,"0",131
-"154","amurpeppervine","Cumberland Island National Seashore",0,36431,0,"0",259
-"155","amurpeppervine","Everglades National Park",0,1538658,0,"0",546
-"156","amurpeppervine","Gauley River National Recreation Area",7,11159,0,"0",93
-"157","amurpeppervine","Great Smoky Mountains National Park",1299,518497,0,"0",18
-"158","amurpeppervine","Isle Royale National Park",0,549739,0,"0",343
-"159","amurpeppervine","Lake Meredith National Recreation Area",0,41628,0,"0",604
-"160","amurpeppervine","Nez Perce National Historical Park",0,3449,0,"0",977
-"161","amurpeppervine","Obed Wild and Scenic River",0,5324,0,"0",75
-"162","amurpeppervine","Poverty Point National Monument",0,910,0,"0",264
-"163","amurpeppervine","Redwood National Park",0,115642,0,"0",1656
-"164","amurpeppervine","Shiloh National Battlefield",0,4083,0,"0",107
-"165","amurpeppervine","Timucuan Ecological and Historic Preserve",0,45696,0,"0",275
-"166","amurpeppervine","Little Bighorn Battlefield National Monument",0,780,0,"0",854
-"167","amurpeppervine","Capulin Volcano National Monument",0,791,0,"0",700
-"168","amurpeppervine","Fort Bowie National Historic Site",0,998,0,"0",1106
-"169","amurpeppervine","Gila Cliff Dwellings National Monument",0,605,0,"0",1010
-"170","amurpeppervine","Tuzigoot National Monument",0,813,0,"0",1153
-"171","amurpeppervine","Yucca House National Monument",0,36,0,"0",934
-"172","amurpeppervine","Castillo de San Marcos National Monument",0,20,0,"0",326
-"173","amurpeppervine","Timpanogos Cave National Monument",0,250,0,"0",1066
-"174","amurpeppervine","Tupelo National Battlefield",0,1,0,"0",124
-"175","amurpeppervine","Brices Cross Roads National Battlefield Site",0,1,0,"0",131
-"176","amurpeppervine","Point Reyes National Seashore",0,71866,0,"0",1637
-"177","amurpeppervine","Fort Sumter National Monument",0,232,0,"0",200
-"178","amurpeppervine","Florissant Fossil Beds National Monument",0,5994,0,"0",743
-"179","amurpeppervine","Tonto National Monument",0,1122,0,"0",1138
-"180","amurpeppervine","Ninety Six National Historic Site",0,963,0,"0",53
-"181","amurpeppervine","Charles Pinckney National Historic Site",0,33,0,"0",200
-"182","amurpeppervine","Carter G. Woodson National Historic Site",0,0,0,"0",1
-"183","amurpeppervine","Sunset Crater Volcano National Monument",0,3040,0,"0",1112
-"184","amurpeppervine","Mary McLeod Bethune Council House National Historic Site",0,0,0,"0",1
-"185","amurpeppervine","Brown v. Board of Education National Historic Site",0,2,0,"0",258
-"186","amurpeppervine","Pipe Spring National Monument",0,40,0,"0",1146
-"187","amurpeppervine","El Morro National Monument",0,1279,0,"0",960
-"188","amurpeppervine","Castle Clinton National Monument",0,1,0,"0",2
-"189","amurpeppervine","Fossil Butte National Monument",0,8318,0,"0",1024
-"190","amurpeppervine","Effigy Mounds National Monument",0,2486,0,"0",83
-"191","amurpeppervine","Hovenweep National Monument",0,809,0,"0",933
-"192","amurpeppervine","Fort Union National Monument",0,721,0,"0",772
-"193","amurpeppervine","Dry Tortugas National Park",0,65579,0,"0",585
-"194","amurpeppervine","Fort Frederica National Monument",0,282,0,"0",246
-"195","amurpeppervine","Manzanar National Historic Site",0,814,0,"0",1424
-"196","amurpeppervine","Bryce Canyon National Park",0,35988,0,"0",1101
-"197","amurpeppervine","John D. Rockefeller, Jr., Memorial Parkway",0,23623,0,"0",1001
-"198","amurpeppervine","George Washington Carver National Monument",0,211,0,"0",224
-"199","amurpeppervine","Yellowstone National Park",0,2199496,0,"0",962
-"200","amurpeppervine","Hubbell Trading Post National Historic Site",0,160,0,"0",1006
-"201","amurpeppervine","Chamizal National Memorial",0,55,0,"0",980
-"202","amurpeppervine","Alibates Flint Quarries National Monument",0,1371,0,"0",614
-"203","amurpeppervine","Canaveral National Seashore",0,58461,0,"0",397
-"204","amurpeppervine","African Burial Ground National Monument",0,0,0,"0",3
-"205","amurpeppervine","Cabrillo National Monument",0,160,0,"0",1475
-"206","amurpeppervine","Sequoia National Park",0,406814,0,"0",1433
-"207","amurpeppervine","Natchez National Historical Park",0,108,0,"0",289
-"208","amurpeppervine","Edgar Allan Poe National Historic Site",0,1,0,"0",2
-"209","amurpeppervine","Mammoth Cave National Park",2,51696,0,"0",72
-"210","amurpeppervine","Eugene O'Neill National Historic Site",0,13,0,"0",1604
-"211","amurpeppervine","Navajo National Monument",0,360,0,"0",1033
-"212","amurpeppervine","Cane River Creole National Historical Park",0,206,0,"0",371
-"213","amurpeppervine","Great Basin National Park",0,77003,0,"0",1193
-"214","amurpeppervine","Grand Portage National Monument",0,708,0,"0",357
-"215","amurpeppervine","Whiskeytown-Shasta-Trinity National Recreation Area",0,42139,0,"0",1601
-"216","amurpeppervine","Fort Point National Historic Site",0,25,0,"0",1627
-"217","amurpeppervine","Salem Maritime National Historic Site",0,9,0,"0",16
-"218","amurpeppervine","Moores Creek National Battlefield",0,91,0,"0",98
-"219","amurpeppervine","Horseshoe Bend National Military Park",0,2079,0,"0",52
-"220","amurpeppervine","Fort Matanzas National Monument",0,274,0,"0",340
-"221","amurpeppervine","Channel Islands National Park",0,245690,0,"0",1535
-"222","amurpeppervine","Canyonlands National Park",0,334254,0,"0",974
-"223","amurpeppervine","Jean Lafitte National Historical Park and Preserve",0,21717,0,"0",263
-"224","amurpeppervine","Jewel Cave National Monument",0,1274,0,"0",681
-"225","amurpeppervine","Fort Larned National Historic Site",0,705,0,"0",439
-"226","amurpeppervine","Rosie the Riveter/World War II Home Front National Historical Park",0,149,0,"0",1619
-"227","amurpeppervine","Thaddeus Kosciuszko National Memorial",0,0,0,"0",2
-"228","amurpeppervine","Perry's Victory and International Peace Memorial",0,27,0,"0",58
-"229","amurpeppervine","Rainbow Bridge National Monument",0,160,0,"0",1052
-"230","amurpeppervine","Natural Bridges National Monument",0,7610,0,"0",992
-"231","amurpeppervine","Bent's Old Fort National Historic Site",0,830,0,"0",655
-"232","amurpeppervine","Hohokam Pima National Monument",0,1688,0,"0",1191
-"233","amurpeppervine","Gulf Islands National Seashore",0,130415,0,"0",145
-"234","amurpeppervine","Pipestone National Monument",0,287,0,"0",332
-"235","amurpeppervine","Biscayne National Park",0,173840,0,"0",600
-"236","amurpeppervine","Mount Rushmore National Memorial",0,1274,0,"0",663
-"237","amurpeppervine","Guadalupe Mountains National Park",0,87226,0,"0",892
-"238","amurpeppervine","City of Rocks National Reserve",0,14538,0,"0",1161
-"239","amurpeppervine","Hagerman Fossil Beds National Monument",0,4380,0,"0",1211
-"240","amurpeppervine","John Muir National Historic Site",0,343,0,"0",1607
-"241","amurpeppervine","Fort Vancouver National Historic Site",0,208,0,"0",1549
-"242","amurpeppervine","Saint-Gaudens National Historic Site",0,188,0,"0",81
-"243","amurpeppervine","John Fitzgerald Kennedy National Historic Site",0,0,0,"0",1
-"244","amurpeppervine","Fort Pulaski National Monument",0,5417,0,"0",213
-"245","amurpeppervine","Friendship Hill National Historic Site",0,675,0,"Yes (1)",0
-"246","amurpeppervine","Theodore Roosevelt Birthplace National Historic Site",0,0,0,"0",1
-"247","amurpeppervine","Coronado National Memorial",0,4811,0,"0",1174
-"248","amurpeppervine","Selma to Montgomery National Historic Trail",0,20,0,"0",23
-"249","amurpeppervine","Kings Mountain National Military Park",0,3930,0,"0",56
-"250","amurpeppervine","Golden Spike National Historic Site",0,2670,0,"0",1108
-"251","amurpeppervine","Lava Beds National Monument",0,46813,0,"0",1530
-"252","amurpeppervine","Longfellow House-Washington's Headquarters National Historic Site",0,2,0,"0",2
-"253","amurpeppervine","Hopewell Furnace National Historic Site",0,849,0,"0",6
-"254","amurpeppervine","Montezuma Castle National Monument",0,1012,0,"0",1143
-"255","amurpeppervine","Kings Canyon National Park",0,458974,0,"0",1433
-"256","amurpeppervine","Whitman Mission National Historic Site",0,139,0,"0",1359
-"257","amurpeppervine","Russell Cave National Monument",0,289,0,"0",106
-"258","amurpeppervine","Bighorn Canyon National Recreation Area",0,119830,0,"0",870
-"259","amurpeppervine","Muir Woods National Monument",0,555,0,"0",1631
-"260","amurpeppervine","Sand Creek Massacre National Historic Site",0,12530,0,"0",603
-"261","amurpeppervine","Knife River Indian Villages National Historic Site",0,1772,0,"0",629
-"262","amurpeppervine","Governors Island National Monument",0,23,0,"0",1
-"263","amurpeppervine","Scotts Bluff National Monument",0,3217,0,"0",690
-"264","amurpeppervine","Agate Fossil Beds National Monument",0,3045,0,"0",683
-"265","amurpeppervine","Capitol Reef National Park",0,244800,0,"0",1040
-"266","amurpeppervine","Flight 93 National Memorial",10,2264,0,"0",54
-"267","amurpeppervine","Devils Postpile National Monument",0,799,0,"0",1458
-"268","amurpeppervine","San Francisco Maritime National Historical Park",0,99,0,"0",1625
-"269","amurpeppervine","Palo Alto Battlefield National Historical Park",0,3414,0,"0",789
-"270","amurpeppervine","Joshua Tree National Park",0,792959,0,"0",1337
-"271","amurpeppervine","Marsh-Billings-Rockefeller National Historical Park",0,646,0,"0",90
-"272","amurpeppervine","First Ladies National Historic Site",0,0,0,"0",24
-"273","amurpeppervine","Cesar E. Chavez National Monument",0,118,0,"0",1475
-"274","amurpeppervine","Minuteman Missile National Historic Site",0,44,0,"0",591
-"275","amurpeppervine","Salinas Pueblo Missions National Monument",0,1072,0,"0",871
-"276","amurpeppervine","Pinnacles National Park",0,26707,0,"0",1579
-"277","amurpeppervine","Death Valley National Park",0,3399561,0,"0",1335
-"278","amurpeppervine","Niobrara National Scenic River",0,29081,0,"0",472
-"279","amurpeppervine","Casa Grande Ruins National Monument",0,473,0,"0",1179
-"280","amurpeppervine","De Soto National Memorial",0,30,0,"0",410
-"281","amurpeppervine","Andersonville National Historic Site",0,521,0,"0",112
-"282","amurpeppervine","Chiricahua National Monument",0,12205,0,"0",1104
-"283","amurpeppervine","Devils Tower National Monument",0,1350,0,"0",725
-"284","amurpeppervine","Oregon Caves National Monument and Preserve",0,4560,0,"0",1619
-"285","amurpeppervine","General Grant National Memorial",0,1,0,"0",0
-"286","amurpeppervine","Golden Gate National Recreation Area",0,82468,0,"0",1623
-"287","amurpeppervine","Port Chicago Naval Magazine National Memorial",0,6,0,"0",1601
-"288","amurpeppervine","John Day Fossil Beds National Monument",0,13990,0,"0",1416
-"289","amurpeppervine","Theodore Roosevelt Inaugural National Historic Site",0,1,0,"0",119
-"290","amurpeppervine","Lassen Volcanic National Park",0,107511,0,"0",1539
-"291","amurpeppervine","Badlands National Park",0,242740,0,"0",591
-"292","amurpeppervine","San Juan Island National Historical Park",0,2142,0,"0",1566
-"293","amurpeppervine","Minidoka National Historic Site",0,399,0,"0",1180
-"294","amurpeppervine","Big Hole National Battlefield",0,977,0,"0",1139
-"295","amurpeppervine","Canyon de Chelly National Monument",0,88230,0,"0",975
-"296","amurpeppervine","Mount Rainier National Park",0,236442,0,"0",1494
-"297","amurpeppervine","Castle Mountains National Monument",0,20871,0,"0",1293
-"298","amurpeppervine","Waco Mammoth National Monument",0,107,0,"0",548
-"299","amurpeppervine","Glen Canyon National Recreation Area",0,1250244,0,"0",986
-"300","amurpeppervine","Yosemite National Park",0,745915,0,"0",1460
-"301","amurpeppervine","Tallgrass Prairie National Preserve",0,10897,0,"0",299
-"302","amurpeppervine","Fort Caroline National Memorial",0,140,0,"0",291
-"303","amurpeppervine","Saint Croix Island International Historic Site",0,7,0,"0",276
-"304","amurpeppervine","Lower Saint Croix National Scenic Riverway",0,11306,0,"0",214
-"305","amurpeppervine","Statue Of Liberty National Monument",0,69,0,"0",2
-"306","amurpeppervine","Bandelier National Monument",0,33684,0,"0",833
-"307","amurpeppervine","Valles Caldera National Preserve",0,88957,0,"0",841
-"308","amurpeppervine","Wind Cave National Park",0,33928,0,"0",659
-"309","amurpeppervine","Colorado National Monument",0,20449,0,"0",914
-"310","amurpeppervine","Belmont-Paul Women's Equality National Monument",0,0,0,"0",1
-"311","amurpeppervine","North Cascades National Park",0,501391,0,"0",1465
-"312","amurpeppervine","Stonewall National Monument",0,5,0,"0",2
-"313","amurpeppervine","Voyageurs National Park",0,204710,0,"0",406
-"314","amurpeppervine","Buffalo National River",256,93546,0,"0",159
-"315","amurpeppervine","Congaree National Park",0,26408,0,"0",109
-"316","amurpeppervine","Federal Hall National Memorial",0,1,0,"0",3
-"317","amurpeppervine","Ozark National Scenic Riverway",0,82333,0,"0",85
-"318","amurpeppervine","El Malpais National Monument",0,113580,0,"0",933
-"319","amurpeppervine","Lewis and Clark National Historic Trail",0,80,0,"0",302
-"320","amurpeppervine","Lake Chelan National Recreation Area",0,62904,0,"0",1460
-"321","amurpeppervine","Harriet Tubman Underground Railroad National Historical Park",0,25543,0,"0",21
-"322","amurpeppervine","Lyndon B. Johnson National Historical Park",0,1568,0,"0",665
-"323","amurpeppervine","Carlsbad Caverns National Park",0,46798,0,"0",867
-"324","amurpeppervine","Aztec Ruins National Monument",0,317,0,"0",905
-"325","amurpeppervine","Zion National Park",0,148712,0,"0",1147
-"326","amurpeppervine","Craters of the Moon National Preserve",0,698969,0,"0",1125
-"327","amurpeppervine","Craters of the Moon National Monument",0,53390,0,"0",1135
-"328","amurpeppervine","White Sands National Monument",0,145489,0,"0",922
-"329","amurpeppervine","Pecos National Historical Park",0,6695,0,"0",812
-"330","amurpeppervine","Organ Pipe Cactus National Monument",0,330696,0,"0",1264
-"331","amurpeppervine","Curecanti National Recreation Area",0,41364,0,"0",834
-"332","amurpeppervine","Missouri National Recreation River",0,68370,0,"0",347
-"333","amurpeppervine","Theodore Roosevelt National Park",0,70463,0,"0",697
-"334","amurpeppervine","Dinosaur National Monument",0,210405,0,"0",899
-"335","amurpeppervine","Crater Lake National Park",0,182555,0,"0",1541
-"336","amurpeppervine","Pictured Rocks National Lakeshore",208,73651,0,"0",259
-"337","amurpeppervine","Apostle Islands National Lakeshore",10,72778,0,"0",272
-"338","amurpeppervine","Saguaro National Park",0,92480,0,"0",1155
-"339","amurpeppervine","Mojave National Preserve",0,1587809,0,"0",1291
-"340","amurpeppervine","Homestead National Monument",0,214,0,"0",335
-"341","amurpeppervine","Chaco Culture National Historical Park",0,34376,0,"0",905
-"342","amurpeppervine","Grant-Kohrs Ranch National Historic Site",0,1576,0,"0",1102
-"343","amurpeppervine","Captain John Smith National Historic Trail",0,263,0,"0",32
-"344","amurpeppervine","New Orleans Jazz National Historical Park",0,5,0,"0",275
-"345","amurpeppervine","Reconstruction Era National Monument",0,17,0,"0",197
-"346","amurpeppervine","Birmingham Civil Rights National Monument",0,1,0,"0",10
-"347","amurpeppervine","Grand Teton National Park",0,310020,0,"0",992
-"348","amurpeppervine","Chickasaw National Recreation Area",0,9874,0,"0",425
-"349","amurpeppervine","Great Sand Dunes National Preserve",0,41693,0,"0",760
-"350","amurpeppervine","Great Sand Dunes National Park",0,107583,0,"0",764
-"351","amurpeppervine","Big Thicket National Preserve",0,113142,0,"0",453
-"352","amurpeppervine","Saint Croix National Scenic Riverway",0,69079,0,"0",227
-"353","amurpeppervine","Rio Grande Wild and Scenic River",0,22060,0,"0",833
-"354","amurpeppervine","San Antonio Missions National Historical Park",0,943,0,"0",714
-"355","amurpeppervine","Black Canyon of the Gunnison National Park",0,31229,0,"0",865
-"356","amurpeppervine","Walnut Canyon National Monument",0,3241,0,"0",1114
-"357","amurpeppervine","Nicodemus National Historic Site",0,5,0,"0",459
-"358","amurpeppervine","Wupatki National Monument",0,35430,0,"0",1097
-"359","amurpeppervine","Washita Battlefield National Historic Site",0,320,0,"0",519
-"360","amurpeppervine","Katahdin Woods And Waters National Monument",0,89564,0,"0",273
-"361","amurpeppervine","Ross Lake National Recreation Area",0,116792,0,"0",1481
-"362","amurpeppervine","Petrified Forest National Park",0,222963,0,"0",1023
-"363","amurpeppervine","Big Bend National Park",0,810893,0,"0",899
-"364","amurpeppervine","Rocky Mountain National Park",0,267044,0,"0",759
-"365","amurpeppervine","Lake Mead National Recreation Area",0,1494424,0,"0",1179
-"366","amurpeppervine","Mississippi National River and Recreation Area",0,53831,0,"0",193
-"367","amurpeppervine","Cedar Breaks National Monument",14,6125,0,"0",1139
-"368","amurpeppervine","Fort Davis National Historic Site",0,518,0,"0",898
-"369","amurpeppervine","Fort Monroe National Monument",0,368,0,"0",17
-"370","amurpeppervine","Arches National Park",0,76460,0,"0",959
-"371","amurpeppervine","Fort Laramie National Historic Site",0,897,0,"0",725
-"372","amurpeppervine","Tumacacori National Historical Park",0,363,0,"0",1204
-"373","amurpeppervine","Tule Springs Fossil Beds National Monument",0,22644,0,"0",1279
-"374","amurpeppervine","Petroglyph National Monument",0,7202,0,"0",874
-"375","amurpeppervine","Fort Union Trading Post National Historic Site",0,444,0,"0",756
-"376","amurpeppervine","Grand Canyon National Park",0,1203128,0,"0",1088
-"377","amurpeppervine","Padre Island National Seashore",0,130558,0,"0",719
-"378","amurpeppervine","Mesa Verde National Park",0,53689,0,"0",916
+"1","Amur peppervine","Steamtown National Historic Site",55,55,1,"0",50
+"2","Amur peppervine","Manassas National Battlefield Park",5132,5125,1,"0",6
+"3","Amur peppervine","Wolf Trap National Park for the Performing Arts",137,134,1,"Yes (5)",0
+"4","Amur peppervine","Monocacy National Battlefield",1615,1622,1,"Yes (1)",0
+"5","Amur peppervine","Ford's Theatre National Historic Site",2,0,1,"0",1
+"6","Amur peppervine","Andrew Johnson National Historic Site",17,16,1,"0",19
+"7","Amur peppervine","Boston African American National Historic Site",2,1,1,"0",1
+"8","Amur peppervine","White House",19,18,1,"0",0
+"9","Amur peppervine","William Howard Taft National Historic Site",7,4,1,"0",1
+"10","Amur peppervine","Fort Scott National Historic Site",17,17,1,"0",215
+"11","Amur peppervine","World War II Memorial",10,9,1,"0",0
+"12","Amur peppervine","Vietnam Veterans Memorial",2,2,1,"0",1
+"13","Amur peppervine","Korean War Veterans Memorial",2,2,1,"0",0
+"14","Amur peppervine","Martin Luther King, Jr., Memorial",5,3,1,"0",0
+"15","Amur peppervine","Lincoln Memorial",10,7,1,"0",0
+"16","Amur peppervine","Maggie L. Walker National Historic Site",2,1,1,"0",4
+"17","Amur peppervine","Johnstown Flood National Memorial",182,180,1,"0",55
+"18","Amur peppervine","Ronald Reagan Boyhood Home National Historic Site",2,1,1,"0",92
+"19","Amur peppervine","Saugus Iron Works National Historic Site",14,13,1,"0",10
+"20","Amur peppervine","Gettysburg National Military Park",6136,6136,1,"0",31
+"21","Amur peppervine","Boston National Historical Park",46,44,1,"0",2
+"22","Amur peppervine","First State National Historical Park",1162,1155,1,"Yes (3)",0
+"23","Amur peppervine","Paterson Great Falls National Historical Park",55,51,1,"0",4
+"24","Amur peppervine","Frederick Law Olmsted National Historic Site",7,7,1,"Yes (2)",0
+"25","Amur peppervine","Hamilton Grange National Memorial",2,2,1,"0",0
+"26","Amur peppervine","Hampton National Historic Site",65,62,1,"Yes (1)",0
+"27","Amur peppervine","Tuskegee Institute National Historic Site",62,62,1,"0",35
+"28","Amur peppervine","Pullman National Monument",2,0,1,"0",110
+"29","Amur peppervine","World War I Memorial",2,2,1,"0",0
+"30","Amur peppervine","Lincoln Home National Historic Site",14,14,1,"0",92
+"31","Amur peppervine","Cuyahoga Valley National Park",32744,32745,1,"Yes (2)",0
+"32","Amur peppervine","Rock Creek Park",1759,1749,1,"Yes (35)",0
+"33","Amur peppervine","Independence National Historical Park",43,43,1,"0",1
+"34","Amur peppervine","Freedom Riders National Monument",10,8,1,"0",39
+"35","Amur peppervine","Minute Man National Historical Park",1037,1024,1,"Yes (7)",0
+"36","Amur peppervine","Valley Forge National Historical Park",3445,3451,1,"0",5
+"37","Amur peppervine","Little Rock Central High School National Historic Site",29,29,1,"0",196
+"38","Amur peppervine","President William Jefferson Clinton Birthplace Home National Historic Site",2,1,1,"0",300
+"39","Amur peppervine","Greenbelt Park",1138,1149,0.99,"0",0
+"40","Amur peppervine","Kennesaw Mountain National Battlefield Park",2882,2899,0.99,"0",15
+"41","Amur peppervine","Martin Luther King, Jr., National Historic Site",38,39,0.99,"0",0
+"42","Amur peppervine","Piscataway Park",4500,4606,0.98,"0",3
+"43","Amur peppervine","George Rogers Clark National Historical Park",24,24,0.98,"0",54
+"44","Amur peppervine","Ulysses S. Grant National Historic Site",10,10,0.97,"0",6
+"45","Amur peppervine","Tuskegee Airmen National Historic Site",86,89,0.97,"0",37
+"46","Amur peppervine","National Mall",168,173,0.97,"0",0
+"47","Amur peppervine","Dayton Aviation Heritage National Historical Park",110,114,0.97,"0",37
+"48","Amur peppervine","Guilford Courthouse National Military Park",218,224,0.97,"0",4
+"49","Amur peppervine","Lincoln Boyhood National Memorial",194,200,0.97,"0",59
+"50","Amur peppervine","Keweenaw National Historical Park",1814,1862,0.97,"0",297
+"51","Amur peppervine","National Capital Parks",7008,7233,0.97,"Yes (61)",0
+"52","Amur peppervine","River Raisin National Battlefield Park",41,42,0.97,"0",32
+"53","Amur peppervine","Chattahoochee River National Recreation Area",8302,8696,0.95,"0",5
+"54","Amur peppervine","Constitution Gardens",41,43,0.95,"0",0
+"55","Amur peppervine","Charles Young Buffalo Soldiers National Monument",58,60,0.95,"0",44
+"56","Amur peppervine","Washington Monument",98,104,0.94,"0",0
+"57","Amur peppervine","Carl Sandburg Home National Historic Site",249,266,0.94,"0",20
+"58","Amur peppervine","Springfield Armory National Historic Site",50,54,0.93,"0",20
+"59","Amur peppervine","Thomas Edison National Historical Park",19,21,0.92,"0",2
+"60","Amur peppervine","James A. Garfield National Historic Site",7,8,0.92,"0",4
+"61","Amur peppervine","Weir Farm National Historic Site",62,69,0.91,"0",4
+"62","Amur peppervine","Indiana Dunes National Lakeshore",14426,15931,0.91,"0",104
+"63","Amur peppervine","Booker T. Washington National Monument",220,244,0.9,"0",74
+"64","Amur peppervine","Arlington House, The Robert E. Lee Memorial",14,16,0.88,"0",1
+"65","Amur peppervine","Fort Washington Park",302,344,0.88,"0",2
+"66","Amur peppervine","Adams National Historical Park",12,14,0.88,"0",4
+"67","Amur peppervine","Franklin Delano Roosevelt Memorial",7,8,0.88,"0",0
+"68","Amur peppervine","Morristown National Historical Park",1488,1691,0.88,"Yes (1)",0
+"69","Amur peppervine","Stones River National Battlefield",637,721,0.88,"0",161
+"70","Amur peppervine","George Washington Memorial Parkway",5856,6716,0.87,"Yes (54)",0
+"71","Amur peppervine","Eisenhower National Historic Site",604,693,0.87,"0",32
+"72","Amur peppervine","Fort Stanwix National Monument",14,17,0.86,"0",73
+"73","Amur peppervine","Eleanor Roosevelt National Historic Site",153,177,0.86,"0",4
+"74","Amur peppervine","Thomas Stone National Historic Site",278,328,0.85,"0",7
+"75","Amur peppervine","Gateway Arch National Park",165,194,0.85,"0",4
+"76","Amur peppervine","Appomattox Court House National Historical Park",1454,1779,0.82,"0",45
+"77","Amur peppervine","Theodore Roosevelt Island National Memorial",81,100,0.81,"Yes (6)",0
+"78","Amur peppervine","Fort Smith National Historic Site",58,71,0.81,"0",276
+"79","Amur peppervine","Vicksburg National Military Park",1313,1649,0.8,"0",239
+"80","Amur peppervine","Lyndon Baines Johnson Memorial Grove on the Potomac",14,18,0.8,"0",0
+"81","Amur peppervine","Fort Raleigh National Historic Site",125,158,0.79,"0",89
+"82","Amur peppervine","Lowell National Historical Park",149,189,0.78,"0",12
+"83","Amur peppervine","Saint Paul's Church National Historic Site",5,6,0.77,"0",1
+"84","Amur peppervine","Harry S Truman National Historic Site",10,12,0.77,"0",196
+"85","Amur peppervine","Hot Springs National Park",4095,5466,0.75,"0",235
+"86","Amur peppervine","Thomas Jefferson Memorial",14,20,0.73,"0",0
+"87","Amur peppervine","Cowpens National Battlefield",616,846,0.73,"0",37
+"88","Amur peppervine","Hopewell Culture National Historical Park",1301,1790,0.73,"0",41
+"89","Amur peppervine","Cedar Creek and Belle Grove National Historical Park",2487,3469,0.72,"0",32
+"90","Amur peppervine","Colonial National Historical Park",6163,8520,0.72,"0",17
+"91","Amur peppervine","Women's Rights National Historical Park",5,8,0.64,"0",37
+"92","Amur peppervine","Martin Van Buren National Historic Site",182,297,0.61,"0",20
+"93","Amur peppervine","Clara Barton National Historic Site",5,8,0.58,"0",0
+"94","Amur peppervine","Fort Donelson National Battlefield",748,1301,0.57,"0",71
+"95","Amur peppervine","Frederick Douglass National Historic Site",5,8,0.57,"0",0
+"96","Amur peppervine","Home of Franklin D. Roosevelt National Historic Site",498,899,0.55,"0",3
+"97","Amur peppervine","Roger Williams National Memorial",2,5,0.53,"0",2
+"98","Amur peppervine","Ice Age National Scenic Trail",81,158,0.52,"0",8
+"99","Amur peppervine","Petersburg National Battlefield",1452,2783,0.52,"0",22
+"100","Amur peppervine","Chickamauga and Chattanooga National Military Park",4164,8229,0.51,"0",91
+"101","Amur peppervine","Allegheny Portage Railroad National Historic Site",654,1311,0.5,"0",51
+"102","Amur peppervine","Richmond National Battlefield Park",4128,8204,0.5,"0",1
+"103","Amur peppervine","Herbert Hoover National Historic Site",91,188,0.48,"0",139
+"104","Amur peppervine","Manhattan Project National Historical Park",55,114,0.48,"0",57
+"105","Amur peppervine","Prince William Forest Park",6637,13813,0.48,"0",8
+"106","Amur peppervine","Fort McHenry National Monument and Historic Shrine",22,47,0.46,"0",5
+"107","Amur peppervine","Cape Cod National Seashore",19008,44310,0.43,"Yes (1)",0
+"108","Amur peppervine","Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park",3812,9265,0.41,"0",25
+"109","Amur peppervine","Pennsylvania Avenue National Historic Site",7,19,0.39,"0",0
+"110","Amur peppervine","Abraham Lincoln Birthplace National Historical Park",110,339,0.33,"0",44
+"111","Amur peppervine","Chesapeake and Ohio Canal National Historical Park",6474,20882,0.31,"Yes (7)",0
+"112","Amur peppervine","Sagamore Hill National Historic Site",24,83,0.29,"Yes (3)",0
+"113","Amur peppervine","Harpers Ferry National Historical Park",1081,3713,0.29,"0",14
+"114","Amur peppervine","Ocmulgee National Monument",192,690,0.28,"0",78
+"115","Amur peppervine","Boston Harbor Islands National Recreation Area",415,1595,0.26,"0",1
+"116","Amur peppervine","Antietam National Battlefield",635,3253,0.2,"0",12
+"117","Amur peppervine","Gateway National Recreation Area",5300,27159,0.2,"Yes (10)",0
+"118","Amur peppervine","Saratoga National Historical Park",688,3554,0.19,"0",24
+"119","Amur peppervine","Blue Ridge Parkway",16446,90527,0.18,"0",1
+"120","Amur peppervine","Natchez Trace Parkway",8997,52841,0.17,"0",109
+"121","Amur peppervine","Catoctin Mountain Park",875,5742,0.15,"0",19
+"122","Amur peppervine","Acadia National Park",4850,38791,0.13,"0",168
+"123","Amur peppervine","Wright Brothers National Memorial",46,429,0.11,"0",86
+"124","Amur peppervine","Delaware Water Gap National Recreation Area",7634,71041,0.11,"0",22
+"125","Amur peppervine","New River Gorge National River",7183,70388,0.1,"0",102
+"126","Amur peppervine","Arkansas Post National Memorial",77,763,0.1,"0",202
+"127","Amur peppervine","Pea Ridge National Military Park",410,4276,0.1,"0",232
+"128","Amur peppervine","Jimmy Carter National Historic Site",7,72,0.1,"0",110
+"129","Amur peppervine","Appalachian National Scenic Trail",21272,234414,0.09,"Yes (1)",0
+"130","Amur peppervine","New Bedford Whaling National Historical Park",2,31,0.08,"0",2
+"131","Amur peppervine","Fire Island National Seashore",1416,19658,0.07,"0",12
+"132","Amur peppervine","Cape Hatteras National Seashore",1831,31093,0.06,"0",95
+"133","Amur peppervine","Cumberland Gap National Historical Park",1416,24856,0.06,"0",29
+"134","Amur peppervine","Vanderbilt Mansion National Historic Site",12,211,0.06,"0",6
+"135","Amur peppervine","Wilson's Creek National Battlefield",151,2426,0.06,"0",177
+"136","Amur peppervine","George Washington Birthplace National Monument",34,658,0.05,"0",31
+"137","Amur peppervine","Glacier National Park",45927,1008117,0.05,"0",1148
+"138","Amur peppervine","Assateague Island National Seashore",2180,48738,0.04,"0",25
+"139","Amur peppervine","Fort Necessity National Battlefield",24,916,0.03,"0",16
+"140","Amur peppervine","Upper Delaware Scenic and Recreational River",1440,57157,0.03,"0",13
+"141","Amur peppervine","Shenandoah National Park",1071,193280,0.01,"0",14
+"142","Amur peppervine","Sleeping Bear Dunes National Lakeshore",743,70225,0.01,"0",128
+"143","Amur peppervine","Little River Canyon National Preserve",93,15416,0.01,"0",69
+"144","Amur peppervine","Ebey's Landing National Historical Reserve",0,18134,0,"0",1550
+"145","Amur peppervine","Lake Roosevelt National Recreation Area",0,100628,0,"0",1342
+"146","Amur peppervine","Lewis and Clark National Historical Park",0,3674,0,"0",1602
+"147","Amur peppervine","Olympic National Park",0,914822,0,"0",1570
+"148","Amur peppervine","Santa Monica Mountains National Recreation Area",0,153809,0,"0",1491
+"149","Amur peppervine","Amistad National Recreation Area",0,57567,0,"0",801
+"150","Amur peppervine","Big Cypress National Preserve",0,729526,0,"0",528
+"151","Amur peppervine","Big South Fork National River and Recreation Area",0,122507,0,"0",69
+"152","Amur peppervine","Bluestone National Scenic River",0,4340,0,"0",107
+"153","Amur peppervine","Cape Lookout National Seashore",69,27945,0,"0",131
+"154","Amur peppervine","Cumberland Island National Seashore",0,36431,0,"0",259
+"155","Amur peppervine","Everglades National Park",0,1538658,0,"0",546
+"156","Amur peppervine","Gauley River National Recreation Area",7,11159,0,"0",93
+"157","Amur peppervine","Great Smoky Mountains National Park",1299,518497,0,"0",18
+"158","Amur peppervine","Isle Royale National Park",0,549739,0,"0",343
+"159","Amur peppervine","Lake Meredith National Recreation Area",0,41628,0,"0",604
+"160","Amur peppervine","Nez Perce National Historical Park",0,3449,0,"0",977
+"161","Amur peppervine","Obed Wild and Scenic River",0,5324,0,"0",75
+"162","Amur peppervine","Poverty Point National Monument",0,910,0,"0",264
+"163","Amur peppervine","Redwood National Park",0,115642,0,"0",1656
+"164","Amur peppervine","Shiloh National Battlefield",0,4083,0,"0",107
+"165","Amur peppervine","Timucuan Ecological and Historic Preserve",0,45696,0,"0",275
+"166","Amur peppervine","Little Bighorn Battlefield National Monument",0,780,0,"0",854
+"167","Amur peppervine","Capulin Volcano National Monument",0,791,0,"0",700
+"168","Amur peppervine","Fort Bowie National Historic Site",0,998,0,"0",1106
+"169","Amur peppervine","Gila Cliff Dwellings National Monument",0,605,0,"0",1010
+"170","Amur peppervine","Tuzigoot National Monument",0,813,0,"0",1153
+"171","Amur peppervine","Yucca House National Monument",0,36,0,"0",934
+"172","Amur peppervine","Castillo de San Marcos National Monument",0,20,0,"0",326
+"173","Amur peppervine","Timpanogos Cave National Monument",0,250,0,"0",1066
+"174","Amur peppervine","Tupelo National Battlefield",0,1,0,"0",124
+"175","Amur peppervine","Brices Cross Roads National Battlefield Site",0,1,0,"0",131
+"176","Amur peppervine","Point Reyes National Seashore",0,71866,0,"0",1637
+"177","Amur peppervine","Fort Sumter National Monument",0,232,0,"0",200
+"178","Amur peppervine","Florissant Fossil Beds National Monument",0,5994,0,"0",743
+"179","Amur peppervine","Tonto National Monument",0,1122,0,"0",1138
+"180","Amur peppervine","Ninety Six National Historic Site",0,963,0,"0",53
+"181","Amur peppervine","Charles Pinckney National Historic Site",0,33,0,"0",200
+"182","Amur peppervine","Carter G. Woodson National Historic Site",0,0,0,"0",1
+"183","Amur peppervine","Sunset Crater Volcano National Monument",0,3040,0,"0",1112
+"184","Amur peppervine","Mary McLeod Bethune Council House National Historic Site",0,0,0,"0",1
+"185","Amur peppervine","Brown v. Board of Education National Historic Site",0,2,0,"0",258
+"186","Amur peppervine","Pipe Spring National Monument",0,40,0,"0",1146
+"187","Amur peppervine","El Morro National Monument",0,1279,0,"0",960
+"188","Amur peppervine","Castle Clinton National Monument",0,1,0,"0",2
+"189","Amur peppervine","Fossil Butte National Monument",0,8318,0,"0",1024
+"190","Amur peppervine","Effigy Mounds National Monument",0,2486,0,"0",83
+"191","Amur peppervine","Hovenweep National Monument",0,809,0,"0",933
+"192","Amur peppervine","Fort Union National Monument",0,721,0,"0",772
+"193","Amur peppervine","Dry Tortugas National Park",0,65579,0,"0",585
+"194","Amur peppervine","Fort Frederica National Monument",0,282,0,"0",246
+"195","Amur peppervine","Manzanar National Historic Site",0,814,0,"0",1424
+"196","Amur peppervine","Bryce Canyon National Park",0,35988,0,"0",1101
+"197","Amur peppervine","John D. Rockefeller, Jr., Memorial Parkway",0,23623,0,"0",1001
+"198","Amur peppervine","George Washington Carver National Monument",0,211,0,"0",224
+"199","Amur peppervine","Yellowstone National Park",0,2199496,0,"0",962
+"200","Amur peppervine","Hubbell Trading Post National Historic Site",0,160,0,"0",1006
+"201","Amur peppervine","Chamizal National Memorial",0,55,0,"0",980
+"202","Amur peppervine","Alibates Flint Quarries National Monument",0,1371,0,"0",614
+"203","Amur peppervine","Canaveral National Seashore",0,58461,0,"0",397
+"204","Amur peppervine","African Burial Ground National Monument",0,0,0,"0",3
+"205","Amur peppervine","Cabrillo National Monument",0,160,0,"0",1475
+"206","Amur peppervine","Sequoia National Park",0,406814,0,"0",1433
+"207","Amur peppervine","Natchez National Historical Park",0,108,0,"0",289
+"208","Amur peppervine","Edgar Allan Poe National Historic Site",0,1,0,"0",2
+"209","Amur peppervine","Mammoth Cave National Park",2,51696,0,"0",72
+"210","Amur peppervine","Eugene O'Neill National Historic Site",0,13,0,"0",1604
+"211","Amur peppervine","Navajo National Monument",0,360,0,"0",1033
+"212","Amur peppervine","Cane River Creole National Historical Park",0,206,0,"0",371
+"213","Amur peppervine","Great Basin National Park",0,77003,0,"0",1193
+"214","Amur peppervine","Grand Portage National Monument",0,708,0,"0",357
+"215","Amur peppervine","Whiskeytown-Shasta-Trinity National Recreation Area",0,42139,0,"0",1601
+"216","Amur peppervine","Fort Point National Historic Site",0,25,0,"0",1627
+"217","Amur peppervine","Salem Maritime National Historic Site",0,9,0,"0",16
+"218","Amur peppervine","Moores Creek National Battlefield",0,91,0,"0",98
+"219","Amur peppervine","Horseshoe Bend National Military Park",0,2079,0,"0",52
+"220","Amur peppervine","Fort Matanzas National Monument",0,274,0,"0",340
+"221","Amur peppervine","Channel Islands National Park",0,245690,0,"0",1535
+"222","Amur peppervine","Canyonlands National Park",0,334254,0,"0",974
+"223","Amur peppervine","Jean Lafitte National Historical Park and Preserve",0,21717,0,"0",263
+"224","Amur peppervine","Jewel Cave National Monument",0,1274,0,"0",681
+"225","Amur peppervine","Fort Larned National Historic Site",0,705,0,"0",439
+"226","Amur peppervine","Rosie the Riveter/World War II Home Front National Historical Park",0,149,0,"0",1619
+"227","Amur peppervine","Thaddeus Kosciuszko National Memorial",0,0,0,"0",2
+"228","Amur peppervine","Perry's Victory and International Peace Memorial",0,27,0,"0",58
+"229","Amur peppervine","Rainbow Bridge National Monument",0,160,0,"0",1052
+"230","Amur peppervine","Natural Bridges National Monument",0,7610,0,"0",992
+"231","Amur peppervine","Bent's Old Fort National Historic Site",0,830,0,"0",655
+"232","Amur peppervine","Hohokam Pima National Monument",0,1688,0,"0",1191
+"233","Amur peppervine","Gulf Islands National Seashore",0,130415,0,"0",145
+"234","Amur peppervine","Pipestone National Monument",0,287,0,"0",332
+"235","Amur peppervine","Biscayne National Park",0,173840,0,"0",600
+"236","Amur peppervine","Mount Rushmore National Memorial",0,1274,0,"0",663
+"237","Amur peppervine","Guadalupe Mountains National Park",0,87226,0,"0",892
+"238","Amur peppervine","City of Rocks National Reserve",0,14538,0,"0",1161
+"239","Amur peppervine","Hagerman Fossil Beds National Monument",0,4380,0,"0",1211
+"240","Amur peppervine","John Muir National Historic Site",0,343,0,"0",1607
+"241","Amur peppervine","Fort Vancouver National Historic Site",0,208,0,"0",1549
+"242","Amur peppervine","Saint-Gaudens National Historic Site",0,188,0,"0",81
+"243","Amur peppervine","John Fitzgerald Kennedy National Historic Site",0,0,0,"0",1
+"244","Amur peppervine","Fort Pulaski National Monument",0,5417,0,"0",213
+"245","Amur peppervine","Friendship Hill National Historic Site",0,675,0,"Yes (1)",0
+"246","Amur peppervine","Theodore Roosevelt Birthplace National Historic Site",0,0,0,"0",1
+"247","Amur peppervine","Coronado National Memorial",0,4811,0,"0",1174
+"248","Amur peppervine","Selma to Montgomery National Historic Trail",0,20,0,"0",23
+"249","Amur peppervine","Kings Mountain National Military Park",0,3930,0,"0",56
+"250","Amur peppervine","Golden Spike National Historic Site",0,2670,0,"0",1108
+"251","Amur peppervine","Lava Beds National Monument",0,46813,0,"0",1530
+"252","Amur peppervine","Longfellow House-Washington's Headquarters National Historic Site",0,2,0,"0",2
+"253","Amur peppervine","Hopewell Furnace National Historic Site",0,849,0,"0",6
+"254","Amur peppervine","Montezuma Castle National Monument",0,1012,0,"0",1143
+"255","Amur peppervine","Kings Canyon National Park",0,458974,0,"0",1433
+"256","Amur peppervine","Whitman Mission National Historic Site",0,139,0,"0",1359
+"257","Amur peppervine","Russell Cave National Monument",0,289,0,"0",106
+"258","Amur peppervine","Bighorn Canyon National Recreation Area",0,119830,0,"0",870
+"259","Amur peppervine","Muir Woods National Monument",0,555,0,"0",1631
+"260","Amur peppervine","Sand Creek Massacre National Historic Site",0,12530,0,"0",603
+"261","Amur peppervine","Knife River Indian Villages National Historic Site",0,1772,0,"0",629
+"262","Amur peppervine","Governors Island National Monument",0,23,0,"0",1
+"263","Amur peppervine","Scotts Bluff National Monument",0,3217,0,"0",690
+"264","Amur peppervine","Agate Fossil Beds National Monument",0,3045,0,"0",683
+"265","Amur peppervine","Capitol Reef National Park",0,244800,0,"0",1040
+"266","Amur peppervine","Flight 93 National Memorial",10,2264,0,"0",54
+"267","Amur peppervine","Devils Postpile National Monument",0,799,0,"0",1458
+"268","Amur peppervine","San Francisco Maritime National Historical Park",0,99,0,"0",1625
+"269","Amur peppervine","Palo Alto Battlefield National Historical Park",0,3414,0,"0",789
+"270","Amur peppervine","Joshua Tree National Park",0,792959,0,"0",1337
+"271","Amur peppervine","Marsh-Billings-Rockefeller National Historical Park",0,646,0,"0",90
+"272","Amur peppervine","First Ladies National Historic Site",0,0,0,"0",24
+"273","Amur peppervine","Cesar E. Chavez National Monument",0,118,0,"0",1475
+"274","Amur peppervine","Minuteman Missile National Historic Site",0,44,0,"0",591
+"275","Amur peppervine","Salinas Pueblo Missions National Monument",0,1072,0,"0",871
+"276","Amur peppervine","Pinnacles National Park",0,26707,0,"0",1579
+"277","Amur peppervine","Death Valley National Park",0,3399561,0,"0",1335
+"278","Amur peppervine","Niobrara National Scenic River",0,29081,0,"0",472
+"279","Amur peppervine","Casa Grande Ruins National Monument",0,473,0,"0",1179
+"280","Amur peppervine","De Soto National Memorial",0,30,0,"0",410
+"281","Amur peppervine","Andersonville National Historic Site",0,521,0,"0",112
+"282","Amur peppervine","Chiricahua National Monument",0,12205,0,"0",1104
+"283","Amur peppervine","Devils Tower National Monument",0,1350,0,"0",725
+"284","Amur peppervine","Oregon Caves National Monument and Preserve",0,4560,0,"0",1619
+"285","Amur peppervine","General Grant National Memorial",0,1,0,"0",0
+"286","Amur peppervine","Golden Gate National Recreation Area",0,82468,0,"0",1623
+"287","Amur peppervine","Port Chicago Naval Magazine National Memorial",0,6,0,"0",1601
+"288","Amur peppervine","John Day Fossil Beds National Monument",0,13990,0,"0",1416
+"289","Amur peppervine","Theodore Roosevelt Inaugural National Historic Site",0,1,0,"0",119
+"290","Amur peppervine","Lassen Volcanic National Park",0,107511,0,"0",1539
+"291","Amur peppervine","Badlands National Park",0,242740,0,"0",591
+"292","Amur peppervine","San Juan Island National Historical Park",0,2142,0,"0",1566
+"293","Amur peppervine","Minidoka National Historic Site",0,399,0,"0",1180
+"294","Amur peppervine","Big Hole National Battlefield",0,977,0,"0",1139
+"295","Amur peppervine","Canyon de Chelly National Monument",0,88230,0,"0",975
+"296","Amur peppervine","Mount Rainier National Park",0,236442,0,"0",1494
+"297","Amur peppervine","Castle Mountains National Monument",0,20871,0,"0",1293
+"298","Amur peppervine","Waco Mammoth National Monument",0,107,0,"0",548
+"299","Amur peppervine","Glen Canyon National Recreation Area",0,1250244,0,"0",986
+"300","Amur peppervine","Yosemite National Park",0,745915,0,"0",1460
+"301","Amur peppervine","Tallgrass Prairie National Preserve",0,10897,0,"0",299
+"302","Amur peppervine","Fort Caroline National Memorial",0,140,0,"0",291
+"303","Amur peppervine","Saint Croix Island International Historic Site",0,7,0,"0",276
+"304","Amur peppervine","Lower Saint Croix National Scenic Riverway",0,11306,0,"0",214
+"305","Amur peppervine","Statue Of Liberty National Monument",0,69,0,"0",2
+"306","Amur peppervine","Bandelier National Monument",0,33684,0,"0",833
+"307","Amur peppervine","Valles Caldera National Preserve",0,88957,0,"0",841
+"308","Amur peppervine","Wind Cave National Park",0,33928,0,"0",659
+"309","Amur peppervine","Colorado National Monument",0,20449,0,"0",914
+"310","Amur peppervine","Belmont-Paul Women's Equality National Monument",0,0,0,"0",1
+"311","Amur peppervine","North Cascades National Park",0,501391,0,"0",1465
+"312","Amur peppervine","Stonewall National Monument",0,5,0,"0",2
+"313","Amur peppervine","Voyageurs National Park",0,204710,0,"0",406
+"314","Amur peppervine","Buffalo National River",256,93546,0,"0",159
+"315","Amur peppervine","Congaree National Park",0,26408,0,"0",109
+"316","Amur peppervine","Federal Hall National Memorial",0,1,0,"0",3
+"317","Amur peppervine","Ozark National Scenic Riverway",0,82333,0,"0",85
+"318","Amur peppervine","El Malpais National Monument",0,113580,0,"0",933
+"319","Amur peppervine","Lewis and Clark National Historic Trail",0,80,0,"0",302
+"320","Amur peppervine","Lake Chelan National Recreation Area",0,62904,0,"0",1460
+"321","Amur peppervine","Harriet Tubman Underground Railroad National Historical Park",0,25543,0,"0",21
+"322","Amur peppervine","Lyndon B. Johnson National Historical Park",0,1568,0,"0",665
+"323","Amur peppervine","Carlsbad Caverns National Park",0,46798,0,"0",867
+"324","Amur peppervine","Aztec Ruins National Monument",0,317,0,"0",905
+"325","Amur peppervine","Zion National Park",0,148712,0,"0",1147
+"326","Amur peppervine","Craters of the Moon National Preserve",0,698969,0,"0",1125
+"327","Amur peppervine","Craters of the Moon National Monument",0,53390,0,"0",1135
+"328","Amur peppervine","White Sands National Monument",0,145489,0,"0",922
+"329","Amur peppervine","Pecos National Historical Park",0,6695,0,"0",812
+"330","Amur peppervine","Organ Pipe Cactus National Monument",0,330696,0,"0",1264
+"331","Amur peppervine","Curecanti National Recreation Area",0,41364,0,"0",834
+"332","Amur peppervine","Missouri National Recreation River",0,68370,0,"0",347
+"333","Amur peppervine","Theodore Roosevelt National Park",0,70463,0,"0",697
+"334","Amur peppervine","Dinosaur National Monument",0,210405,0,"0",899
+"335","Amur peppervine","Crater Lake National Park",0,182555,0,"0",1541
+"336","Amur peppervine","Pictured Rocks National Lakeshore",208,73651,0,"0",259
+"337","Amur peppervine","Apostle Islands National Lakeshore",10,72778,0,"0",272
+"338","Amur peppervine","Saguaro National Park",0,92480,0,"0",1155
+"339","Amur peppervine","Mojave National Preserve",0,1587809,0,"0",1291
+"340","Amur peppervine","Homestead National Monument",0,214,0,"0",335
+"341","Amur peppervine","Chaco Culture National Historical Park",0,34376,0,"0",905
+"342","Amur peppervine","Grant-Kohrs Ranch National Historic Site",0,1576,0,"0",1102
+"343","Amur peppervine","Captain John Smith National Historic Trail",0,263,0,"0",32
+"344","Amur peppervine","New Orleans Jazz National Historical Park",0,5,0,"0",275
+"345","Amur peppervine","Reconstruction Era National Monument",0,17,0,"0",197
+"346","Amur peppervine","Birmingham Civil Rights National Monument",0,1,0,"0",10
+"347","Amur peppervine","Grand Teton National Park",0,310020,0,"0",992
+"348","Amur peppervine","Chickasaw National Recreation Area",0,9874,0,"0",425
+"349","Amur peppervine","Great Sand Dunes National Preserve",0,41693,0,"0",760
+"350","Amur peppervine","Great Sand Dunes National Park",0,107583,0,"0",764
+"351","Amur peppervine","Big Thicket National Preserve",0,113142,0,"0",453
+"352","Amur peppervine","Saint Croix National Scenic Riverway",0,69079,0,"0",227
+"353","Amur peppervine","Rio Grande Wild and Scenic River",0,22060,0,"0",833
+"354","Amur peppervine","San Antonio Missions National Historical Park",0,943,0,"0",714
+"355","Amur peppervine","Black Canyon of the Gunnison National Park",0,31229,0,"0",865
+"356","Amur peppervine","Walnut Canyon National Monument",0,3241,0,"0",1114
+"357","Amur peppervine","Nicodemus National Historic Site",0,5,0,"0",459
+"358","Amur peppervine","Wupatki National Monument",0,35430,0,"0",1097
+"359","Amur peppervine","Washita Battlefield National Historic Site",0,320,0,"0",519
+"360","Amur peppervine","Katahdin Woods And Waters National Monument",0,89564,0,"0",273
+"361","Amur peppervine","Ross Lake National Recreation Area",0,116792,0,"0",1481
+"362","Amur peppervine","Petrified Forest National Park",0,222963,0,"0",1023
+"363","Amur peppervine","Big Bend National Park",0,810893,0,"0",899
+"364","Amur peppervine","Rocky Mountain National Park",0,267044,0,"0",759
+"365","Amur peppervine","Lake Mead National Recreation Area",0,1494424,0,"0",1179
+"366","Amur peppervine","Mississippi National River and Recreation Area",0,53831,0,"0",193
+"367","Amur peppervine","Cedar Breaks National Monument",14,6125,0,"0",1139
+"368","Amur peppervine","Fort Davis National Historic Site",0,518,0,"0",898
+"369","Amur peppervine","Fort Monroe National Monument",0,368,0,"0",17
+"370","Amur peppervine","Arches National Park",0,76460,0,"0",959
+"371","Amur peppervine","Fort Laramie National Historic Site",0,897,0,"0",725
+"372","Amur peppervine","Tumacacori National Historical Park",0,363,0,"0",1204
+"373","Amur peppervine","Tule Springs Fossil Beds National Monument",0,22644,0,"0",1279
+"374","Amur peppervine","Petroglyph National Monument",0,7202,0,"0",874
+"375","Amur peppervine","Fort Union Trading Post National Historic Site",0,444,0,"0",756
+"376","Amur peppervine","Grand Canyon National Park",0,1203128,0,"0",1088
+"377","Amur peppervine","Padre Island National Seashore",0,130558,0,"0",719
+"378","Amur peppervine","Mesa Verde National Park",0,53689,0,"0",916

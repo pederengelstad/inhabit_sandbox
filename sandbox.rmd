@@ -79,6 +79,7 @@ library(DT)
 library(magrittr)
 library(knitr)
 library(kableExtra)
+library(dplyr)
 
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
 pred.info = read.csv(file = "predictorInformation.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
@@ -117,7 +118,7 @@ pres_pts = reactive({if(input$pres_button=="yes"){
   }
 })
 
-species = reactive({gsub(' ','',tolower(input$sp_select))})
+species = reactive({tolower(gsub(pattern = "\\s", '', gsub("'", replacement = '', x = input$sp_select)))})
 
 tilesURL = reactive(
     paste0("http://pederengelstad.github.io/",gsub(' ','',tolower(input$sp_select)),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
@@ -135,7 +136,7 @@ sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
             , width = '95%'
-            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Red brome"
+            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Amur peppervine"
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
 ```
@@ -311,11 +312,12 @@ downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species')
 #                                  write.csv(sp_dt, file, row.names = F)
 #                                  }
 #                                )
-
-fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/summary.csv',sep='')
-                                                    , header = T, stringsAsFactors = F),
+fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
+                                                    , header = T, stringsAsFactors = F) %>%
+                                             select(-c(X, total_area_acre)) %>%
+                                             mutate(Species = input$sp_select),
               fillContainer = getOption("DT.fillContainer", TRUE),
-              caption = "This is a sample of summary information by National Parks with more species data to be added in the future. 'Known presence' indicates if presence locations from the park were available for model development. 'Established suitable area' is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. 'Percent of Park' is the percent of the park area that is classified as suitable. 'Minimum distance to Occurrence' is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from NPS IRMA (https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True)",
+              caption = HTML('This is a sample of summary information by National Parks with more species data to be added in the future. "Known presence indicates if presence locations from the park were available for model development. "Established suitable area" is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. "Percent of Park" is the percent of the park area that is classified as suitable. "Minimum distance to Occurrence" is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from <a href="https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True" target="_blank">NPS IRMA</a>.'),
               colnames = c("Species", 
                            "Management Unit",
                            "Estimated Suitable Area (Acres)",

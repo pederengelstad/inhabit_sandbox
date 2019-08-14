@@ -1,0 +1,379 @@
+"","Species","Park_Name","est_suit_area_acre","total_area_acre","perc_suit","Known_Presences","min_dist_miles"
+"1","bishopsGoutweed","Manassas National Battlefield Park",5137,5125,1,"0",22
+"2","bishopsGoutweed","Wolf Trap National Park for the Performing Arts",137,134,1,"0",11
+"3","bishopsGoutweed","Monocacy National Battlefield",1615,1622,1,"0",28
+"4","bishopsGoutweed","Home of Franklin D. Roosevelt National Historic Site",899,899,1,"0",5
+"5","bishopsGoutweed","Ford's Theatre National Historic Site",2,0,1,"0",2
+"6","bishopsGoutweed","Boston African American National Historic Site",2,1,1,"0",4
+"7","bishopsGoutweed","White House",19,18,1,"0",1
+"8","bishopsGoutweed","William Howard Taft National Historic Site",5,4,1,"0",96
+"9","bishopsGoutweed","World War II Memorial",10,9,1,"0",1
+"10","bishopsGoutweed","Vietnam Veterans Memorial",2,2,1,"0",1
+"11","bishopsGoutweed","Korean War Veterans Memorial",2,2,1,"0",1
+"12","bishopsGoutweed","Martin Luther King, Jr., Memorial",5,3,1,"0",1
+"13","bishopsGoutweed","Lincoln Memorial",10,7,1,"0",1
+"14","bishopsGoutweed","Morristown National Historical Park",1684,1691,1,"Yes (1)",0
+"15","bishopsGoutweed","Johnstown Flood National Memorial",182,180,1,"0",46
+"16","bishopsGoutweed","Ronald Reagan Boyhood Home National Historic Site",2,1,1,"0",67
+"17","bishopsGoutweed","Flight 93 National Memorial",2259,2264,1,"0",24
+"18","bishopsGoutweed","Fort Necessity National Battlefield",913,916,1,"0",22
+"19","bishopsGoutweed","Saugus Iron Works National Historic Site",14,13,1,"0",7
+"20","bishopsGoutweed","Boston National Historical Park",46,44,1,"0",3
+"21","bishopsGoutweed","First State National Historical Park",1162,1155,1,"0",24
+"22","bishopsGoutweed","Paterson Great Falls National Historical Park",55,51,1,"0",10
+"23","bishopsGoutweed","Frederick Law Olmsted National Historic Site",7,7,1,"Yes (1)",0
+"24","bishopsGoutweed","Hamilton Grange National Memorial",2,2,1,"0",1
+"25","bishopsGoutweed","Hampton National Historic Site",65,62,1,"0",5
+"26","bishopsGoutweed","Pullman National Monument",2,0,1,"0",21
+"27","bishopsGoutweed","World War I Memorial",2,2,1,"0",1
+"28","bishopsGoutweed","Lewis and Clark National Historic Trail",84,80,1,"0",44
+"29","bishopsGoutweed","Carl Sandburg Home National Historic Site",266,266,1,"0",91
+"30","bishopsGoutweed","Lincoln Home National Historic Site",14,14,1,"0",66
+"31","bishopsGoutweed","Cuyahoga Valley National Park",32670,32745,1,"0",0
+"32","bishopsGoutweed","Rock Creek Park",1759,1749,1,"0",1
+"33","bishopsGoutweed","Independence National Historical Park",43,43,1,"0",3
+"34","bishopsGoutweed","Minute Man National Historical Park",1033,1024,1,"Yes (1)",0
+"35","bishopsGoutweed","Valley Forge National Historical Park",3443,3451,1,"0",5
+"36","bishopsGoutweed","Cedar Creek and Belle Grove National Historical Park",3431,3469,0.99,"0",58
+"37","bishopsGoutweed","Greenbelt Park",1138,1149,0.99,"0",0
+"38","bishopsGoutweed","Thomas Stone National Historic Site",323,328,0.99,"0",18
+"39","bishopsGoutweed","Catoctin Mountain Park",5657,5742,0.99,"0",38
+"40","bishopsGoutweed","Saint-Gaudens National Historic Site",187,188,0.99,"0",1
+"41","bishopsGoutweed","Eleanor Roosevelt National Historic Site",175,177,0.99,"0",5
+"42","bishopsGoutweed","Marsh-Billings-Rockefeller National Historical Park",642,646,0.99,"Yes (6)",0
+"43","bishopsGoutweed","Friendship Hill National Historic Site",664,675,0.98,"0",10
+"44","bishopsGoutweed","George Rogers Clark National Historical Park",24,24,0.98,"0",97
+"45","bishopsGoutweed","Lincoln Boyhood National Memorial",196,200,0.98,"0",87
+"46","bishopsGoutweed","Keweenaw National Historical Park",1826,1862,0.98,"0",0
+"47","bishopsGoutweed","Steamtown National Historic Site",53,55,0.97,"0",64
+"48","bishopsGoutweed","Antietam National Battlefield",3160,3253,0.97,"0",40
+"49","bishopsGoutweed","Ice Age National Scenic Trail",153,158,0.97,"0",9
+"50","bishopsGoutweed","Ulysses S. Grant National Historic Site",10,10,0.97,"0",161
+"51","bishopsGoutweed","Hopewell Furnace National Historic Site",824,849,0.97,"0",21
+"52","bishopsGoutweed","River Raisin National Battlefield Park",41,42,0.97,"0",32
+"53","bishopsGoutweed","Piscataway Park",4437,4606,0.96,"0",6
+"54","bishopsGoutweed","Herbert Hoover National Historic Site",180,188,0.96,"0",110
+"55","bishopsGoutweed","Blue Ridge Parkway",86142,90527,0.95,"0",5
+"56","bishopsGoutweed","Constitution Gardens",41,43,0.95,"0",1
+"57","bishopsGoutweed","Charles Young Buffalo Soldiers National Monument",58,60,0.95,"0",118
+"58","bishopsGoutweed","Allegheny Portage Railroad National Historic Site",1241,1311,0.95,"0",39
+"59","bishopsGoutweed","Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park",8757,9265,0.95,"0",40
+"60","bishopsGoutweed","Lowell National Historical Park",177,189,0.94,"0",12
+"61","bishopsGoutweed","Martin Van Buren National Historic Site",280,297,0.94,"0",4
+"62","bishopsGoutweed","Vanderbilt Mansion National Historic Site",199,211,0.94,"0",8
+"63","bishopsGoutweed","Springfield Armory National Historic Site",50,54,0.93,"0",8
+"64","bishopsGoutweed","Dayton Aviation Heritage National Historical Park",105,114,0.93,"0",100
+"65","bishopsGoutweed","National Capital Parks",6740,7233,0.93,"0",0
+"66","bishopsGoutweed","Thomas Edison National Historical Park",19,21,0.92,"0",12
+"67","bishopsGoutweed","Washington Monument",96,104,0.92,"0",1
+"68","bishopsGoutweed","Booker T. Washington National Monument",225,244,0.92,"0",85
+"69","bishopsGoutweed","James A. Garfield National Historic Site",7,8,0.92,"0",10
+"70","bishopsGoutweed","Weir Farm National Historic Site",62,69,0.91,"0",10
+"71","bishopsGoutweed","Wilson's Creek National Battlefield",2207,2426,0.91,"0",324
+"72","bishopsGoutweed","Effigy Mounds National Monument",2231,2486,0.9,"0",46
+"73","bishopsGoutweed","Chesapeake and Ohio Canal National Historical Park",18804,20882,0.9,"0",0
+"74","bishopsGoutweed","Arlington House, The Robert E. Lee Memorial",14,16,0.88,"0",1
+"75","bishopsGoutweed","Fort Washington Park",302,344,0.88,"0",5
+"76","bishopsGoutweed","Adams National Historical Park",12,14,0.88,"0",6
+"77","bishopsGoutweed","Appomattox Court House National Historical Park",1560,1779,0.88,"0",46
+"78","bishopsGoutweed","Franklin Delano Roosevelt Memorial",7,8,0.88,"0",1
+"79","bishopsGoutweed","Harpers Ferry National Historical Park",3273,3713,0.88,"0",38
+"80","bishopsGoutweed","Andrew Johnson National Historic Site",14,16,0.87,"0",70
+"81","bishopsGoutweed","Fort Stanwix National Monument",14,17,0.86,"0",13
+"82","bishopsGoutweed","Gateway Arch National Park",168,194,0.86,"0",154
+"83","bishopsGoutweed","George Washington Memorial Parkway",5727,6716,0.85,"0",0
+"84","bishopsGoutweed","Gettysburg National Military Park",5168,6136,0.84,"0",29
+"85","bishopsGoutweed","Upper Delaware Scenic and Recreational River",48275,57157,0.84,"0",21
+"86","bishopsGoutweed","Theodore Roosevelt Island National Memorial",81,100,0.81,"0",0
+"87","bishopsGoutweed","Lyndon Baines Johnson Memorial Grove on the Potomac",14,18,0.8,"0",1
+"88","bishopsGoutweed","Prince William Forest Park",10988,13813,0.8,"0",19
+"89","bishopsGoutweed","Gauley River National Recreation Area",8834,11159,0.79,"0",70
+"90","bishopsGoutweed","National Mall",134,173,0.78,"0",1
+"91","bishopsGoutweed","Saint Paul's Church National Historic Site",5,6,0.77,"0",3
+"92","bishopsGoutweed","Delaware Water Gap National Recreation Area",54955,71041,0.77,"0",22
+"93","bishopsGoutweed","Harry S Truman National Historic Site",10,12,0.77,"0",177
+"94","bishopsGoutweed","Lower Saint Croix National Scenic Riverway",8336,11306,0.74,"Yes (9)",0
+"95","bishopsGoutweed","Thomas Jefferson Memorial",14,20,0.73,"0",2
+"96","bishopsGoutweed","Indiana Dunes National Lakeshore",11393,15931,0.72,"0",34
+"97","bishopsGoutweed","Hopewell Culture National Historical Park",1272,1790,0.71,"0",144
+"98","bishopsGoutweed","Mississippi National River and Recreation Area",38322,53831,0.71,"0",2
+"99","bishopsGoutweed","Oregon Caves National Monument and Preserve",3213,4560,0.7,"0",326
+"100","bishopsGoutweed","New River Gorge National River",48520,70388,0.69,"0",84
+"101","bishopsGoutweed","Appalachian National Scenic Trail",158009,234414,0.67,"Yes (9)",0
+"102","bishopsGoutweed","Pea Ridge National Military Park",2878,4276,0.67,"0",364
+"103","bishopsGoutweed","Saint Croix National Scenic Riverway",45798,69079,0.66,"0",1
+"104","bishopsGoutweed","Shenandoah National Park",125748,193280,0.65,"0",14
+"105","bishopsGoutweed","Abraham Lincoln Birthplace National Historical Park",220,339,0.65,"0",54
+"106","bishopsGoutweed","Women's Rights National Historical Park",5,8,0.64,"0",13
+"107","bishopsGoutweed","Sleeping Bear Dunes National Lakeshore",44427,70225,0.63,"0",1
+"108","bishopsGoutweed","Eisenhower National Historic Site",436,693,0.63,"0",32
+"109","bishopsGoutweed","Fort Donelson National Battlefield",815,1301,0.63,"0",81
+"110","bishopsGoutweed","Saratoga National Historical Park",2200,3554,0.62,"0",8
+"111","bishopsGoutweed","Pictured Rocks National Lakeshore",44935,73651,0.61,"Yes (3)",0
+"112","bishopsGoutweed","Obed Wild and Scenic River",3153,5324,0.59,"0",101
+"113","bishopsGoutweed","Clara Barton National Historic Site",5,8,0.58,"0",5
+"114","bishopsGoutweed","Frederick Douglass National Historic Site",5,8,0.57,"0",4
+"115","bishopsGoutweed","Acadia National Park",20666,38791,0.53,"0",1
+"116","bishopsGoutweed","Roger Williams National Memorial",2,5,0.53,"0",37
+"117","bishopsGoutweed","Ross Lake National Recreation Area",56520,116792,0.48,"0",86
+"118","bishopsGoutweed","Great Smoky Mountains National Park",241184,518497,0.47,"0",93
+"119","bishopsGoutweed","Big South Fork National River and Recreation Area",56192,122507,0.46,"0",92
+"120","bishopsGoutweed","Fort McHenry National Monument and Historic Shrine",22,47,0.46,"0",4
+"121","bishopsGoutweed","Crater Lake National Park",84769,182555,0.46,"0",247
+"122","bishopsGoutweed","Apostle Islands National Lakeshore",29385,72778,0.4,"Yes (1)",0
+"123","bishopsGoutweed","Cape Cod National Seashore",15826,44310,0.36,"0",8
+"124","bishopsGoutweed","Cumberland Gap National Historical Park",8360,24856,0.34,"0",103
+"125","bishopsGoutweed","Mount Rainier National Park",73429,236442,0.31,"0",15
+"126","bishopsGoutweed","Sagamore Hill National Historic Site",24,83,0.29,"0",12
+"127","bishopsGoutweed","Richmond National Battlefield Park",2154,8204,0.26,"0",51
+"128","bishopsGoutweed","Lake Chelan National Recreation Area",14949,62904,0.24,"0",77
+"129","bishopsGoutweed","Harriet Tubman Underground Railroad National Historical Park",5889,25543,0.23,"0",36
+"130","bishopsGoutweed","Bluestone National Scenic River",956,4340,0.22,"0",74
+"131","bishopsGoutweed","Buffalo National River",20199,93546,0.22,"0",318
+"132","bishopsGoutweed","Glacier National Park",223368,1008117,0.22,"0",339
+"133","bishopsGoutweed","Boston Harbor Islands National Recreation Area",333,1595,0.21,"0",5
+"134","bishopsGoutweed","Gateway National Recreation Area",5195,27159,0.19,"0",1
+"135","bishopsGoutweed","Pipestone National Monument",46,287,0.16,"0",162
+"136","bishopsGoutweed","North Cascades National Park",73122,501391,0.15,"0",80
+"137","bishopsGoutweed","Cedar Breaks National Monument",910,6125,0.15,"0",230
+"138","bishopsGoutweed","Pennsylvania Avenue National Historic Site",2,19,0.13,"0",1
+"139","bishopsGoutweed","Timpanogos Cave National Monument",29,250,0.12,"0",22
+"140","bishopsGoutweed","Ozark National Scenic Riverway",10224,82333,0.12,"0",232
+"141","bishopsGoutweed","Manhattan Project National Historical Park",12,114,0.11,"0",94
+"142","bishopsGoutweed","Voyageurs National Park",23201,204710,0.11,"0",9
+"143","bishopsGoutweed","Isle Royale National Park",50343,549739,0.09,"0",42
+"144","bishopsGoutweed","Grand Portage National Monument",67,708,0.09,"0",21
+"145","bishopsGoutweed","Katahdin Woods And Waters National Monument",7744,89564,0.09,"0",80
+"146","bishopsGoutweed","Mammoth Cave National Park",3946,51696,0.08,"0",18
+"147","bishopsGoutweed","New Bedford Whaling National Historical Park",2,31,0.08,"0",39
+"148","bishopsGoutweed","Great Sand Dunes National Preserve",3163,41693,0.08,"0",130
+"149","bishopsGoutweed","Missouri National Recreation River",4806,68370,0.07,"0",103
+"150","bishopsGoutweed","John D. Rockefeller, Jr., Memorial Parkway",1486,23623,0.06,"0",248
+"151","bishopsGoutweed","Chickamauga and Chattanooga National Military Park",443,8229,0.05,"0",148
+"152","bishopsGoutweed","Natchez Trace Parkway",2878,52841,0.05,"0",75
+"153","bishopsGoutweed","Little River Canyon National Preserve",479,15416,0.03,"0",186
+"154","bishopsGoutweed","Guilford Courthouse National Military Park",7,224,0.03,"0",72
+"155","bishopsGoutweed","Rocky Mountain National Park",7157,267044,0.03,"0",21
+"156","bishopsGoutweed","Fire Island National Seashore",410,19658,0.02,"0",12
+"157","bishopsGoutweed","Mount Rushmore National Memorial",24,1274,0.02,"0",299
+"158","bishopsGoutweed","Olympic National Park",13111,914822,0.01,"0",5
+"159","bishopsGoutweed","Yellowstone National Park",12249,2199496,0.01,"0",252
+"160","bishopsGoutweed","Sequoia National Park",4229,406814,0.01,"0",444
+"161","bishopsGoutweed","Lassen Volcanic National Park",589,107511,0.01,"0",431
+"162","bishopsGoutweed","Bandelier National Monument",218,33684,0.01,"0",287
+"163","bishopsGoutweed","Valles Caldera National Preserve",1152,88957,0.01,"0",280
+"164","bishopsGoutweed","Grand Teton National Park",3958,310020,0.01,"0",213
+"165","bishopsGoutweed","Ebey's Landing National Historical Reserve",0,18134,0,"0",30
+"166","bishopsGoutweed","Lake Roosevelt National Recreation Area",43,100628,0,"0",128
+"167","bishopsGoutweed","Lewis and Clark National Historical Park",0,3674,0,"0",89
+"168","bishopsGoutweed","Santa Monica Mountains National Recreation Area",0,153809,0,"0",588
+"169","bishopsGoutweed","Amistad National Recreation Area",0,57567,0,"0",740
+"170","bishopsGoutweed","Assateague Island National Seashore",12,48738,0,"0",85
+"171","bishopsGoutweed","Big Cypress National Preserve",0,729526,0,"0",249
+"172","bishopsGoutweed","Cape Hatteras National Seashore",0,31093,0,"0",116
+"173","bishopsGoutweed","Cape Lookout National Seashore",0,27945,0,"0",72
+"174","bishopsGoutweed","Chattahoochee River National Recreation Area",0,8696,0,"0",209
+"175","bishopsGoutweed","Cumberland Island National Seashore",0,36431,0,"0",89
+"176","bishopsGoutweed","Everglades National Park",0,1538658,0,"0",273
+"177","bishopsGoutweed","Fort Raleigh National Historic Site",0,158,0,"0",169
+"178","bishopsGoutweed","Lake Meredith National Recreation Area",0,41628,0,"0",335
+"179","bishopsGoutweed","Nez Perce National Historical Park",7,3449,0,"0",203
+"180","bishopsGoutweed","Poverty Point National Monument",0,910,0,"0",412
+"181","bishopsGoutweed","Redwood National Park",0,115642,0,"0",355
+"182","bishopsGoutweed","Shiloh National Battlefield",0,4083,0,"0",166
+"183","bishopsGoutweed","Timucuan Ecological and Historic Preserve",0,45696,0,"0",70
+"184","bishopsGoutweed","Vicksburg National Military Park",0,1649,0,"0",410
+"185","bishopsGoutweed","Little Bighorn Battlefield National Monument",0,780,0,"0",410
+"186","bishopsGoutweed","Capulin Volcano National Monument",0,791,0,"0",218
+"187","bishopsGoutweed","Fort Bowie National Historic Site",0,998,0,"0",598
+"188","bishopsGoutweed","Gila Cliff Dwellings National Monument",0,605,0,"0",502
+"189","bishopsGoutweed","Tuzigoot National Monument",0,813,0,"0",435
+"190","bishopsGoutweed","Yucca House National Monument",0,36,0,"0",261
+"191","bishopsGoutweed","Castillo de San Marcos National Monument",0,20,0,"0",61
+"192","bishopsGoutweed","Tupelo National Battlefield",0,1,0,"0",233
+"193","bishopsGoutweed","Brices Cross Roads National Battlefield Site",0,1,0,"0",218
+"194","bishopsGoutweed","Point Reyes National Seashore",0,71866,0,"0",584
+"195","bishopsGoutweed","Fort Sumter National Monument",0,232,0,"0",153
+"196","bishopsGoutweed","Florissant Fossil Beds National Monument",0,5994,0,"0",57
+"197","bishopsGoutweed","Tonto National Monument",0,1122,0,"0",518
+"198","bishopsGoutweed","Ninety Six National Historic Site",0,963,0,"0",160
+"199","bishopsGoutweed","Charles Pinckney National Historic Site",0,33,0,"0",148
+"200","bishopsGoutweed","Carter G. Woodson National Historic Site",0,0,0,"0",2
+"201","bishopsGoutweed","Sunset Crater Volcano National Monument",0,3040,0,"0",391
+"202","bishopsGoutweed","Mary McLeod Bethune Council House National Historic Site",0,0,0,"0",2
+"203","bishopsGoutweed","Brown v. Board of Education National Historic Site",0,2,0,"0",164
+"204","bishopsGoutweed","Pipe Spring National Monument",0,40,0,"0",287
+"205","bishopsGoutweed","El Morro National Monument",0,1279,0,"0",382
+"206","bishopsGoutweed","Castle Clinton National Monument",0,1,0,"0",2
+"207","bishopsGoutweed","Fossil Butte National Monument",0,8318,0,"0",96
+"208","bishopsGoutweed","Hovenweep National Monument",0,809,0,"0",254
+"209","bishopsGoutweed","Fort Union National Monument",0,721,0,"0",276
+"210","bishopsGoutweed","Dry Tortugas National Park",0,65579,0,"0",351
+"211","bishopsGoutweed","Fort Frederica National Monument",0,282,0,"0",121
+"212","bishopsGoutweed","Manzanar National Historic Site",0,814,0,"0",434
+"213","bishopsGoutweed","Bryce Canyon National Park",34,35988,0,"0",223
+"214","bishopsGoutweed","George Washington Carver National Monument",0,211,0,"0",323
+"215","bishopsGoutweed","Hubbell Trading Post National Historic Site",0,160,0,"0",376
+"216","bishopsGoutweed","Chamizal National Memorial",0,55,0,"0",582
+"217","bishopsGoutweed","Alibates Flint Quarries National Monument",0,1371,0,"0",344
+"218","bishopsGoutweed","Canaveral National Seashore",0,58461,0,"0",98
+"219","bishopsGoutweed","African Burial Ground National Monument",0,0,0,"0",1
+"220","bishopsGoutweed","Cabrillo National Monument",0,160,0,"0",652
+"221","bishopsGoutweed","Tuskegee Airmen National Historic Site",0,89,0,"0",277
+"222","bishopsGoutweed","Natchez National Historical Park",0,108,0,"0",477
+"223","bishopsGoutweed","Edgar Allan Poe National Historic Site",0,1,0,"0",5
+"224","bishopsGoutweed","Eugene O'Neill National Historic Site",0,13,0,"0",556
+"225","bishopsGoutweed","Navajo National Monument",0,360,0,"0",299
+"226","bishopsGoutweed","Cane River Creole National Historical Park",0,206,0,"0",525
+"227","bishopsGoutweed","Great Basin National Park",247,77003,0,"0",171
+"228","bishopsGoutweed","Whiskeytown-Shasta-Trinity National Recreation Area",0,42139,0,"0",426
+"229","bishopsGoutweed","Fort Point National Historic Site",0,25,0,"0",577
+"230","bishopsGoutweed","Salem Maritime National Historic Site",0,9,0,"0",14
+"231","bishopsGoutweed","Moores Creek National Battlefield",0,91,0,"0",25
+"232","bishopsGoutweed","Horseshoe Bend National Military Park",0,2079,0,"0",293
+"233","bishopsGoutweed","Fort Matanzas National Monument",0,274,0,"0",63
+"234","bishopsGoutweed","Channel Islands National Park",0,245690,0,"0",610
+"235","bishopsGoutweed","Canyonlands National Park",0,334254,0,"0",185
+"236","bishopsGoutweed","Jean Lafitte National Historical Park and Preserve",0,21717,0,"0",439
+"237","bishopsGoutweed","Jewel Cave National Monument",0,1274,0,"0",284
+"238","bishopsGoutweed","Fort Larned National Historic Site",0,705,0,"0",276
+"239","bishopsGoutweed","Rosie the Riveter/World War II Home Front National Historical Park",0,149,0,"0",568
+"240","bishopsGoutweed","Thaddeus Kosciuszko National Memorial",0,0,0,"0",6
+"241","bishopsGoutweed","Fort Scott National Historic Site",0,17,0,"0",259
+"242","bishopsGoutweed","Perry's Victory and International Peace Memorial",0,27,0,"0",47
+"243","bishopsGoutweed","Rainbow Bridge National Monument",0,160,0,"0",271
+"244","bishopsGoutweed","Natural Bridges National Monument",0,7610,0,"0",246
+"245","bishopsGoutweed","Bent's Old Fort National Historic Site",0,830,0,"0",143
+"246","bishopsGoutweed","Hohokam Pima National Monument",0,1688,0,"0",550
+"247","bishopsGoutweed","Gulf Islands National Seashore",0,130415,0,"0",247
+"248","bishopsGoutweed","Biscayne National Park",0,173840,0,"0",310
+"249","bishopsGoutweed","Arkansas Post National Memorial",0,763,0,"0",337
+"250","bishopsGoutweed","Guadalupe Mountains National Park",0,87226,0,"0",560
+"251","bishopsGoutweed","City of Rocks National Reserve",0,14538,0,"0",130
+"252","bishopsGoutweed","Hagerman Fossil Beds National Monument",0,4380,0,"0",210
+"253","bishopsGoutweed","John Muir National Historic Site",0,343,0,"0",556
+"254","bishopsGoutweed","Petersburg National Battlefield",0,2783,0,"0",79
+"255","bishopsGoutweed","Fort Vancouver National Historic Site",0,208,0,"0",71
+"256","bishopsGoutweed","John Fitzgerald Kennedy National Historic Site",0,0,0,"0",2
+"257","bishopsGoutweed","Fort Pulaski National Monument",0,5417,0,"0",186
+"258","bishopsGoutweed","Theodore Roosevelt Birthplace National Historic Site",0,0,0,"0",1
+"259","bishopsGoutweed","Coronado National Memorial",5,4811,0,"0",668
+"260","bishopsGoutweed","Wright Brothers National Memorial",0,429,0,"0",175
+"261","bishopsGoutweed","Selma to Montgomery National Historic Trail",0,20,0,"0",313
+"262","bishopsGoutweed","Kings Mountain National Military Park",0,3930,0,"0",86
+"263","bishopsGoutweed","Golden Spike National Historic Site",0,2670,0,"0",71
+"264","bishopsGoutweed","Lava Beds National Monument",0,46813,0,"0",338
+"265","bishopsGoutweed","Longfellow House-Washington's Headquarters National Historic Site",0,2,0,"0",2
+"266","bishopsGoutweed","Montezuma Castle National Monument",0,1012,0,"0",444
+"267","bishopsGoutweed","Kings Canyon National Park",851,458974,0,"0",429
+"268","bishopsGoutweed","Whitman Mission National Historic Site",0,139,0,"0",152
+"269","bishopsGoutweed","Russell Cave National Monument",0,289,0,"0",150
+"270","bishopsGoutweed","Maggie L. Walker National Historic Site",0,1,0,"0",66
+"271","bishopsGoutweed","Bighorn Canyon National Recreation Area",0,119830,0,"0",343
+"272","bishopsGoutweed","Muir Woods National Monument",0,555,0,"0",579
+"273","bishopsGoutweed","Sand Creek Massacre National Historic Site",0,12530,0,"0",145
+"274","bishopsGoutweed","Knife River Indian Villages National Historic Site",0,1772,0,"0",391
+"275","bishopsGoutweed","Governors Island National Monument",0,23,0,"0",3
+"276","bishopsGoutweed","Scotts Bluff National Monument",0,3217,0,"0",155
+"277","bishopsGoutweed","Agate Fossil Beds National Monument",0,3045,0,"0",193
+"278","bishopsGoutweed","Capitol Reef National Park",0,244800,0,"0",163
+"279","bishopsGoutweed","Devils Postpile National Monument",0,799,0,"0",430
+"280","bishopsGoutweed","San Francisco Maritime National Historical Park",0,99,0,"0",575
+"281","bishopsGoutweed","Palo Alto Battlefield National Historical Park",0,3414,0,"0",930
+"282","bishopsGoutweed","Joshua Tree National Park",0,792959,0,"0",519
+"283","bishopsGoutweed","First Ladies National Historic Site",0,0,0,"0",23
+"284","bishopsGoutweed","Cesar E. Chavez National Monument",0,118,0,"0",530
+"285","bishopsGoutweed","Minuteman Missile National Historic Site",0,44,0,"0",327
+"286","bishopsGoutweed","Salinas Pueblo Missions National Monument",0,1072,0,"0",378
+"287","bishopsGoutweed","Pinnacles National Park",0,26707,0,"0",564
+"288","bishopsGoutweed","Death Valley National Park",0,3399561,0,"0",373
+"289","bishopsGoutweed","Niobrara National Scenic River",29,29081,0,"0",196
+"290","bishopsGoutweed","Casa Grande Ruins National Monument",0,473,0,"0",564
+"291","bishopsGoutweed","Kennesaw Mountain National Battlefield Park",0,2899,0,"0",236
+"292","bishopsGoutweed","De Soto National Memorial",0,30,0,"0",153
+"293","bishopsGoutweed","Andersonville National Historic Site",0,521,0,"0",209
+"294","bishopsGoutweed","Ocmulgee National Monument",0,690,0,"0",238
+"295","bishopsGoutweed","Cowpens National Battlefield",0,846,0,"0",88
+"296","bishopsGoutweed","Chiricahua National Monument",12,12205,0,"0",602
+"297","bishopsGoutweed","Martin Luther King, Jr., National Historic Site",0,39,0,"0",242
+"298","bishopsGoutweed","Devils Tower National Monument",0,1350,0,"0",339
+"299","bishopsGoutweed","General Grant National Memorial",0,1,0,"0",0
+"300","bishopsGoutweed","Golden Gate National Recreation Area",0,82468,0,"0",573
+"301","bishopsGoutweed","Port Chicago Naval Magazine National Memorial",0,6,0,"0",549
+"302","bishopsGoutweed","John Day Fossil Beds National Monument",0,13990,0,"0",127
+"303","bishopsGoutweed","Theodore Roosevelt Inaugural National Historic Site",0,1,0,"0",1
+"304","bishopsGoutweed","Badlands National Park",0,242740,0,"0",283
+"305","bishopsGoutweed","Jimmy Carter National Historic Site",0,72,0,"0",208
+"306","bishopsGoutweed","San Juan Island National Historical Park",0,2142,0,"0",49
+"307","bishopsGoutweed","Minidoka National Historic Site",0,399,0,"0",23
+"308","bishopsGoutweed","Big Hole National Battlefield",0,977,0,"0",370
+"309","bishopsGoutweed","Canyon de Chelly National Monument",0,88230,0,"0",332
+"310","bishopsGoutweed","Castle Mountains National Monument",0,20871,0,"0",426
+"311","bishopsGoutweed","George Washington Birthplace National Monument",0,658,0,"0",43
+"312","bishopsGoutweed","Waco Mammoth National Monument",0,107,0,"0",701
+"313","bishopsGoutweed","Glen Canyon National Recreation Area",0,1250244,0,"0",187
+"314","bishopsGoutweed","Yosemite National Park",1222,745915,0,"0",424
+"315","bishopsGoutweed","Tallgrass Prairie National Preserve",0,10897,0,"0",204
+"316","bishopsGoutweed","Tuskegee Institute National Historic Site",0,62,0,"0",277
+"317","bishopsGoutweed","Fort Caroline National Memorial",0,140,0,"0",71
+"318","bishopsGoutweed","Saint Croix Island International Historic Site",0,7,0,"0",62
+"319","bishopsGoutweed","Statue Of Liberty National Monument",0,69,0,"0",3
+"320","bishopsGoutweed","Wind Cave National Park",0,33928,0,"0",273
+"321","bishopsGoutweed","Colorado National Monument",0,20449,0,"0",183
+"322","bishopsGoutweed","Belmont-Paul Women's Equality National Monument",0,0,0,"0",3
+"323","bishopsGoutweed","Stonewall National Monument",0,5,0,"0",0
+"324","bishopsGoutweed","Congaree National Park",0,26408,0,"0",156
+"325","bishopsGoutweed","Federal Hall National Memorial",0,1,0,"0",2
+"326","bishopsGoutweed","Fort Smith National Historic Site",0,71,0,"0",436
+"327","bishopsGoutweed","El Malpais National Monument",0,113580,0,"0",365
+"328","bishopsGoutweed","Lyndon B. Johnson National Historical Park",0,1568,0,"0",764
+"329","bishopsGoutweed","Carlsbad Caverns National Park",0,46798,0,"0",546
+"330","bishopsGoutweed","Aztec Ruins National Monument",0,317,0,"0",260
+"331","bishopsGoutweed","Zion National Park",38,148712,0,"0",246
+"332","bishopsGoutweed","Craters of the Moon National Preserve",0,698969,0,"0",159
+"333","bishopsGoutweed","Craters of the Moon National Monument",0,53390,0,"0",204
+"334","bishopsGoutweed","White Sands National Monument",0,145489,0,"0",501
+"335","bishopsGoutweed","Pecos National Historical Park",0,6695,0,"0",303
+"336","bishopsGoutweed","Organ Pipe Cactus National Monument",0,330696,0,"0",624
+"337","bishopsGoutweed","Curecanti National Recreation Area",0,41364,0,"0",134
+"338","bishopsGoutweed","Theodore Roosevelt National Park",0,70463,0,"0",472
+"339","bishopsGoutweed","Dinosaur National Monument",0,210405,0,"0",126
+"340","bishopsGoutweed","Saguaro National Park",290,92480,0,"0",612
+"341","bishopsGoutweed","Mojave National Preserve",0,1587809,0,"0",421
+"342","bishopsGoutweed","Homestead National Monument",0,214,0,"0",81
+"343","bishopsGoutweed","Chaco Culture National Historical Park",0,34376,0,"0",304
+"344","bishopsGoutweed","Grant-Kohrs Ranch National Historic Site",0,1576,0,"0",406
+"345","bishopsGoutweed","Captain John Smith National Historic Trail",0,263,0,"0",102
+"346","bishopsGoutweed","New Orleans Jazz National Historical Park",0,5,0,"0",448
+"347","bishopsGoutweed","Reconstruction Era National Monument",0,17,0,"0",201
+"348","bishopsGoutweed","Freedom Riders National Monument",0,8,0,"0",245
+"349","bishopsGoutweed","Birmingham Civil Rights National Monument",0,1,0,"0",253
+"350","bishopsGoutweed","Chickasaw National Recreation Area",0,9874,0,"0",495
+"351","bishopsGoutweed","Stones River National Battlefield",0,721,0,"0",80
+"352","bishopsGoutweed","Great Sand Dunes National Park",0,107583,0,"0",134
+"353","bishopsGoutweed","Big Thicket National Preserve",0,113142,0,"0",615
+"354","bishopsGoutweed","Rio Grande Wild and Scenic River",0,22060,0,"0",726
+"355","bishopsGoutweed","San Antonio Missions National Historical Park",0,943,0,"0",825
+"356","bishopsGoutweed","Black Canyon of the Gunnison National Park",0,31229,0,"0",156
+"357","bishopsGoutweed","Walnut Canyon National Monument",0,3241,0,"0",406
+"358","bishopsGoutweed","Nicodemus National Historic Site",0,5,0,"0",225
+"359","bishopsGoutweed","Wupatki National Monument",0,35430,0,"0",374
+"360","bishopsGoutweed","Washita Battlefield National Historic Site",0,320,0,"0",402
+"361","bishopsGoutweed","Petrified Forest National Park",0,222963,0,"0",411
+"362","bishopsGoutweed","Big Bend National Park",0,810893,0,"0",731
+"363","bishopsGoutweed","Colonial National Historical Park",36,8520,0,"0",105
+"364","bishopsGoutweed","Lake Mead National Recreation Area",0,1494424,0,"0",328
+"365","bishopsGoutweed","Little Rock Central High School National Historic Site",0,29,0,"0",351
+"366","bishopsGoutweed","Fort Davis National Historic Site",0,518,0,"0",662
+"367","bishopsGoutweed","Fort Monroe National Monument",0,368,0,"0",134
+"368","bishopsGoutweed","Arches National Park",0,76460,0,"0",175
+"369","bishopsGoutweed","Fort Laramie National Historic Site",0,897,0,"0",167
+"370","bishopsGoutweed","Tumacacori National Historical Park",0,363,0,"0",668
+"371","bishopsGoutweed","Tule Springs Fossil Beds National Monument",0,22644,0,"0",360
+"372","bishopsGoutweed","Hot Springs National Park",0,5466,0,"0",392
+"373","bishopsGoutweed","Petroglyph National Monument",0,7202,0,"0",341
+"374","bishopsGoutweed","President William Jefferson Clinton Birthplace Home National Historic Site",0,1,0,"0",452
+"375","bishopsGoutweed","Fort Union Trading Post National Historic Site",0,444,0,"0",503
+"376","bishopsGoutweed","Grand Canyon National Park",5,1203128,0,"0",284
+"377","bishopsGoutweed","Padre Island National Seashore",0,130558,0,"0",888
+"378","bishopsGoutweed","Mesa Verde National Park",0,53689,0,"0",246
