@@ -1,5 +1,5 @@
 ---
-# title: "INHABIT - Sandbox"
+title: "INHABIT - Sandbox"
 logo: usgs.png
 resource_files:
 - mgmt
@@ -7,8 +7,7 @@ resource_files:
 - species
 runtime: shiny
 output:
-  flexdashboard::flex_dashboard:
-    # orientation: rows
+  flexdashboard::flex_dashboard
 ---
 
 <style type='text/css'>
@@ -16,10 +15,57 @@ output:
 img {
     max-width: 100%;
     min-height: 100%;
-    height: auto;
+    height: 100%;
 }
 
+ /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  <!-- background-color: #eee; -->
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 5px;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-size: 10px;
+} 
+
 </style>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+
+</script>
 
 ```{r setup, include=FALSE}
 # .libPaths( c( "C:/LocalData/Source/RPackages",.libPaths()))
@@ -28,11 +74,11 @@ library(leaflet)
 library(flexdashboard)
 library(rgdal)
 library(shinyWidgets)
+library(shinydashboard)
 library(DT)
 library(magrittr)
 library(knitr)
 library(kableExtra)
-library(shinyBS)
 
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
 pred.info = read.csv(file = "predictorInformation.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
@@ -86,10 +132,10 @@ Inputs {.sidebar width=200px}
 
 ```{r}
 sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
-pickerInput(inputId = 'sp_select', label = 'Species of interest'
+pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
             , width = '95%'
-            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep=''))
+            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Red brome"
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
 ```
@@ -100,23 +146,15 @@ sliderTextInput(inputId = "slider", label = "Choose your model threshold:"
                 , grid = T, hide_min_max = F, force_edges = T, width = '100%')
 ```
 
+Restrict environmental conditions? <br>
+<button class="collapsible">More Information <img src="ibutton.png" width=10px></button>
+<div class="content">
+  <p>'If "yes", the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a>'</p>
+</div>
+
 -----
-
-<!-- <div class="tooltip"><img src="ibutton.png" width=20px/> -->
-<!--   <span class="tooltiptext">If 'yes', the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></span> -->
-<!-- </div> -->
-
 ``` {r}
-## From ui.R: Adds a tooltip to element with inputId = "someInput" 
-## with text, "This is an input.", that appears to the left on hover.
-bsTooltip(id = "someInput", title = "This is an input", 
-          placement = "left", trigger = "hover")
-
-## From server.R: Add the same tooltip as above
-addTooltip(session, id = "someInput", title = "This is an input.",
-           placement = "left", trigger = "hover")
-
-radioButtons(inputId = "mess",choices=c("yes","no"), selected = "yes", label=NULL)
+radioButtons(inputId = "mess", label = NULL, choices = c("yes","no"), selected = "yes")
 ```
 
 -----
@@ -255,7 +293,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 })
 ```
 
-Data Summary
+Zonal Stats
 =====================================
 
 ```{r}
@@ -274,13 +312,12 @@ downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species')
 #                                  }
 #                                )
 
-#Filtered GAP's 'Fine Agency Level' layer by Mang_Name = 'NPS'
 fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/summary.csv',sep='')
                                                     , header = T, stringsAsFactors = F),
               fillContainer = getOption("DT.fillContainer", TRUE),
               caption = "This is a sample of summary information by National Parks with more species data to be added in the future. 'Known presence' indicates if presence locations from the park were available for model development. 'Established suitable area' is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. 'Percent of Park' is the percent of the park area that is classified as suitable. 'Minimum distance to Occurrence' is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from NPS IRMA (https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True)",
               colnames = c("Species", 
-                           "National Park",
+                           "Management Unit",
                            "Estimated Suitable Area (Acres)",
                            "Percent of Park Area",
                            "Known Presence? (Count)",
@@ -298,16 +335,34 @@ Column {.tabset}
 
 ### Summary
 
+
 Flashy data visualizations for rapid model assessment
 
+```{r}
+gauge(0.8, min = 0, max = 100, symbol = '%', gaugeSectors(
+  success = c(80, 100), warning = c(40, 79), danger = c(0, 39)
+))
+infoBox("title", value = NULL, subtitle = NULL,
+  icon = shiny::icon("bar-chart"), color = "aqua", width = 4,
+  href = NULL, fill = FALSE)
+valueBox(1, "subtitle", icon = NULL, color = "aqua", width = 4,
+  href = NULL)
+valueBox(1, "subtitle", icon = NULL, color = "aqua", width = 4,
+  href = NULL)
+```
+
 ### Evaluation Statistics
-    
+
 ```{r}
 ```
 
 ### Variable Response Curves
 ```{r}
-include_graphics('species/redbrome/responsecurves.png')
+img = reactive({paste0('species/',species(),'/responsecurves.png',sep='')})
+renderImage({
+  img = include_graphics(img())
+  list(src=img)
+}, deleteFile = F)
 ```
 
 ### Variable Importance
@@ -326,15 +381,20 @@ fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','
 ```
 
 ### Variable Source
-    
+
 ```{r}
 ```
 
 
-About/F.A.Q.
+About
 =====================================
 
-##### This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
+Background
 
-About/F.A.Q.
+This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
+
+<!-- # Methods -->
+<!-- # Contact -->
+
+F.A.Q.
 =====================================
