@@ -298,35 +298,46 @@ Zonal Stats
 =====================================
 
 ```{r}
-downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species')
+downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species & Administrative Agencies')
 # downloadBttn(outputId = 'dl.all', label = paste0('Download All Available Data (', nrow(sp_dt), ' Records)', sep=''))
 
-# output$dl.dt = downloadHandler(filename = 'DataSummaryExport.csv', 
-#                                content = function(file){
-#                                  write.csv(, file, row.names = F)
-#                                  }
-#                                )
+output$dl.dt = downloadHandler(filename = 'DataSummaryExport.csv',
+                               content = function(file){
+                                 write.csv(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
+                                                    , header = T, stringsAsFactors = F) %>%
+                                             select(-c(X, total_area_acre)) %>%
+                                             mutate(Species = input$sp_select) %>%
+                                             filter(Admin %in% input$mgmt.admin), file, row.names = F)
+                                 }
+                               )
 
-# output$dl.all = downloadHandler(filename = 'DataSummaryExport_All.csv', 
-#                                content = function(file){
-#                                  write.csv(sp_dt, file, row.names = F)
-#                                  }
-#                                )
 fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
                                                     , header = T, stringsAsFactors = F) %>%
                                              select(-c(X, total_area_acre)) %>%
-                                             mutate(Species = input$sp_select),
+                                             mutate(Species = input$sp_select) %>%
+                                             filter(Admin %in% input$mgmt.admin),
+              options = list(pageLength=50),
+              callback = JS("var tips = ['','','',
+                           'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
+                           'The percent of the park area that is classified as suitable',
+                           'Indicates if presence locations from the park were available for model development.',
+                           'The minimum distance from the park boundary to a known occurrence used in model development.'],
+                              header = table.columns().header();
+                                for (var i = 0; i < tips.length; i++) {
+                                  $(header[i]).attr('title', tips[i]);
+                                }"),
               fillContainer = getOption("DT.fillContainer", TRUE),
-              caption = HTML('This is a sample of summary information by National Parks with more species data to be added in the future. "Known presence indicates if presence locations from the park were available for model development. "Established suitable area" is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. "Percent of Park" is the percent of the park area that is classified as suitable. "Minimum distance to Occurrence" is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from <a href="https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True" target="_blank">NPS IRMA</a>.'),
-              colnames = c("Species", 
+              caption = HTML('This is a sample of summary information by National Parks with more species data to be added in the future. "Known presence" indicates if presence locations from the park were available for model development. "Established suitable area" is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. "Percent of Park" is the percent of the park area that is classified as suitable. "Minimum distance to Occurrence" is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from <a href="https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True" target="_blank">NPS IRMA</a>.'),
+              colnames = c("Species",
+                           "Admin",
                            "Management Unit",
                            "Estimated Suitable Area (Acres)",
                            "Percent of Park Area",
                            "Known Presence? (Count)",
                            "Minimum Distance to Occurrence (Miles)"),
               rownames = FALSE) %>%
-              formatStyle(columns = c(1:6), 'text-align' = 'center') %>%
-              DT::formatPercentage(columns = 4)))
+              formatStyle(columns = c(1:7), 'text-align' = 'center') %>%
+              DT::formatPercentage(columns = 5)))
 ```
 
 Model Details
