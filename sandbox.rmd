@@ -7,7 +7,8 @@ resource_files:
 - species
 runtime: shiny
 output:
-  flexdashboard::flex_dashboard
+  flexdashboard::flex_dashboard:
+    orientation: rows
 ---
 
 <style type='text/css'>
@@ -74,19 +75,21 @@ library(leaflet)
 library(flexdashboard)
 library(rgdal)
 library(shinyWidgets)
-library(shinydashboard)
+# library(shinydashboard)
 library(DT)
 library(magrittr)
 library(knitr)
 library(kableExtra)
+library(dplyr)
 
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
 pred.info = read.csv(file = "predictorInformation.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
+cred.table = read.csv(file = "CredTable.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
 states = readOGR("states/cb_2017_us_state_500k_conus_simple.shp", GDAL1_integer64_policy = T)
 
 #Reactive elements
 distro_shp = reactive({if(input$known_distro=="yes"){
-  kde_poly = readOGR(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/kde.shp',sep=''), verbose = F)
+  kde_poly = readOGR(paste0("species/",species(),'/kde.shp',sep=''), verbose = F)
 } else {
     kde_poly = NULL
   }})
@@ -111,13 +114,13 @@ model = reactive(
   })
 
 pres_pts = reactive({if(input$pres_button=="yes"){
-  kde_poly = readOGR(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/pts.sqlite',sep=''), verbose = F)
+  species_pts = readOGR(paste0("species/",species(),'/pts.sqlite',sep=''), verbose = F)
 } else {
     species_pts = NULL
   }
 })
 
-species = reactive({gsub(' ','',tolower(input$sp_select))})
+species = reactive({tolower(gsub(pattern = "\\s", '', gsub("'", replacement = '', x = input$sp_select)))})
 
 tilesURL = reactive(
     paste0("http://pederengelstad.github.io/",gsub(' ','',tolower(input$sp_select)),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
@@ -191,7 +194,7 @@ radioButtons(inputId = "pres_button",choices=c("yes","no"), selected = "no", lab
 radioButtons(inputId = "known_distro",choices=c("yes","no"), selected = "no", label='Display Known Distribution?', width = '100%')
 ```
 
-Map Output
+Map
 =====================================
 
 ```{r}
@@ -293,38 +296,97 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 })
 ```
 
+
+
+Model Summary
+=====================================
+
+Row {data-height: 33%}
+-------------------------------------
+    
+### Number of Presence Points Used
+    
+```{r}
+```
+ 
+### Model Thresholds
+    
+```{r}
+
+``` 
+
+### Chart 3
+    
+```{r}
+renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1))
+```
+
+Row {data-height: 33%}
+-------------------------------------
+
+### Chart 4
+
+```{r}
+renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1))
+```
+
+Row {data-height: 33%}
+-------------------------------------
+    
+### Chart 5
+    
+```{r}
+```
+    
+### Chart 6
+
+```{r}
+```
+
 Zonal Stats
 =====================================
 
 ```{r}
-downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species')
+downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species & Administrative Agencies')
 # downloadBttn(outputId = 'dl.all', label = paste0('Download All Available Data (', nrow(sp_dt), ' Records)', sep=''))
 
-# output$dl.dt = downloadHandler(filename = 'DataSummaryExport.csv', 
-#                                content = function(file){
-#                                  write.csv(, file, row.names = F)
-#                                  }
-#                                )
+output$dl.dt = downloadHandler(filename = 'DataSummaryExport.csv',
+                               content = function(file){
+                                 write.csv(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
+                                                    , header = T, stringsAsFactors = F) %>%
+                                             select(-c(X, total_area_acre)) %>%
+                                             mutate(Species = input$sp_select) %>%
+                                             filter(Admin %in% input$mgmt.admin), file, row.names = F)
+                                 }
+                               )
 
-# output$dl.all = downloadHandler(filename = 'DataSummaryExport_All.csv', 
-#                                content = function(file){
-#                                  write.csv(sp_dt, file, row.names = F)
-#                                  }
-#                                )
-
-fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/summary.csv',sep='')
-                                                    , header = T, stringsAsFactors = F),
+fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
+                                                    , header = T, stringsAsFactors = F) %>%
+                                             select(-c(X, total_area_acre)) %>%
+                                             mutate(Species = input$sp_select) %>%
+                                             filter(Admin %in% input$mgmt.admin),
+              options = list(pageLength=50),
+              callback = JS("var tips = ['','','',
+                           'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
+                           'The percent of the park area that is classified as suitable',
+                           'Indicates if presence locations from the park were available for model development.',
+                           'The minimum distance from the park boundary to a known occurrence used in model development.'],
+                              header = table.columns().header();
+                                for (var i = 0; i < tips.length; i++) {
+                                  $(header[i]).attr('title', tips[i]);
+                                }"),
               fillContainer = getOption("DT.fillContainer", TRUE),
-              caption = "This is a sample of summary information by National Parks with more species data to be added in the future. 'Known presence' indicates if presence locations from the park were available for model development. 'Established suitable area' is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. 'Percent of Park' is the percent of the park area that is classified as suitable. 'Minimum distance to Occurrence' is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from NPS IRMA (https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True)",
-              colnames = c("Species", 
+              caption = HTML('This is a sample of summary information by National Parks with more species data to be added in the future. "Known presence" indicates if presence locations from the park were available for model development. "Established suitable area" is the number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable. "Percent of Park" is the percent of the park area that is classified as suitable. "Minimum distance to Occurrence" is the minimum distance from the park boundary to a known occurrence used in model development. Boundaries generated from <a href="https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True" target="_blank">NPS IRMA</a>.'),
+              colnames = c("Species",
+                           "Admin",
                            "Management Unit",
                            "Estimated Suitable Area (Acres)",
                            "Percent of Park Area",
                            "Known Presence? (Count)",
                            "Minimum Distance to Occurrence (Miles)"),
               rownames = FALSE) %>%
-              formatStyle(columns = c(1:6), 'text-align' = 'center') %>%
-              DT::formatPercentage(columns = 4)))
+              formatStyle(columns = c(1:7), 'text-align' = 'center') %>%
+              DT::formatPercentage(columns = 5)))
 ```
 
 Model Details
@@ -333,22 +395,39 @@ Model Details
 Column {.tabset}
 -------------------------------------
 
-### Summary
-
-
-Flashy data visualizations for rapid model assessment
-
+### Credibility Assessment
 ```{r}
-gauge(0.8, min = 0, max = 100, symbol = '%', gaugeSectors(
-  success = c(80, 100), warning = c(40, 79), danger = c(0, 39)
-))
-infoBox("title", value = NULL, subtitle = NULL,
-  icon = shiny::icon("bar-chart"), color = "aqua", width = 4,
-  href = NULL, fill = FALSE)
-valueBox(1, "subtitle", icon = NULL, color = "aqua", width = 4,
-  href = NULL)
-valueBox(1, "subtitle", icon = NULL, color = "aqua", width = 4,
-  href = NULL)
+caption = 'Model credibility reflects both input data attributes and methodological decisions. 
+          For each major element of the model development and delivery process, we provide an overview 
+          of problematic (red), acceptable (yellow), and ideal (green) practices. Source: <a href="https://doi.org/10.1093/biosci/biz045" target="_blank">Sofaer et al., 2019</a>'
+fillPage(HTML(
+  
+  kable(cred.table, row.names = F
+        , col.names = c('','','Interpret With Caution',colnames(cred.table[4:6]))
+        , caption = caption
+        , format = 'html'
+        , escape = F) %>%
+  kable_styling(position = "center"
+                , full_width = T
+                , bootstrap_options = c("condensed","bordered", "responsive"), font_size = 10) %>%
+  row_spec(row = 0:nrow(cred.table)) %>%
+           # , extra_css = c('border: 1px solid black;')) 
+  column_spec(1
+              # , width = '2cm'
+              , extra_css = 'webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);') %>%
+  column_spec(2:6,
+              # width = '5cm',
+              extra_css = 'vertical-align: middle;') %>%
+  column_spec(1,
+              # border_right = '1px solid black',
+              extra_css = 'text-orientation: upgright;') %>%
+  column_spec(2:6, color = 'black') %>%
+  column_spec(3, background = '#FB8686') %>%
+  column_spec(4, background = '#F4FDAD') %>%
+  column_spec(5, background = '#71F453') %>%
+  collapse_rows(1:2)  
+  )
+)
 ```
 
 ### Evaluation Statistics
@@ -367,22 +446,46 @@ renderImage({
 
 ### Variable Importance
 ```{r}
-caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
-DT:::DT2BSClass(c('compact', 'cell-border'))
-
-fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
-                                                    , header = T, stringsAsFactors = F),
-              fillContainer = getOption("DT.fillContainer", TRUE),
-              caption = caption,
-              colnames = c("","predictor","brt_KDE_1","brt_target_2","glm_KDE_1","glm_target_1","mars_KDE_1","mars_target_1","Maxent_KDE_3","Maxent_target_1","rf_KDE_1","rf_target_1"),
-              rownames = FALSE) %>%
-              formatStyle(columns = c(1:6), 'text-align' = 'center') %>%
-              DT::formatPercentage(columns = 4)))
+# caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
+# DT:::DT2BSClass(c('compact', 'cell-border'))
+# 
+# fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
+#                                                     , header = T, stringsAsFactors = F),
+#               fillContainer = getOption("DT.fillContainer", TRUE),
+#               caption = caption,
+#               colnames = c("","predictor","brt_KDE_1","brt_target_2","glm_KDE_1","glm_target_1","mars_KDE_1","mars_target_1","Maxent_KDE_3","Maxent_target_1","rf_KDE_1","rf_target_1"),
+#               rownames = FALSE) %>%
+#               formatStyle(columns = c(1:6), 'text-align' = 'center') %>%
+#               DT::formatPercentage(columns = 4)))
+# UI component
+htmlOutput("vi_table") 
+vi = reactive({read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
+                                                    , header = T, stringsAsFactors = F)})
+# server component
+output$vi_table <- renderText({
+  kable(vi()) %>%
+    kable_styling(
+      font_size = 10,
+      full_width = F,
+      bootstrap_options = c("condensed", "responsive")
+    ) 
+})
 ```
 
 ### Variable Source
 
 ```{r}
+htmlOutput("source_table") 
+
+# server component
+output$source_table <- renderText({
+  kable(pred.info[pred.info$name %in% vi()$predictor,], format = 'html', escape = F) %>%
+    kable_styling(
+      font_size = 10,
+      full_width = F,
+      bootstrap_options = c("condensed")
+    ) 
+})
 ```
 
 
@@ -393,8 +496,30 @@ Background
 
 This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
 
+Sources for management polygons
+
+BLM - https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_Administrative_Units.zip
+EPMT -  
+FWS - https://ecos.fws.gov/ServCat/Reference/Profile/110959
+NPS - https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True
+US Counties - https://www.weather.gov/gis/Counties
+
 <!-- # Methods -->
 <!-- # Contact -->
 
+Feedback
+=====================================
+<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSc5TVLYur7zjC2ikJlrrJho07frcdUgcc2dIMjRDj7Q2ieK1w/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" align="center">Loading.</iframe>
+
 F.A.Q.
 =====================================
+1. What is species distribution modeling?
+
+2. How far in can I zoom?
+The models are produced at a ~90m resolution. You can zoom in.
+
+3. Why are there areas of low model agreement  around some of the presence locations?
+The thresholds used to create the maps classified as suitable or unsuitable that are added together involve classifying some occurrence locations as unsuitable. How many are classified as unsuitable depends on the threshold method. For the thresholds, the occurrence locations used to create the models are ordered by their predicted values for each model. A certain percent starting from the bottom will be classified as unsuitable, such that with 100 presence points and a 1% threshold the presence point with the lowest predicted suitability would be classified as occurring in unsuitable habitat. At the other extreme a 90% threshold would classify 90 of the training presence points as unsuitable, focusing the map on only the highest relative suitability locations.
+
+4. What is the number of models included in the ensemble?
+The largest number in the legend indicates the number of models included in the ensemble. The maximum is 10 (5 model algorithms times 2 background generation methods).  

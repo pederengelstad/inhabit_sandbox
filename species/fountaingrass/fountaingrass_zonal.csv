@@ -1,0 +1,379 @@
+X,Species,Admin,Park_Name,est_suit_area_acre,total_area_acre,perc_suit,Known_Presences,min_dist_miles
+1,fountaingrass,NPS,Wolf Trap National Park for the Performing Arts,137,134,1,0,4
+2,fountaingrass,NPS,Castillo de San Marcos National Monument,22,20,1,0,63
+3,fountaingrass,NPS,Tonto National Monument,1119,1122,1,Yes (4),0
+4,fountaingrass,NPS,Charles Pinckney National Historic Site,34,33,1,0,25
+5,fountaingrass,NPS,Maggie L. Walker National Historic Site,2,1,1,0,104
+6,fountaingrass,NPS,Port Chicago Naval Magazine National Memorial,7,6,1,0,211
+7,fountaingrass,NPS,Jimmy Carter National Historic Site,72,72,1,0,89
+8,fountaingrass,NPS,Waco Mammoth National Monument,113,107,1,0,271
+9,fountaingrass,NPS,Tuskegee Institute National Historic Site,62,62,1,0,99
+10,fountaingrass,NPS,Lincoln Home National Historic Site,14,14,1,0,553
+11,fountaingrass,NPS,San Antonio Missions National Historical Park,954,943,1,0,110
+12,fountaingrass,NPS,Manassas National Battlefield Park,5048,5125,0.99,0,18
+13,fountaingrass,NPS,Greenbelt Park,1138,1149,0.99,0,7
+14,fountaingrass,NPS,Andersonville National Historic Site,518,521,0.99,0,77
+15,fountaingrass,NPS,Ocmulgee National Monument,680,690,0.99,0,48
+16,fountaingrass,NPS,Tuskegee Airmen National Historic Site,86,89,0.97,0,97
+17,fountaingrass,NPS,Fort Caroline National Memorial,137,140,0.97,0,73
+18,fountaingrass,NPS,Selma to Montgomery National Historic Trail,19,20,0.96,0,153
+19,fountaingrass,NPS,Monocacy National Battlefield,1548,1622,0.95,0,28
+20,fountaingrass,NPS,Cane River Creole National Historical Park,194,206,0.94,0,358
+21,fountaingrass,NPS,Independence National Historical Park,41,43,0.94,0,120
+22,fountaingrass,NPS,Valley Forge National Historical Park,3175,3451,0.92,0,114
+23,fountaingrass,NPS,Cedar Creek and Belle Grove National Historical Park,3036,3469,0.88,0,13
+24,fountaingrass,NPS,Gateway Arch National Park,168,194,0.86,0,499
+25,fountaingrass,NPS,Saguaro National Park,76096,92480,0.82,Yes (926),0
+26,fountaingrass,NPS,Appomattox Court House National Historical Park,1435,1779,0.81,0,114
+27,fountaingrass,NPS,Moores Creek National Battlefield,67,91,0.74,0,175
+28,fountaingrass,NPS,John Muir National Historic Site,249,343,0.73,0,207
+29,fountaingrass,NPS,Casa Grande Ruins National Monument,335,473,0.71,0,19
+30,fountaingrass,NPS,Fort Frederica National Monument,194,282,0.69,0,121
+31,fountaingrass,NPS,Gettysburg National Military Park,4255,6136,0.69,0,58
+32,fountaingrass,NPS,Tuzigoot National Monument,546,813,0.67,0,31
+33,fountaingrass,NPS,Petersburg National Battlefield,1857,2783,0.67,0,121
+34,fountaingrass,NPS,Chickamauga and Chattanooga National Military Park,5403,8229,0.66,0,127
+35,fountaingrass,NPS,Joshua Tree National Park,506459,792959,0.64,Yes (308),0
+36,fountaingrass,NPS,Clara Barton National Historic Site,5,8,0.58,0,4
+37,fountaingrass,NPS,Richmond National Battlefield Park,4675,8204,0.57,0,77
+38,fountaingrass,NPS,Colonial National Historical Park,4794,8520,0.56,0,124
+39,fountaingrass,NPS,Theodore Roosevelt Island National Memorial,55,100,0.55,0,4
+40,fountaingrass,NPS,Eugene O'Neill National Historic Site,7,13,0.54,0,195
+41,fountaingrass,NPS,Coronado National Memorial,2581,4811,0.54,0,8
+42,fountaingrass,NPS,Cuyahoga Valley National Park,17311,32745,0.53,0,235
+43,fountaingrass,NPS,Kennesaw Mountain National Battlefield Park,1464,2899,0.51,0,50
+44,fountaingrass,NPS,Harpers Ferry National Historical Park,1862,3713,0.5,0,32
+45,fountaingrass,NPS,Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park,4457,9265,0.48,0,45
+46,fountaingrass,NPS,Chesapeake and Ohio Canal National Historical Park,9912,20882,0.47,Yes (1),0
+47,fountaingrass,NPS,George Washington Memorial Parkway,3065,6716,0.46,0,0
+48,fountaingrass,NPS,Lyndon B. Johnson National Historical Park,704,1568,0.45,0,192
+49,fountaingrass,NPS,Santa Monica Mountains National Recreation Area,67884,153809,0.44,Yes (30),0
+50,fountaingrass,NPS,Antietam National Battlefield,1421,3253,0.44,0,38
+51,fountaingrass,NPS,Lake Mead National Recreation Area,659081,1494424,0.44,Yes (639),0
+52,fountaingrass,NPS,Rock Creek Park,712,1749,0.41,Yes (1),0
+53,fountaingrass,NPS,Carlsbad Caverns National Park,17117,46798,0.37,0,101
+54,fountaingrass,NPS,National Capital Parks,2628,7233,0.36,0,0
+55,fountaingrass,NPS,Organ Pipe Cactus National Monument,112942,330696,0.34,Yes (4),0
+56,fountaingrass,NPS,Big Thicket National Preserve,35986,113142,0.32,0,224
+57,fountaingrass,NPS,Reconstruction Era National Monument,5,17,0.29,0,28
+58,fountaingrass,NPS,Big Bend National Park,230268,810893,0.28,0,236
+59,fountaingrass,NPS,Ninety Six National Historic Site,264,963,0.27,0,139
+60,fountaingrass,NPS,Eisenhower National Historic Site,165,693,0.24,0,59
+61,fountaingrass,NPS,Congaree National Park,5528,26408,0.21,0,87
+62,fountaingrass,NPS,Thomas Stone National Historic Site,65,328,0.2,0,31
+63,fountaingrass,NPS,Cesar E. Chavez National Monument,24,118,0.2,0,44
+64,fountaingrass,NPS,Death Valley National Park,668933,3399561,0.2,Yes (2),0
+65,fountaingrass,NPS,Golden Gate National Recreation Area,16669,82468,0.2,0,175
+66,fountaingrass,NPS,Tule Springs Fossil Beds National Monument,4160,22644,0.18,0,5
+67,fountaingrass,NPS,Castle Mountains National Monument,3520,20871,0.17,0,18
+68,fountaingrass,NPS,Timucuan Ecological and Historic Preserve,7119,45696,0.16,0,72
+69,fountaingrass,NPS,Natchez Trace Parkway,8185,52841,0.15,0,228
+70,fountaingrass,NPS,Captain John Smith National Historic Trail,31,263,0.12,0,115
+71,fountaingrass,NPS,Rio Grande Wild and Scenic River,2442,22060,0.11,0,262
+72,fountaingrass,NPS,Indiana Dunes National Lakeshore,1550,15931,0.1,0,479
+73,fountaingrass,NPS,Grand Canyon National Park,102852,1203128,0.09,0,42
+74,fountaingrass,NPS,Guadalupe Mountains National Park,6999,87226,0.08,0,81
+75,fountaingrass,NPS,Amistad National Recreation Area,3994,57567,0.07,0,244
+76,fountaingrass,NPS,Arkansas Post National Memorial,53,763,0.07,0,386
+77,fountaingrass,NPS,Mojave National Preserve,106067,1587809,0.07,0,11
+78,fountaingrass,NPS,George Washington Birthplace National Monument,24,658,0.04,0,56
+79,fountaingrass,NPS,Fort Davis National Historic Site,22,518,0.04,0,170
+80,fountaingrass,NPS,Chattahoochee River National Recreation Area,302,8696,0.03,0,42
+81,fountaingrass,NPS,Blue Ridge Parkway,2202,90527,0.02,0,75
+82,fountaingrass,NPS,Everglades National Park,32296,1538658,0.02,0,1
+83,fountaingrass,NPS,Fort Sumter National Monument,5,232,0.02,0,18
+84,fountaingrass,NPS,Chickasaw National Recreation Area,165,9874,0.02,0,474
+85,fountaingrass,NPS,Tumacacori National Historical Park,7,363,0.02,0,9
+86,fountaingrass,NPS,Appalachian National Scenic Trail,2576,234414,0.01,Yes (1),0
+87,fountaingrass,NPS,Big Cypress National Preserve,5901,729526,0.01,0,27
+88,fountaingrass,NPS,Point Reyes National Seashore,1016,71866,0.01,0,215
+89,fountaingrass,NPS,Fort Pulaski National Monument,34,5417,0.01,0,58
+90,fountaingrass,NPS,Prince William Forest Park,91,13813,0.01,0,27
+91,fountaingrass,NPS,Ebey's Landing National Historical Reserve,84,18134,0,0,902
+92,fountaingrass,NPS,Lake Roosevelt National Recreation Area,0,100628,0,0,833
+93,fountaingrass,NPS,Lewis and Clark National Historical Park,0,3674,0,0,779
+94,fountaingrass,NPS,Olympic National Park,0,914822,0,0,868
+95,fountaingrass,NPS,Acadia National Park,0,38791,0,0,552
+96,fountaingrass,NPS,Assateague Island National Seashore,0,48738,0,0,110
+97,fountaingrass,NPS,Big South Fork National River and Recreation Area,0,122507,0,0,224
+98,fountaingrass,NPS,Bluestone National Scenic River,0,4340,0,0,175
+99,fountaingrass,NPS,Cape Hatteras National Seashore,0,31093,0,0,235
+100,fountaingrass,NPS,Cape Lookout National Seashore,0,27945,0,0,243
+101,fountaingrass,NPS,Cumberland Island National Seashore,5,36431,0,0,90
+102,fountaingrass,NPS,Fire Island National Seashore,0,19658,0,0,227
+103,fountaingrass,NPS,Fort Raleigh National Historic Site,0,158,0,0,231
+104,fountaingrass,NPS,Gauley River National Recreation Area,0,11159,0,0,152
+105,fountaingrass,NPS,Great Smoky Mountains National Park,0,518497,0,0,160
+106,fountaingrass,NPS,Isle Royale National Park,0,549739,0,0,829
+107,fountaingrass,NPS,Lake Meredith National Recreation Area,2,41628,0,0,253
+108,fountaingrass,NPS,Lowell National Historical Park,0,189,0,0,389
+109,fountaingrass,NPS,Nez Perce National Historical Park,0,3449,0,0,651
+110,fountaingrass,NPS,New River Gorge National River,295,70388,0,0,161
+111,fountaingrass,NPS,Obed Wild and Scenic River,0,5324,0,0,205
+112,fountaingrass,NPS,Poverty Point National Monument,0,910,0,0,396
+113,fountaingrass,NPS,Redwood National Park,0,115642,0,0,452
+114,fountaingrass,NPS,Shenandoah National Park,668,193280,0,0,5
+115,fountaingrass,NPS,Shiloh National Battlefield,0,4083,0,0,258
+116,fountaingrass,NPS,Sleeping Bear Dunes National Lakeshore,0,70225,0,0,574
+117,fountaingrass,NPS,Steamtown National Historic Site,0,55,0,0,192
+118,fountaingrass,NPS,Vicksburg National Military Park,0,1649,0,0,369
+119,fountaingrass,NPS,Little Bighorn Battlefield National Monument,0,780,0,0,752
+120,fountaingrass,NPS,Capulin Volcano National Monument,0,791,0,0,176
+121,fountaingrass,NPS,Fort Bowie National Historic Site,0,998,0,0,59
+122,fountaingrass,NPS,Gila Cliff Dwellings National Monument,0,605,0,0,135
+123,fountaingrass,NPS,Yucca House National Monument,0,36,0,0,182
+124,fountaingrass,NPS,Timpanogos Cave National Monument,0,250,0,0,353
+125,fountaingrass,NPS,Lyndon Baines Johnson Memorial Grove on the Potomac,0,18,0,0,6
+126,fountaingrass,NPS,"Arlington House, The Robert E. Lee Memorial",0,16,0,0,6
+127,fountaingrass,NPS,Cumberland Gap National Historical Park,0,24856,0,0,240
+128,fountaingrass,NPS,Tupelo National Battlefield,0,1,0,0,254
+129,fountaingrass,NPS,Brices Cross Roads National Battlefield Site,0,1,0,0,259
+130,fountaingrass,NPS,Florissant Fossil Beds National Monument,0,5994,0,0,273
+131,fountaingrass,NPS,Home of Franklin D. Roosevelt National Historic Site,0,899,0,0,257
+132,fountaingrass,NPS,Carter G. Woodson National Historic Site,0,0,0,0,4
+133,fountaingrass,NPS,Boston Harbor Islands National Recreation Area,0,1595,0,0,387
+134,fountaingrass,NPS,Sunset Crater Volcano National Monument,0,3040,0,0,72
+135,fountaingrass,NPS,Mary McLeod Bethune Council House National Historic Site,0,0,0,0,4
+136,fountaingrass,NPS,Ford's Theatre National Historic Site,0,0,0,0,5
+137,fountaingrass,NPS,Brown v. Board of Education National Historic Site,0,2,0,0,631
+138,fountaingrass,NPS,Pipe Spring National Monument,0,40,0,0,120
+139,fountaingrass,NPS,El Morro National Monument,0,1279,0,0,95
+140,fountaingrass,NPS,Andrew Johnson National Historic Site,0,16,0,0,224
+141,fountaingrass,NPS,Saint Paul's Church National Historic Site,0,6,0,0,215
+142,fountaingrass,NPS,Castle Clinton National Monument,0,1,0,0,199
+143,fountaingrass,NPS,Fossil Butte National Monument,0,8318,0,0,464
+144,fountaingrass,NPS,Effigy Mounds National Monument,0,2486,0,0,709
+145,fountaingrass,NPS,Ice Age National Scenic Trail,0,158,0,0,644
+146,fountaingrass,NPS,Hovenweep National Monument,0,809,0,0,193
+147,fountaingrass,NPS,Fort Union National Monument,0,721,0,0,95
+148,fountaingrass,NPS,Abraham Lincoln Birthplace National Historical Park,0,339,0,0,320
+149,fountaingrass,NPS,Dry Tortugas National Park,0,65579,0,0,1
+150,fountaingrass,NPS,Piscataway Park,0,4606,0,0,19
+151,fountaingrass,NPS,Manzanar National Historic Site,0,814,0,0,70
+152,fountaingrass,NPS,Bryce Canyon National Park,0,35988,0,0,163
+153,fountaingrass,NPS,"John D. Rockefeller, Jr., Memorial Parkway",0,23623,0,0,607
+154,fountaingrass,NPS,George Washington Carver National Monument,0,211,0,0,604
+155,fountaingrass,NPS,Thomas Edison National Historical Park,0,21,0,0,194
+156,fountaingrass,NPS,Yellowstone National Park,0,2199496,0,0,607
+157,fountaingrass,NPS,Hubbell Trading Post National Historic Site,0,160,0,0,152
+158,fountaingrass,NPS,Chamizal National Memorial,0,55,0,0,3
+159,fountaingrass,NPS,Alibates Flint Quarries National Monument,0,1371,0,0,262
+160,fountaingrass,NPS,Ulysses S. Grant National Historic Site,0,10,0,0,502
+161,fountaingrass,NPS,Canaveral National Seashore,0,58461,0,0,99
+162,fountaingrass,NPS,African Burial Ground National Monument,0,0,0,0,200
+163,fountaingrass,NPS,Cabrillo National Monument,0,160,0,Yes (3),0
+164,fountaingrass,NPS,Fort Washington Park,0,344,0,0,18
+165,fountaingrass,NPS,Sequoia National Park,1244,406814,0,0,73
+166,fountaingrass,NPS,Natchez National Historical Park,0,108,0,0,415
+167,fountaingrass,NPS,Edgar Allan Poe National Historic Site,0,1,0,0,121
+168,fountaingrass,NPS,Boston African American National Historic Site,0,1,0,0,387
+169,fountaingrass,NPS,Mammoth Cave National Park,0,51696,0,0,295
+170,fountaingrass,NPS,Adams National Historical Park,0,14,0,0,384
+171,fountaingrass,NPS,Navajo National Monument,0,360,0,0,174
+172,fountaingrass,NPS,Great Basin National Park,0,77003,0,0,187
+173,fountaingrass,NPS,Grand Portage National Monument,0,708,0,0,861
+174,fountaingrass,NPS,Whiskeytown-Shasta-Trinity National Recreation Area,0,42139,0,0,393
+175,fountaingrass,NPS,Fort Point National Historic Site,0,25,0,0,203
+176,fountaingrass,NPS,Salem Maritime National Historic Site,0,9,0,0,401
+177,fountaingrass,NPS,Washington Monument,0,104,0,0,5
+178,fountaingrass,NPS,Thomas Jefferson Memorial,0,20,0,0,6
+179,fountaingrass,NPS,Horseshoe Bend National Military Park,0,2079,0,0,81
+180,fountaingrass,NPS,Fort Matanzas National Monument,0,274,0,0,65
+181,fountaingrass,NPS,Channel Islands National Park,0,245690,0,0,13
+182,fountaingrass,NPS,Canyonlands National Park,0,334254,0,0,255
+183,fountaingrass,NPS,White House,0,18,0,0,5
+184,fountaingrass,NPS,Booker T. Washington National Monument,0,244,0,0,155
+185,fountaingrass,NPS,Jean Lafitte National Historical Park and Preserve,0,21717,0,0,331
+186,fountaingrass,NPS,Jewel Cave National Monument,0,1274,0,0,634
+187,fountaingrass,NPS,Fort Larned National Historic Site,0,705,0,0,438
+188,fountaingrass,NPS,Rosie the Riveter/World War II Home Front National Historical Park,0,149,0,0,207
+189,fountaingrass,NPS,Fort Stanwix National Monument,0,17,0,0,321
+190,fountaingrass,NPS,Thaddeus Kosciuszko National Memorial,0,0,0,0,120
+191,fountaingrass,NPS,William Howard Taft National Historic Site,0,4,0,0,327
+192,fountaingrass,NPS,Fort Scott National Historic Site,0,17,0,0,648
+193,fountaingrass,NPS,Perry's Victory and International Peace Memorial,0,27,0,0,310
+194,fountaingrass,NPS,James A. Garfield National Historic Site,0,8,0,0,260
+195,fountaingrass,NPS,Catoctin Mountain Park,0,5742,0,0,48
+196,fountaingrass,NPS,Rainbow Bridge National Monument,0,160,0,0,200
+197,fountaingrass,NPS,Natural Bridges National Monument,0,7610,0,0,244
+198,fountaingrass,NPS,Bent's Old Fort National Historic Site,0,830,0,0,261
+199,fountaingrass,NPS,Hohokam Pima National Monument,0,1688,0,0,12
+200,fountaingrass,NPS,Gulf Islands National Seashore,0,130415,0,0,241
+201,fountaingrass,NPS,Pipestone National Monument,0,287,0,0,821
+202,fountaingrass,NPS,Biscayne National Park,0,173840,0,0,2
+203,fountaingrass,NPS,Mount Rushmore National Memorial,0,1274,0,0,649
+204,fountaingrass,NPS,City of Rocks National Reserve,0,14538,0,0,418
+205,fountaingrass,NPS,Hagerman Fossil Beds National Monument,0,4380,0,0,461
+206,fountaingrass,NPS,Fort Vancouver National Historic Site,0,208,0,0,711
+207,fountaingrass,NPS,Saint-Gaudens National Historic Site,0,188,0,0,404
+208,fountaingrass,NPS,John Fitzgerald Kennedy National Historic Site,0,0,0,0,384
+209,fountaingrass,NPS,Eleanor Roosevelt National Historic Site,0,177,0,0,258
+210,fountaingrass,NPS,Friendship Hill National Historic Site,0,675,0,0,113
+211,fountaingrass,NPS,Theodore Roosevelt Birthplace National Historic Site,0,0,0,0,201
+212,fountaingrass,NPS,Wright Brothers National Memorial,0,429,0,0,226
+213,fountaingrass,NPS,Kings Mountain National Military Park,0,3930,0,0,195
+214,fountaingrass,NPS,Golden Spike National Historic Site,0,2670,0,0,404
+215,fountaingrass,NPS,New Bedford Whaling National Historical Park,0,31,0,0,362
+216,fountaingrass,NPS,Sagamore Hill National Historic Site,0,83,0,0,227
+217,fountaingrass,NPS,Lava Beds National Monument,0,46813,0,0,448
+218,fountaingrass,NPS,Women's Rights National Historical Park,0,8,0,0,288
+219,fountaingrass,NPS,George Rogers Clark National Historical Park,0,24,0,0,430
+220,fountaingrass,NPS,Longfellow House-Washington's Headquarters National Historic Site,0,2,0,0,385
+221,fountaingrass,NPS,Hopewell Furnace National Historic Site,0,849,0,0,111
+222,fountaingrass,NPS,Franklin Delano Roosevelt Memorial,0,8,0,0,6
+223,fountaingrass,NPS,Montezuma Castle National Monument,0,1012,0,0,16
+224,fountaingrass,NPS,Kings Canyon National Park,0,458974,0,0,80
+225,fountaingrass,NPS,Springfield Armory National Historic Site,0,54,0,0,320
+226,fountaingrass,NPS,Whitman Mission National Historic Site,0,139,0,0,707
+227,fountaingrass,NPS,World War II Memorial,0,9,0,0,5
+228,fountaingrass,NPS,Vietnam Veterans Memorial,0,2,0,0,5
+229,fountaingrass,NPS,Korean War Veterans Memorial,0,2,0,0,5
+230,fountaingrass,NPS,Constitution Gardens,0,43,0,0,5
+231,fountaingrass,NPS,"Martin Luther King, Jr., Memorial",0,3,0,0,5
+232,fountaingrass,NPS,Lincoln Memorial,0,7,0,0,5
+233,fountaingrass,NPS,National Mall,0,173,0,0,5
+234,fountaingrass,NPS,Russell Cave National Monument,0,289,0,0,149
+235,fountaingrass,NPS,Bighorn Canyon National Recreation Area,0,119830,0,0,700
+236,fountaingrass,NPS,Muir Woods National Monument,0,555,0,0,211
+237,fountaingrass,NPS,Sand Creek Massacre National Historic Site,0,12530,0,0,319
+238,fountaingrass,NPS,Knife River Indian Villages National Historic Site,0,1772,0,0,919
+239,fountaingrass,NPS,Morristown National Historical Park,0,1691,0,0,180
+240,fountaingrass,NPS,Herbert Hoover National Historic Site,0,188,0,0,690
+241,fountaingrass,NPS,Martin Van Buren National Historic Site,0,297,0,0,299
+242,fountaingrass,NPS,Governors Island National Monument,0,23,0,0,198
+243,fountaingrass,NPS,Scotts Bluff National Monument,0,3217,0,0,501
+244,fountaingrass,NPS,Johnstown Flood National Memorial,0,180,0,0,111
+245,fountaingrass,NPS,Agate Fossil Beds National Monument,0,3045,0,0,542
+246,fountaingrass,NPS,Ronald Reagan Boyhood Home National Historic Site,0,1,0,0,606
+247,fountaingrass,NPS,Capitol Reef National Park,0,244800,0,0,229
+248,fountaingrass,NPS,Flight 93 National Memorial,0,2264,0,0,93
+249,fountaingrass,NPS,Devils Postpile National Monument,0,799,0,0,143
+250,fountaingrass,NPS,San Francisco Maritime National Historical Park,0,99,0,0,202
+251,fountaingrass,NPS,Palo Alto Battlefield National Historical Park,0,3414,0,0,119
+252,fountaingrass,NPS,Marsh-Billings-Rockefeller National Historical Park,0,646,0,0,407
+253,fountaingrass,NPS,Little River Canyon National Preserve,0,15416,0,0,106
+254,fountaingrass,NPS,Charles Young Buffalo Soldiers National Monument,0,60,0,0,300
+255,fountaingrass,NPS,Dayton Aviation Heritage National Historical Park,0,114,0,0,309
+256,fountaingrass,NPS,First Ladies National Historic Site,0,0,0,0,216
+257,fountaingrass,NPS,Fort Necessity National Battlefield,0,916,0,0,101
+258,fountaingrass,NPS,Minuteman Missile National Historic Site,0,44,0,0,671
+259,fountaingrass,NPS,Salinas Pueblo Missions National Monument,0,1072,0,0,50
+260,fountaingrass,NPS,Pinnacles National Park,101,26707,0,0,83
+261,fountaingrass,NPS,Fort McHenry National Monument and Historic Shrine,0,47,0,0,33
+262,fountaingrass,NPS,Niobrara National Scenic River,0,29081,0,0,634
+263,fountaingrass,NPS,Saugus Iron Works National Historic Site,0,13,0,0,394
+264,fountaingrass,NPS,Roger Williams National Memorial,0,5,0,0,350
+265,fountaingrass,NPS,Allegheny Portage Railroad National Historic Site,0,1311,0,0,112
+266,fountaingrass,NPS,De Soto National Memorial,0,30,0,0,30
+267,fountaingrass,NPS,Cowpens National Battlefield,0,846,0,0,190
+268,fountaingrass,NPS,Chiricahua National Monument,0,12205,0,0,52
+269,fountaingrass,NPS,"Martin Luther King, Jr., National Historic Site",0,39,0,0,36
+270,fountaingrass,NPS,Devils Tower National Monument,0,1350,0,0,689
+271,fountaingrass,NPS,Boston National Historical Park,0,44,0,0,386
+272,fountaingrass,NPS,Oregon Caves National Monument and Preserve,0,4560,0,0,512
+273,fountaingrass,NPS,General Grant National Memorial,0,1,0,0,206
+274,fountaingrass,NPS,John Day Fossil Beds National Monument,0,13990,0,0,605
+275,fountaingrass,NPS,First State National Historical Park,0,1155,0,0,79
+276,fountaingrass,NPS,Guilford Courthouse National Military Park,0,224,0,0,222
+277,fountaingrass,NPS,Paterson Great Falls National Historical Park,0,51,0,0,203
+278,fountaingrass,NPS,Pea Ridge National Military Park,0,4276,0,0,572
+279,fountaingrass,NPS,Weir Farm National Historic Site,0,69,0,0,246
+280,fountaingrass,NPS,Theodore Roosevelt Inaugural National Historic Site,0,1,0,0,296
+281,fountaingrass,NPS,Lassen Volcanic National Park,0,107511,0,0,367
+282,fountaingrass,NPS,Badlands National Park,0,242740,0,0,630
+283,fountaingrass,NPS,Fort Donelson National Battlefield,0,1301,0,0,301
+284,fountaingrass,NPS,Vanderbilt Mansion National Historic Site,0,211,0,0,258
+285,fountaingrass,NPS,San Juan Island National Historical Park,0,2142,0,0,927
+286,fountaingrass,NPS,Gateway National Recreation Area,0,27159,0,0,186
+287,fountaingrass,NPS,Upper Delaware Scenic and Recreational River,0,57157,0,0,211
+288,fountaingrass,NPS,Minidoka National Historic Site,0,399,0,0,460
+289,fountaingrass,NPS,Big Hole National Battlefield,0,977,0,0,679
+290,fountaingrass,NPS,Canyon de Chelly National Monument,0,88230,0,0,149
+291,fountaingrass,NPS,Cape Cod National Seashore,0,44310,0,0,401
+292,fountaingrass,NPS,Manhattan Project National Historical Park,0,114,0,0,44
+293,fountaingrass,NPS,Mount Rainier National Park,0,236442,0,0,786
+294,fountaingrass,NPS,Lincoln Boyhood National Memorial,0,200,0,0,381
+295,fountaingrass,NPS,Frederick Law Olmsted National Historic Site,0,7,0,0,383
+296,fountaingrass,NPS,Hamilton Grange National Memorial,0,2,0,0,206
+297,fountaingrass,NPS,Hampton National Historic Site,0,62,0,0,41
+298,fountaingrass,NPS,Glen Canyon National Recreation Area,1814,1250244,0,0,172
+299,fountaingrass,NPS,Yosemite National Park,0,745915,0,0,155
+300,fountaingrass,NPS,Tallgrass Prairie National Preserve,0,10897,0,0,571
+301,fountaingrass,NPS,Saint Croix Island International Historic Site,0,7,0,0,659
+302,fountaingrass,NPS,Lower Saint Croix National Scenic Riverway,0,11306,0,0,842
+303,fountaingrass,NPS,Statue Of Liberty National Monument,0,69,0,0,197
+304,fountaingrass,NPS,Bandelier National Monument,0,33684,0,0,34
+305,fountaingrass,NPS,Valles Caldera National Preserve,0,88957,0,0,41
+306,fountaingrass,NPS,Wind Cave National Park,0,33928,0,0,623
+307,fountaingrass,NPS,Colorado National Monument,0,20449,0,0,293
+308,fountaingrass,NPS,Pullman National Monument,0,0,0,0,516
+309,fountaingrass,NPS,Pennsylvania Avenue National Historic Site,0,19,0,0,5
+310,fountaingrass,NPS,World War I Memorial,0,2,0,0,5
+311,fountaingrass,NPS,Belmont-Paul Women's Equality National Monument,0,0,0,0,6
+312,fountaingrass,NPS,North Cascades National Park,0,501391,0,0,894
+313,fountaingrass,NPS,Stonewall National Monument,0,5,0,0,200
+314,fountaingrass,NPS,Voyageurs National Park,0,204710,0,0,966
+315,fountaingrass,NPS,Buffalo National River,379,93546,0,0,485
+316,fountaingrass,NPS,Federal Hall National Memorial,0,1,0,0,199
+317,fountaingrass,NPS,Frederick Douglass National Historic Site,0,8,0,0,8
+318,fountaingrass,NPS,Fort Smith National Historic Site,0,71,0,0,564
+319,fountaingrass,NPS,Hopewell Culture National Historical Park,0,1790,0,0,247
+320,fountaingrass,NPS,Ozark National Scenic Riverway,0,82333,0,0,441
+321,fountaingrass,NPS,El Malpais National Monument,0,113580,0,0,67
+322,fountaingrass,NPS,Lewis and Clark National Historic Trail,0,80,0,0,679
+323,fountaingrass,NPS,Lake Chelan National Recreation Area,0,62904,0,0,883
+324,fountaingrass,NPS,Carl Sandburg Home National Historic Site,0,266,0,0,176
+325,fountaingrass,NPS,Harriet Tubman Underground Railroad National Historical Park,0,25543,0,0,53
+326,fountaingrass,NPS,Aztec Ruins National Monument,0,317,0,0,137
+327,fountaingrass,NPS,Zion National Park,117,148712,0,0,117
+328,fountaingrass,NPS,Craters of the Moon National Preserve,0,698969,0,0,473
+329,fountaingrass,NPS,Craters of the Moon National Monument,0,53390,0,0,511
+330,fountaingrass,NPS,White Sands National Monument,0,145489,0,0,57
+331,fountaingrass,NPS,Pecos National Historical Park,0,6695,0,0,45
+332,fountaingrass,NPS,Curecanti National Recreation Area,0,41364,0,0,230
+333,fountaingrass,NPS,Missouri National Recreation River,0,68370,0,0,690
+334,fountaingrass,NPS,Theodore Roosevelt National Park,0,70463,0,0,866
+335,fountaingrass,NPS,Dinosaur National Monument,0,210405,0,0,384
+336,fountaingrass,NPS,Crater Lake National Park,0,182555,0,0,524
+337,fountaingrass,NPS,Pictured Rocks National Lakeshore,0,73651,0,0,682
+338,fountaingrass,NPS,Apostle Islands National Lakeshore,0,72778,0,0,831
+339,fountaingrass,NPS,Wilson's Creek National Battlefield,0,2426,0,0,562
+340,fountaingrass,NPS,Glacier National Park,0,1008117,0,0,868
+341,fountaingrass,NPS,Keweenaw National Historical Park,0,1862,0,0,782
+342,fountaingrass,NPS,Homestead National Monument,0,214,0,0,622
+343,fountaingrass,NPS,Chaco Culture National Historical Park,0,34376,0,0,78
+344,fountaingrass,NPS,Grant-Kohrs Ranch National Historic Site,0,1576,0,0,742
+345,fountaingrass,NPS,New Orleans Jazz National Historical Park,0,5,0,0,403
+346,fountaingrass,NPS,Freedom Riders National Monument,0,8,0,0,90
+347,fountaingrass,NPS,Birmingham Civil Rights National Monument,0,1,0,0,140
+348,fountaingrass,NPS,Grand Teton National Park,0,310020,0,0,574
+349,fountaingrass,NPS,Stones River National Battlefield,0,721,0,0,220
+350,fountaingrass,NPS,Great Sand Dunes National Preserve,0,41693,0,0,186
+351,fountaingrass,NPS,Great Sand Dunes National Park,0,107583,0,0,181
+352,fountaingrass,NPS,Saint Croix National Scenic Riverway,0,69079,0,0,824
+353,fountaingrass,NPS,River Raisin National Battlefield Park,0,42,0,0,344
+354,fountaingrass,NPS,Minute Man National Historical Park,0,1024,0,0,380
+355,fountaingrass,NPS,Black Canyon of the Gunnison National Park,0,31229,0,0,243
+356,fountaingrass,NPS,Walnut Canyon National Monument,0,3241,0,0,57
+357,fountaingrass,NPS,Nicodemus National Historic Site,0,5,0,0,471
+358,fountaingrass,NPS,Wupatki National Monument,0,35430,0,0,83
+359,fountaingrass,NPS,Washita Battlefield National Historic Site,0,320,0,0,368
+360,fountaingrass,NPS,Katahdin Woods And Waters National Monument,0,89564,0,0,640
+361,fountaingrass,NPS,Ross Lake National Recreation Area,0,116792,0,0,913
+362,fountaingrass,NPS,Petrified Forest National Park,0,222963,0,0,96
+363,fountaingrass,NPS,Saratoga National Historical Park,0,3554,0,0,339
+364,fountaingrass,NPS,Rocky Mountain National Park,0,267044,0,0,361
+365,fountaingrass,NPS,Delaware Water Gap National Recreation Area,0,71041,0,0,173
+366,fountaingrass,NPS,Mississippi National River and Recreation Area,0,53831,0,0,827
+367,fountaingrass,NPS,Harry S Truman National Historic Site,0,12,0,0,680
+368,fountaingrass,NPS,Little Rock Central High School National Historic Site,0,29,0,0,450
+369,fountaingrass,NPS,Cedar Breaks National Monument,0,6125,0,0,148
+370,fountaingrass,NPS,Fort Monroe National Monument,0,368,0,0,146
+371,fountaingrass,NPS,Arches National Park,38,76460,0,0,289
+372,fountaingrass,NPS,Fort Laramie National Historic Site,0,897,0,0,518
+373,fountaingrass,NPS,Hot Springs National Park,0,5466,0,0,486
+374,fountaingrass,NPS,Petroglyph National Monument,0,7202,0,0,8
+375,fountaingrass,NPS,President William Jefferson Clinton Birthplace Home National Historic Site,0,1,0,0,464
+376,fountaingrass,NPS,Fort Union Trading Post National Historic Site,0,444,0,0,941
+377,fountaingrass,NPS,Padre Island National Seashore,568,130558,0,0,13
+378,fountaingrass,NPS,Mesa Verde National Park,0,53689,0,0,170
