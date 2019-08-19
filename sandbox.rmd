@@ -1,5 +1,5 @@
 ---
-title: "INHABIT - Sandbox"
+title: 'INHABIT'
 logo: usgs.png
 resource_files:
 - mgmt
