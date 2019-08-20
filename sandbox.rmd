@@ -447,25 +447,15 @@ renderImage({
 ### Variable Importance
 ```{r}
 # caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
-# DT:::DT2BSClass(c('compact', 'cell-border'))
-# 
-# fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
-#                                                     , header = T, stringsAsFactors = F),
-#               fillContainer = getOption("DT.fillContainer", TRUE),
-#               caption = caption,
-#               colnames = c("","predictor","brt_KDE_1","brt_target_2","glm_KDE_1","glm_target_1","mars_KDE_1","mars_target_1","Maxent_KDE_3","Maxent_target_1","rf_KDE_1","rf_target_1"),
-#               rownames = FALSE) %>%
-#               formatStyle(columns = c(1:6), 'text-align' = 'center') %>%
-#               DT::formatPercentage(columns = 4)))
-# UI component
+
 htmlOutput("vi_table") 
 vi = reactive({read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
                                                     , header = T, stringsAsFactors = F)})
 # server component
 output$vi_table <- renderText({
-  kable(vi()) %>%
+  kable(vi(), ) %>%
     kable_styling(
-      font_size = 10,
+      font_size = 12,
       full_width = F,
       bootstrap_options = c("condensed", "responsive")
     ) 
@@ -481,7 +471,7 @@ htmlOutput("source_table")
 output$source_table <- renderText({
   kable(pred.info[pred.info$name %in% vi()$predictor,], format = 'html', escape = F) %>%
     kable_styling(
-      font_size = 10,
+      font_size = 12,
       full_width = F,
       bootstrap_options = c("condensed")
     ) 
