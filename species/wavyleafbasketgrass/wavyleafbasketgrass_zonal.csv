@@ -1,0 +1,379 @@
+,Species,Admin,Park_Name,est_suit_area_acre,total_area_acre,perc_suit,Known_Presences,min_dist_miles
+1,wavyleaf_Global,NPS,Big South Fork National River and Recreation Area,122889,122482,1,0,349
+2,wavyleaf_Global,NPS,Bluestone National Scenic River,4383,4338,1,0,142
+3,wavyleaf_Global,NPS,Fort Raleigh National Historic Site,302,158,1,0,177
+4,wavyleaf_Global,NPS,Gauley River National Recreation Area,11337,11152,1,0,119
+5,wavyleaf_Global,NPS,Great Smoky Mountains National Park,517251,518505,1,0,305
+6,wavyleaf_Global,NPS,Shenandoah National Park,192269,193155,1,Yes (14),0
+7,wavyleaf_Global,NPS,Cedar Creek and Belle Grove National Historical Park,3628,3466,1,0,9
+8,wavyleaf_Global,NPS,Cumberland Gap National Historical Park,24789,24850,1,0,299
+9,wavyleaf_Global,NPS,Home of Franklin D. Roosevelt National Historic Site,907,898,1,0,185
+10,wavyleaf_Global,NPS,Ice Age National Scenic Trail,302,158,1,0,644
+11,wavyleaf_Global,NPS,Tuskegee Airmen National Historic Site,151,89,1,0,556
+12,wavyleaf_Global,NPS,Natchez National Historical Park,151,108,1,0,873
+13,wavyleaf_Global,NPS,Thomas Stone National Historic Site,453,328,1,Yes (2),0
+14,wavyleaf_Global,NPS,Catoctin Mountain Park,5744,5737,1,0,4
+15,wavyleaf_Global,NPS,Friendship Hill National Historic Site,756,675,1,0,31
+16,wavyleaf_Global,NPS,Kings Mountain National Military Park,3930,3930,1,0,245
+17,wavyleaf_Global,NPS,Hopewell Furnace National Historic Site,1058,848,1,0,42
+18,wavyleaf_Global,NPS,Martin Van Buren National Historic Site,302,296,1,0,221
+19,wavyleaf_Global,NPS,Flight 93 National Memorial,2267,2262,1,0,44
+20,wavyleaf_Global,NPS,Little River Canyon National Preserve,15871,15421,1,0,474
+21,wavyleaf_Global,NPS,Dayton Aviation Heritage National Historical Park,151,114,1,0,276
+22,wavyleaf_Global,NPS,Eisenhower National Historic Site,756,692,1,0,17
+23,wavyleaf_Global,NPS,Cowpens National Battlefield,907,846,1,0,264
+24,wavyleaf_Global,NPS,Gettysburg National Military Park,6197,6130,1,0,14
+25,wavyleaf_Global,NPS,Oregon Caves National Monument and Preserve,4837,4554,1,0,2632
+26,wavyleaf_Global,NPS,Lincoln Boyhood National Memorial,302,200,1,0,460
+27,wavyleaf_Global,NPS,George Washington Birthplace National Monument,756,657,1,0,21
+28,wavyleaf_Global,NPS,Fort Caroline National Memorial,151,140,1,0,529
+29,wavyleaf_Global,NPS,Prince William Forest Park,13755,13804,1,0,12
+30,wavyleaf_Global,NPS,Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park,9674,9260,1,0,12
+31,wavyleaf_Global,NPS,Richmond National Battlefield Park,8162,8200,1,0,21
+32,wavyleaf_Global,NPS,Harpers Ferry National Historical Park,3779,3710,1,0,0
+33,wavyleaf_Global,NPS,Buffalo National River,93262,93538,1,0,804
+34,wavyleaf_Global,NPS,Hopewell Culture National Historical Park,1965,1789,1,0,208
+35,wavyleaf_Global,NPS,Ozark National Scenic Riverway,82530,82306,1,0,704
+36,wavyleaf_Global,NPS,Carl Sandburg Home National Historic Site,453,266,1,0,288
+37,wavyleaf_Global,NPS,Wilson's Creek National Battlefield,2570,2425,1,0,848
+38,wavyleaf_Global,NPS,Homestead National Monument,302,214,1,0,1040
+39,wavyleaf_Global,NPS,Captain John Smith National Historic Trail,302,263,1,0,73
+40,wavyleaf_Global,NPS,San Antonio Missions National Historical Park,1512,944,1,0,1239
+41,wavyleaf_Global,NPS,Blue Ridge Parkway,89937,90509,0.99,0,16
+42,wavyleaf_Global,NPS,New River Gorge National River,69833,70353,0.99,0,131
+43,wavyleaf_Global,NPS,Mammoth Cave National Park,51090,51678,0.99,0,418
+44,wavyleaf_Global,NPS,Fort Necessity National Battlefield,907,915,0.99,0,17
+45,wavyleaf_Global,NPS,Petersburg National Battlefield,2721,2782,0.98,0,60
+46,wavyleaf_Global,NPS,Morristown National Historical Park,1663,1689,0.98,0,117
+47,wavyleaf_Global,NPS,Upper Delaware Scenic and Recreational River,56078,57079,0.98,0,132
+48,wavyleaf_Global,NPS,Delaware Water Gap National Recreation Area,69229,70953,0.98,0,100
+49,wavyleaf_Global,NPS,Cuyahoga Valley National Park,31742,32703,0.97,0,155
+50,wavyleaf_Global,NPS,Shiloh National Battlefield,3930,4084,0.96,0,599
+51,wavyleaf_Global,NPS,Tallgrass Prairie National Preserve,10430,10890,0.96,0,1023
+52,wavyleaf_Global,NPS,Pea Ridge National Military Park,4081,4275,0.95,0,892
+53,wavyleaf_Global,NPS,Manassas National Battlefield Park,4837,5121,0.94,0,3
+54,wavyleaf_Global,NPS,Marsh-Billings-Rockefeller National Historical Park,605,644,0.94,0,322
+55,wavyleaf_Global,NPS,Jean Lafitte National Historical Park and Preserve,19952,21743,0.92,0,856
+56,wavyleaf_Global,NPS,Allegheny Portage Railroad National Historic Site,1209,1309,0.92,0,47
+57,wavyleaf_Global,NPS,Redwood National Park,102936,115491,0.89,0,2658
+58,wavyleaf_Global,NPS,Abraham Lincoln Birthplace National Historical Park,302,339,0.89,0,389
+59,wavyleaf_Global,NPS,Piscataway Park,4081,4603,0.89,0,4
+60,wavyleaf_Global,NPS,Harriet Tubman Underground Railroad National Historical Park,22673,25527,0.89,0,22
+61,wavyleaf_Global,NPS,Minute Man National Historical Park,907,1022,0.89,0,333
+62,wavyleaf_Global,NPS,Chickamauga and Chattanooga National Military Park,7255,8231,0.88,0,437
+63,wavyleaf_Global,NPS,Antietam National Battlefield,2872,3251,0.88,0,3
+64,wavyleaf_Global,NPS,Fort Washington Park,302,344,0.88,0,3
+65,wavyleaf_Global,NPS,Palo Alto Battlefield National Historical Park,3023,3421,0.88,0,1089
+66,wavyleaf_Global,NPS,Chesapeake and Ohio Canal National Historical Park,18139,20864,0.87,Yes (2),0
+67,wavyleaf_Global,NPS,Appomattox Court House National Historical Park,1512,1778,0.85,0,37
+68,wavyleaf_Global,NPS,Eleanor Roosevelt National Historic Site,151,177,0.85,0,187
+69,wavyleaf_Global,NPS,Congaree National Park,22371,26419,0.85,0,297
+70,wavyleaf_Global,NPS,Johnstown Flood National Memorial,151,179,0.84,0,52
+71,wavyleaf_Global,NPS,Natchez Trace Parkway,43986,52863,0.83,0,501
+72,wavyleaf_Global,NPS,Obed Wild and Scenic River,4383,5324,0.82,0,380
+73,wavyleaf_Global,NPS,Muir Woods National Monument,453,555,0.82,0,2582
+74,wavyleaf_Global,NPS,Herbert Hoover National Historic Site,151,188,0.81,0,723
+75,wavyleaf_Global,NPS,Saratoga National Historical Park,2872,3548,0.81,0,251
+76,wavyleaf_Global,NPS,Saint-Gaudens National Historic Site,151,188,0.8,0,323
+77,wavyleaf_Global,NPS,Arkansas Post National Memorial,605,764,0.79,0,790
+78,wavyleaf_Global,NPS,First State National Historical Park,907,1154,0.79,0,30
+79,wavyleaf_Global,NPS,Ninety Six National Historic Site,756,963,0.78,0,320
+80,wavyleaf_Global,NPS,Acadia National Park,29324,38714,0.76,0,519
+81,wavyleaf_Global,NPS,Colonial National Historical Park,6348,8517,0.75,0,81
+82,wavyleaf_Global,NPS,Olympic National Park,678079,912254,0.74,0,2655
+83,wavyleaf_Global,NPS,Appalachian National Scenic Trail,174432,234181,0.74,Yes (4),0
+84,wavyleaf_Global,NPS,Vicksburg National Military Park,1209,1650,0.73,0,818
+85,wavyleaf_Global,NPS,Effigy Mounds National Monument,1814,2481,0.73,0,730
+86,wavyleaf_Global,NPS,George Washington Carver National Monument,151,211,0.72,0,906
+87,wavyleaf_Global,NPS,Vanderbilt Mansion National Historic Site,151,210,0.72,0,186
+88,wavyleaf_Global,NPS,Ross Lake National Recreation Area,83588,116440,0.72,0,2538
+89,wavyleaf_Global,NPS,Indiana Dunes National Lakeshore,11488,15909,0.72,0,459
+90,wavyleaf_Global,NPS,Wright Brothers National Memorial,302,429,0.71,0,172
+91,wavyleaf_Global,NPS,Lewis and Clark National Historical Park,2570,3665,0.7,0,2685
+92,wavyleaf_Global,NPS,Fort Donelson National Battlefield,907,1301,0.7,0,537
+93,wavyleaf_Global,NPS,Kennesaw Mountain National Battlefield Park,1965,2900,0.68,0,441
+94,wavyleaf_Global,NPS,Golden Gate National Recreation Area,54567,82429,0.66,0,2566
+95,wavyleaf_Global,NPS,Chickasaw National Recreation Area,6500,9877,0.66,0,1094
+96,wavyleaf_Global,NPS,Valley Forge National Historical Park,2267,3447,0.66,0,50
+97,wavyleaf_Global,NPS,Monocacy National Battlefield,1058,1620,0.65,0,9
+98,wavyleaf_Global,NPS,Horseshoe Bend National Military Park,1360,2080,0.65,0,535
+99,wavyleaf_Global,NPS,Stones River National Battlefield,453,721,0.63,0,477
+100,wavyleaf_Global,NPS,Mount Rainier National Park,144504,235830,0.61,0,2548
+101,wavyleaf_Global,NPS,Ebey's Landing National Historical Reserve,10581,18081,0.59,0,2631
+102,wavyleaf_Global,NPS,Sleeping Bear Dunes National Lakeshore,37789,70075,0.54,0,495
+103,wavyleaf_Global,NPS,Russell Cave National Monument,151,289,0.52,0,473
+104,wavyleaf_Global,NPS,Poverty Point National Monument,453,910,0.5,0,841
+105,wavyleaf_Global,NPS,Timucuan Ecological and Historic Preserve,22673,45746,0.5,0,518
+106,wavyleaf_Global,NPS,San Juan Island National Historical Park,1058,2136,0.5,0,2654
+107,wavyleaf_Global,NPS,Point Reyes National Seashore,35068,71827,0.49,0,2590
+108,wavyleaf_Global,NPS,George Washington Memorial Parkway,3174,6711,0.47,Yes (3),0
+109,wavyleaf_Global,NPS,John Muir National Historic Site,151,343,0.44,0,2555
+110,wavyleaf_Global,NPS,Big Thicket National Preserve,43684,113268,0.39,0,1043
+111,wavyleaf_Global,NPS,Chattahoochee River National Recreation Area,3023,8699,0.35,0,410
+112,wavyleaf_Global,NPS,Cumberland Island National Seashore,11488,36469,0.32,0,490
+113,wavyleaf_Global,NPS,Cape Cod National Seashore,13302,44246,0.3,0,383
+114,wavyleaf_Global,NPS,North Cascades National Park,147678,499874,0.3,0,2517
+115,wavyleaf_Global,NPS,Andersonville National Historic Site,151,521,0.29,0,501
+116,wavyleaf_Global,NPS,Crater Lake National Park,41568,182251,0.23,0,2552
+117,wavyleaf_Global,NPS,Santa Monica Mountains National Recreation Area,34463,153861,0.22,0,2353
+118,wavyleaf_Global,NPS,Ocmulgee National Monument,151,691,0.22,0,448
+119,wavyleaf_Global,NPS,Hot Springs National Park,1209,5467,0.22,0,872
+120,wavyleaf_Global,NPS,Canaveral National Seashore,11790,58545,0.2,0,615
+121,wavyleaf_Global,NPS,Sequoia National Park,62427,406734,0.15,0,2329
+122,wavyleaf_Global,NPS,Cape Hatteras National Seashore,4383,31093,0.14,0,180
+123,wavyleaf_Global,NPS,Fort Pulaski National Monument,756,5421,0.14,0,411
+124,wavyleaf_Global,NPS,National Capital Parks,756,7227,0.1,0,0
+125,wavyleaf_Global,NPS,Boston Harbor Islands National Recreation Area,151,1593,0.09,0,348
+126,wavyleaf_Global,NPS,Channel Islands National Park,16778,245778,0.07,0,2399
+127,wavyleaf_Global,NPS,Padre Island National Seashore,8616,130790,0.07,0,1099
+128,wavyleaf_Global,NPS,Assateague Island National Seashore,2267,48708,0.05,0,47
+129,wavyleaf_Global,NPS,Whiskeytown-Shasta-Trinity National Recreation Area,1965,42091,0.05,0,2577
+130,wavyleaf_Global,NPS,Yosemite National Park,40509,745544,0.05,0,2381
+131,wavyleaf_Global,NPS,Missouri National Recreation River,3325,68258,0.05,0,1048
+132,wavyleaf_Global,NPS,Nez Perce National Historical Park,151,3441,0.04,0,1851
+133,wavyleaf_Global,NPS,Gateway National Recreation Area,1209,27129,0.04,0,133
+134,wavyleaf_Global,NPS,Everglades National Park,51846,1541916,0.03,0,408
+135,wavyleaf_Global,NPS,Lake Chelan National Recreation Area,1663,62719,0.03,0,2510
+136,wavyleaf_Global,NPS,Cape Lookout National Seashore,605,27950,0.02,0,221
+137,wavyleaf_Global,NPS,Kings Canyon National Park,10732,458844,0.02,0,2333
+138,wavyleaf_Global,NPS,Big Cypress National Preserve,8465,730905,0.01,0,463
+139,wavyleaf_Global,NPS,Fire Island National Seashore,151,19636,0.01,0,186
+140,wavyleaf_Global,NPS,Lower Saint Croix National Scenic Riverway,151,11281,0.01,0,860
+141,wavyleaf_Global,NPS,Pictured Rocks National Lakeshore,907,73466,0.01,0,569
+142,wavyleaf_Global,NPS,Mississippi National River and Recreation Area,756,53717,0.01,0,850
+143,wavyleaf_Global,NPS,Lake Roosevelt National Recreation Area,302,100337,0,0,2351
+144,wavyleaf_Global,NPS,Amistad National Recreation Area,0,57641,0,0,1389
+145,wavyleaf_Global,NPS,Isle Royale National Park,0,548153,0,0,722
+146,wavyleaf_Global,NPS,Lake Meredith National Recreation Area,0,41628,0,0,1344
+147,wavyleaf_Global,NPS,Lowell National Historical Park,0,189,0,0,340
+148,wavyleaf_Global,NPS,Steamtown National Historic Site,0,54,0,0,109
+149,wavyleaf_Global,NPS,Little Bighorn Battlefield National Monument,0,778,0,0,1707
+150,wavyleaf_Global,NPS,Capulin Volcano National Monument,0,790,0,0,1477
+151,wavyleaf_Global,NPS,Fort Bowie National Historic Site,0,999,0,0,1856
+152,wavyleaf_Global,NPS,Gila Cliff Dwellings National Monument,0,606,0,0,1770
+153,wavyleaf_Global,NPS,Tuzigoot National Monument,0,813,0,0,1972
+154,wavyleaf_Global,NPS,Yucca House National Monument,0,36,0,0,1755
+155,wavyleaf_Global,NPS,Wolf Trap National Park for the Performing Arts,0,134,0,0,2
+156,wavyleaf_Global,NPS,Castillo de San Marcos National Monument,0,20,0,0,558
+157,wavyleaf_Global,NPS,Timpanogos Cave National Monument,0,250,0,0,1931
+158,wavyleaf_Global,NPS,Theodore Roosevelt Island National Memorial,0,100,0,0,3
+159,wavyleaf_Global,NPS,Lyndon Baines Johnson Memorial Grove on the Potomac,0,18,0,0,4
+160,wavyleaf_Global,NPS,"Arlington House, The Robert E. Lee Memorial",0,16,0,0,3
+161,wavyleaf_Global,NPS,Greenbelt Park,0,1148,0,Yes (4),0
+162,wavyleaf_Global,NPS,Tupelo National Battlefield,0,1,0,0,650
+163,wavyleaf_Global,NPS,Brices Cross Roads National Battlefield Site,0,1,0,0,641
+164,wavyleaf_Global,NPS,Fort Sumter National Monument,0,232,0,0,346
+165,wavyleaf_Global,NPS,Florissant Fossil Beds National Monument,0,5989,0,0,1544
+166,wavyleaf_Global,NPS,Tonto National Monument,0,1122,0,0,1931
+167,wavyleaf_Global,NPS,Charles Pinckney National Historic Site,0,33,0,0,341
+168,wavyleaf_Global,NPS,Carter G. Woodson National Historic Site,0,0,0,0,4
+169,wavyleaf_Global,NPS,Sunset Crater Volcano National Monument,0,3040,0,0,1935
+170,wavyleaf_Global,NPS,Mary McLeod Bethune Council House National Historic Site,0,0,0,0,4
+171,wavyleaf_Global,NPS,Ford's Theatre National Historic Site,0,0,0,0,5
+172,wavyleaf_Global,NPS,Brown v. Board of Education National Historic Site,0,2,0,0,971
+173,wavyleaf_Global,NPS,Pipe Spring National Monument,0,40,0,0,1999
+174,wavyleaf_Global,NPS,El Morro National Monument,0,1279,0,0,1751
+175,wavyleaf_Global,NPS,Andrew Johnson National Historic Site,0,16,0,0,279
+176,wavyleaf_Global,NPS,Saint Paul's Church National Historic Site,0,6,0,0,160
+177,wavyleaf_Global,NPS,Castle Clinton National Monument,0,1,0,0,144
+178,wavyleaf_Global,NPS,Fossil Butte National Monument,0,8306,0,0,1876
+179,wavyleaf_Global,NPS,Hovenweep National Monument,0,809,0,0,1757
+180,wavyleaf_Global,NPS,Fort Union National Monument,0,721,0,0,1546
+181,wavyleaf_Global,NPS,Dry Tortugas National Park,0,65726,0,0,389
+182,wavyleaf_Global,NPS,Fort Frederica National Monument,0,283,0,0,473
+183,wavyleaf_Global,NPS,Manzanar National Historic Site,0,813,0,0,2322
+184,wavyleaf_Global,NPS,Bryce Canyon National Park,0,35972,0,0,1956
+185,wavyleaf_Global,NPS,"John D. Rockefeller, Jr., Memorial Parkway",0,23577,0,0,1887
+186,wavyleaf_Global,NPS,Thomas Edison National Historical Park,0,21,0,0,135
+187,wavyleaf_Global,NPS,Yellowstone National Park,0,2194967,0,0,1843
+188,wavyleaf_Global,NPS,Hubbell Trading Post National Historic Site,0,160,0,0,1817
+189,wavyleaf_Global,NPS,Chamizal National Memorial,0,55,0,0,1692
+190,wavyleaf_Global,NPS,Alibates Flint Quarries National Monument,0,1371,0,0,1352
+191,wavyleaf_Global,NPS,Ulysses S. Grant National Historic Site,0,10,0,0,655
+192,wavyleaf_Global,NPS,African Burial Ground National Monument,0,0,0,0,145
+193,wavyleaf_Global,NPS,Cabrillo National Monument,0,160,0,0,2304
+194,wavyleaf_Global,NPS,Clara Barton National Historic Site,0,8,0,0,2
+195,wavyleaf_Global,NPS,Edgar Allan Poe National Historic Site,0,1,0,0,64
+196,wavyleaf_Global,NPS,Boston African American National Historic Site,0,1,0,0,346
+197,wavyleaf_Global,NPS,Eugene O'Neill National Historic Site,0,13,0,0,2550
+198,wavyleaf_Global,NPS,Adams National Historical Park,0,14,0,0,346
+199,wavyleaf_Global,NPS,Navajo National Monument,0,360,0,0,1866
+200,wavyleaf_Global,NPS,Cane River Creole National Historical Park,0,206,0,0,956
+201,wavyleaf_Global,NPS,Great Basin National Park,302,76945,0,0,2076
+202,wavyleaf_Global,NPS,Grand Portage National Monument,0,706,0,0,781
+203,wavyleaf_Global,NPS,Fort Point National Historic Site,0,25,0,0,2576
+204,wavyleaf_Global,NPS,Salem Maritime National Historic Site,0,9,0,0,360
+205,wavyleaf_Global,NPS,Washington Monument,0,104,0,0,4
+206,wavyleaf_Global,NPS,Thomas Jefferson Memorial,0,20,0,0,4
+207,wavyleaf_Global,NPS,Moores Creek National Battlefield,0,91,0,0,228
+208,wavyleaf_Global,NPS,Fort Matanzas National Monument,0,274,0,0,569
+209,wavyleaf_Global,NPS,Canyonlands National Park,0,334058,0,0,1810
+210,wavyleaf_Global,NPS,White House,0,18,0,0,4
+211,wavyleaf_Global,NPS,Booker T. Washington National Monument,0,244,0,0,87
+212,wavyleaf_Global,NPS,Jewel Cave National Monument,0,1271,0,0,1479
+213,wavyleaf_Global,NPS,Fort Larned National Historic Site,0,705,0,0,1185
+214,wavyleaf_Global,NPS,Rosie the Riveter/World War II Home Front National Historical Park,0,149,0,0,2568
+215,wavyleaf_Global,NPS,Fort Stanwix National Monument,0,17,0,0,206
+216,wavyleaf_Global,NPS,Thaddeus Kosciuszko National Memorial,0,0,0,0,64
+217,wavyleaf_Global,NPS,William Howard Taft National Historic Site,0,4,0,0,304
+218,wavyleaf_Global,NPS,Fort Scott National Historic Site,0,17,0,0,919
+219,wavyleaf_Global,NPS,Perry's Victory and International Peace Memorial,0,27,0,0,238
+220,wavyleaf_Global,NPS,James A. Garfield National Historic Site,0,8,0,0,171
+221,wavyleaf_Global,NPS,Rainbow Bridge National Monument,0,160,0,0,1892
+222,wavyleaf_Global,NPS,Natural Bridges National Monument,0,7607,0,0,1827
+223,wavyleaf_Global,NPS,Bent's Old Fort National Historic Site,0,829,0,0,1437
+224,wavyleaf_Global,NPS,Hohokam Pima National Monument,0,1689,0,0,1984
+225,wavyleaf_Global,NPS,Gulf Islands National Seashore,453,130563,0,0,689
+226,wavyleaf_Global,NPS,Pipestone National Monument,0,286,0,0,1044
+227,wavyleaf_Global,NPS,Biscayne National Park,605,174198,0,0,444
+228,wavyleaf_Global,NPS,Mount Rushmore National Memorial,0,1271,0,0,1458
+229,wavyleaf_Global,NPS,Guadalupe Mountains National Park,0,87296,0,0,1590
+230,wavyleaf_Global,NPS,City of Rocks National Reserve,0,14517,0,0,2053
+231,wavyleaf_Global,NPS,Hagerman Fossil Beds National Monument,0,4373,0,0,2131
+232,wavyleaf_Global,NPS,Fort Vancouver National Historic Site,0,208,0,0,2605
+233,wavyleaf_Global,NPS,John Fitzgerald Kennedy National Historic Site,0,0,0,0,343
+234,wavyleaf_Global,NPS,Gateway Arch National Park,0,194,0,0,644
+235,wavyleaf_Global,NPS,Theodore Roosevelt Birthplace National Historic Site,0,0,0,0,147
+236,wavyleaf_Global,NPS,Coronado National Memorial,0,4816,0,0,1917
+237,wavyleaf_Global,NPS,Selma to Montgomery National Historic Trail,0,20,0,0,613
+238,wavyleaf_Global,NPS,Golden Spike National Historic Site,0,2666,0,0,1979
+239,wavyleaf_Global,NPS,New Bedford Whaling National Historical Park,0,31,0,0,336
+240,wavyleaf_Global,NPS,Sagamore Hill National Historic Site,0,83,0,0,176
+241,wavyleaf_Global,NPS,Lava Beds National Monument,0,46748,0,0,2513
+242,wavyleaf_Global,NPS,Women's Rights National Historical Park,0,8,0,0,169
+243,wavyleaf_Global,NPS,George Rogers Clark National Historical Park,0,24,0,0,486
+244,wavyleaf_Global,NPS,Longfellow House-Washington's Headquarters National Historic Site,0,2,0,0,344
+245,wavyleaf_Global,NPS,Franklin Delano Roosevelt Memorial,0,8,0,0,4
+246,wavyleaf_Global,NPS,Montezuma Castle National Monument,0,1012,0,0,1958
+247,wavyleaf_Global,NPS,Springfield Armory National Historic Site,0,54,0,0,261
+248,wavyleaf_Global,NPS,Whitman Mission National Historic Site,0,138,0,0,2365
+249,wavyleaf_Global,NPS,World War II Memorial,0,9,0,0,4
+250,wavyleaf_Global,NPS,Vietnam Veterans Memorial,0,2,0,0,4
+251,wavyleaf_Global,NPS,Korean War Veterans Memorial,0,2,0,0,4
+252,wavyleaf_Global,NPS,Constitution Gardens,0,43,0,0,4
+253,wavyleaf_Global,NPS,"Martin Luther King, Jr., Memorial",0,3,0,0,4
+254,wavyleaf_Global,NPS,Lincoln Memorial,0,7,0,0,4
+255,wavyleaf_Global,NPS,National Mall,0,172,0,0,5
+256,wavyleaf_Global,NPS,Maggie L. Walker National Historic Site,0,1,0,0,43
+257,wavyleaf_Global,NPS,Bighorn Canyon National Recreation Area,0,119568,0,0,1729
+258,wavyleaf_Global,NPS,Sand Creek Massacre National Historic Site,0,12522,0,0,1379
+259,wavyleaf_Global,NPS,Knife River Indian Villages National Historic Site,0,1768,0,0,1387
+260,wavyleaf_Global,NPS,Governors Island National Monument,0,23,0,0,144
+261,wavyleaf_Global,NPS,Scotts Bluff National Monument,0,3213,0,0,1457
+262,wavyleaf_Global,NPS,Agate Fossil Beds National Monument,0,3040,0,0,1461
+263,wavyleaf_Global,NPS,Ronald Reagan Boyhood Home National Historic Site,0,1,0,0,616
+264,wavyleaf_Global,NPS,Capitol Reef National Park,0,244660,0,0,1883
+265,wavyleaf_Global,NPS,Devils Postpile National Monument,0,799,0,0,2374
+266,wavyleaf_Global,NPS,San Francisco Maritime National Historical Park,0,99,0,0,2573
+267,wavyleaf_Global,NPS,Joshua Tree National Park,0,793257,0,0,2172
+268,wavyleaf_Global,NPS,Charles Young Buffalo Soldiers National Monument,0,60,0,0,266
+269,wavyleaf_Global,NPS,First Ladies National Historic Site,0,0,0,0,138
+270,wavyleaf_Global,NPS,Cesar E. Chavez National Monument,0,118,0,0,2356
+271,wavyleaf_Global,NPS,Minuteman Missile National Historic Site,0,43,0,0,1367
+272,wavyleaf_Global,NPS,Salinas Pueblo Missions National Monument,0,1072,0,0,1628
+273,wavyleaf_Global,NPS,Pinnacles National Park,0,26702,0,0,2500
+274,wavyleaf_Global,NPS,Death Valley National Park,0,3398916,0,0,2213
+275,wavyleaf_Global,NPS,Fort McHenry National Monument and Historic Shrine,0,47,0,0,7
+276,wavyleaf_Global,NPS,Niobrara National Scenic River,0,29033,0,0,1206
+277,wavyleaf_Global,NPS,Saugus Iron Works National Historic Site,0,13,0,0,352
+278,wavyleaf_Global,NPS,Roger Williams National Memorial,0,5,0,0,314
+279,wavyleaf_Global,NPS,Casa Grande Ruins National Monument,0,474,0,0,1965
+280,wavyleaf_Global,NPS,De Soto National Memorial,0,30,0,0,605
+281,wavyleaf_Global,NPS,Chiricahua National Monument,0,12214,0,0,1851
+282,wavyleaf_Global,NPS,"Martin Luther King, Jr., National Historic Site",0,39,0,0,440
+283,wavyleaf_Global,NPS,Devils Tower National Monument,0,1347,0,0,1540
+284,wavyleaf_Global,NPS,Boston National Historical Park,0,44,0,0,347
+285,wavyleaf_Global,NPS,General Grant National Memorial,0,1,0,0,150
+286,wavyleaf_Global,NPS,Port Chicago Naval Magazine National Memorial,0,6,0,0,2549
+287,wavyleaf_Global,NPS,John Day Fossil Beds National Monument,0,13961,0,0,2421
+288,wavyleaf_Global,NPS,Guilford Courthouse National Military Park,0,224,0,0,139
+289,wavyleaf_Global,NPS,Paterson Great Falls National Historical Park,0,51,0,0,142
+290,wavyleaf_Global,NPS,Weir Farm National Historic Site,0,69,0,0,190
+291,wavyleaf_Global,NPS,Theodore Roosevelt Inaugural National Historic Site,0,1,0,0,197
+292,wavyleaf_Global,NPS,Lassen Volcanic National Park,302,107393,0,0,2502
+293,wavyleaf_Global,NPS,Badlands National Park,0,242291,0,0,1366
+294,wavyleaf_Global,NPS,Jimmy Carter National Historic Site,0,72,0,0,520
+295,wavyleaf_Global,NPS,Minidoka National Historic Site,0,398,0,0,2090
+296,wavyleaf_Global,NPS,Big Hole National Battlefield,0,975,0,0,2076
+297,wavyleaf_Global,NPS,Canyon de Chelly National Monument,0,88220,0,0,1789
+298,wavyleaf_Global,NPS,Manhattan Project National Historical Park,0,114,0,0,362
+299,wavyleaf_Global,NPS,Frederick Law Olmsted National Historic Site,0,7,0,0,342
+300,wavyleaf_Global,NPS,Castle Mountains National Monument,0,20872,0,0,2145
+301,wavyleaf_Global,NPS,Hamilton Grange National Memorial,0,2,0,0,151
+302,wavyleaf_Global,NPS,Hampton National Historic Site,0,62,0,0,0
+303,wavyleaf_Global,NPS,Waco Mammoth National Monument,0,107,0,0,1179
+304,wavyleaf_Global,NPS,Glen Canyon National Recreation Area,0,1249716,0,0,1827
+305,wavyleaf_Global,NPS,Tuskegee Institute National Historic Site,0,62,0,0,558
+306,wavyleaf_Global,NPS,Saint Croix Island International Historic Site,0,7,0,0,630
+307,wavyleaf_Global,NPS,Statue Of Liberty National Monument,0,69,0,0,142
+308,wavyleaf_Global,NPS,Bandelier National Monument,0,33683,0,0,1617
+309,wavyleaf_Global,NPS,Valles Caldera National Preserve,0,88951,0,0,1628
+310,wavyleaf_Global,NPS,Wind Cave National Park,0,33866,0,0,1450
+311,wavyleaf_Global,NPS,Colorado National Monument,0,20433,0,0,1746
+312,wavyleaf_Global,NPS,Pullman National Monument,0,0,0,0,505
+313,wavyleaf_Global,NPS,Pennsylvania Avenue National Historic Site,0,19,0,0,4
+314,wavyleaf_Global,NPS,World War I Memorial,0,2,0,0,4
+315,wavyleaf_Global,NPS,Belmont-Paul Women's Equality National Monument,0,0,0,0,6
+316,wavyleaf_Global,NPS,Stonewall National Monument,0,5,0,0,146
+317,wavyleaf_Global,NPS,Voyageurs National Park,0,204103,0,0,927
+318,wavyleaf_Global,NPS,Federal Hall National Memorial,0,1,0,0,145
+319,wavyleaf_Global,NPS,Frederick Douglass National Historic Site,0,8,0,0,6
+320,wavyleaf_Global,NPS,Fort Smith National Historic Site,0,71,0,0,934
+321,wavyleaf_Global,NPS,El Malpais National Monument,0,113599,0,0,1721
+322,wavyleaf_Global,NPS,Lewis and Clark National Historic Trail,0,80,0,0,982
+323,wavyleaf_Global,NPS,Lyndon B. Johnson National Historical Park,0,1570,0,0,1286
+324,wavyleaf_Global,NPS,Carlsbad Caverns National Park,0,46834,0,0,1565
+325,wavyleaf_Global,NPS,Aztec Ruins National Monument,0,317,0,0,1716
+326,wavyleaf_Global,NPS,Zion National Park,0,148656,0,0,2004
+327,wavyleaf_Global,NPS,Lincoln Home National Historic Site,0,14,0,0,610
+328,wavyleaf_Global,NPS,Craters of the Moon National Preserve,0,697766,0,0,2022
+329,wavyleaf_Global,NPS,Craters of the Moon National Monument,0,53295,0,0,2045
+330,wavyleaf_Global,NPS,White Sands National Monument,0,145579,0,0,1654
+331,wavyleaf_Global,NPS,Pecos National Historical Park,0,6695,0,0,1587
+332,wavyleaf_Global,NPS,Organ Pipe Cactus National Monument,0,330954,0,0,2044
+333,wavyleaf_Global,NPS,Curecanti National Recreation Area,0,41337,0,0,1649
+334,wavyleaf_Global,NPS,Theodore Roosevelt National Park,0,70275,0,0,1490
+335,wavyleaf_Global,NPS,Dinosaur National Monument,0,210172,0,0,1729
+336,wavyleaf_Global,NPS,Rock Creek Park,0,1748,0,Yes (2),0
+337,wavyleaf_Global,NPS,Apostle Islands National Lakeshore,0,72588,0,0,784
+338,wavyleaf_Global,NPS,Glacier National Park,4081,1005080,0,0,2085
+339,wavyleaf_Global,NPS,Saguaro National Park,151,92548,0,0,1917
+340,wavyleaf_Global,NPS,Mojave National Preserve,0,1587988,0,0,2141
+341,wavyleaf_Global,NPS,Keweenaw National Historical Park,0,1857,0,0,699
+342,wavyleaf_Global,NPS,Chaco Culture National Historical Park,0,34373,0,0,1704
+343,wavyleaf_Global,NPS,Grant-Kohrs Ranch National Historic Site,0,1572,0,0,2031
+344,wavyleaf_Global,NPS,Independence National Historical Park,0,43,0,0,63
+345,wavyleaf_Global,NPS,New Orleans Jazz National Historical Park,0,5,0,0,867
+346,wavyleaf_Global,NPS,Reconstruction Era National Monument,0,17,0,0,382
+347,wavyleaf_Global,NPS,Freedom Riders National Monument,0,8,0,0,515
+348,wavyleaf_Global,NPS,Birmingham Civil Rights National Monument,0,1,0,0,570
+349,wavyleaf_Global,NPS,Grand Teton National Park,0,309438,0,0,1871
+350,wavyleaf_Global,NPS,Great Sand Dunes National Preserve,0,41673,0,0,1558
+351,wavyleaf_Global,NPS,Great Sand Dunes National Park,0,107531,0,0,1562
+352,wavyleaf_Global,NPS,Saint Croix National Scenic Riverway,0,68915,0,0,801
+353,wavyleaf_Global,NPS,Rio Grande Wild and Scenic River,0,22089,0,0,1445
+354,wavyleaf_Global,NPS,River Raisin National Battlefield Park,0,42,0,0,275
+355,wavyleaf_Global,NPS,Black Canyon of the Gunnison National Park,0,31208,0,0,1687
+356,wavyleaf_Global,NPS,Walnut Canyon National Monument,0,3242,0,0,1934
+357,wavyleaf_Global,NPS,Nicodemus National Historic Site,0,5,0,0,1207
+358,wavyleaf_Global,NPS,Wupatki National Monument,0,35431,0,0,1921
+359,wavyleaf_Global,NPS,Washita Battlefield National Historic Site,0,320,0,0,1236
+360,wavyleaf_Global,NPS,Katahdin Woods And Waters National Monument,0,89352,0,0,570
+361,wavyleaf_Global,NPS,Petrified Forest National Park,0,222995,0,0,1825
+362,wavyleaf_Global,NPS,Big Bend National Park,0,811980,0,0,1482
+363,wavyleaf_Global,NPS,Rocky Mountain National Park,0,266758,0,0,1559
+364,wavyleaf_Global,NPS,Lake Mead National Recreation Area,0,1494317,0,0,2027
+365,wavyleaf_Global,NPS,Harry S Truman National Historic Site,0,12,0,0,896
+366,wavyleaf_Global,NPS,Little Rock Central High School National Historic Site,0,29,0,0,827
+367,wavyleaf_Global,NPS,Cedar Breaks National Monument,0,6122,0,0,2000
+368,wavyleaf_Global,NPS,Fort Davis National Historic Site,0,518,0,0,1574
+369,wavyleaf_Global,NPS,Fort Monroe National Monument,0,368,0,0,104
+370,wavyleaf_Global,NPS,Arches National Park,0,76406,0,0,1798
+371,wavyleaf_Global,NPS,Fort Laramie National Historic Site,0,896,0,0,1509
+372,wavyleaf_Global,NPS,Tumacacori National Historical Park,0,363,0,0,1955
+373,wavyleaf_Global,NPS,Tule Springs Fossil Beds National Monument,0,22640,0,0,2145
+374,wavyleaf_Global,NPS,Petroglyph National Monument,0,7203,0,0,1652
+375,wavyleaf_Global,NPS,President William Jefferson Clinton Birthplace Home National Historic Site,0,1,0,0,926
+376,wavyleaf_Global,NPS,Fort Union Trading Post National Historic Site,0,442,0,0,1549
+377,wavyleaf_Global,NPS,Grand Canyon National Park,0,1202984,0,0,1930
+378,wavyleaf_Global,NPS,Mesa Verde National Park,0,53670,0,0,1735
