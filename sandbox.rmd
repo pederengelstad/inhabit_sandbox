@@ -19,6 +19,8 @@ img {
     height: 100%;
 }
 
+.img-full {  max-width: 100%;  height: auto; } 
+
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   <!-- background-color: #eee; -->
@@ -436,24 +438,40 @@ fillPage(HTML(
 ```
 
 ### Variable Response Curves
+
+<br>
+
+These graphs plot the relative habitat suitability (y-axis) across the range of values for each predictor (x-axis). The red lines along the x-axis represent presence points with those values. Each line represents one model algorithm and background point generation method for a total of 10 lines possible; missing lines indicate the predictor was dropped from that model. The numbers in the top left of each graph represent the average relative importance of the predictor with the range across model algorithm/ background method combinations shown in parentheses. The graphs are arranged by relative importance, with the top left contributing most to models on average.
+
 ```{r}
-img = reactive({paste0('species/',species(),'/responsecurves.png',sep='')})
-renderImage({
-  img = include_graphics(img())
-  list(src=img)
-}, deleteFile = F)
+# img = reactive({paste0('<center><img src=\"/species/',species(),'/responsecurves.png\" width=\"600\"></center>',sep='')})
+# img = reactive({paste0('<img src="species/',species(),'/responsecurves.png">', sep='')})
+ # paste('<center><img src="/species/','redbrome','/responsecurves.png" width="600"></center>',sep='')
+# renderText(print(img()))
+
+renderText({
+  HTML(
+    kable(x = data.frame(col = c('<center><img src="species/redbrome/responsecurves.png" width="600"></center>')),
+              escape = F, col.names = '', align = 'c') %>%
+      kable_styling(full_width = F,
+                    position = 'center',
+                    bootstrap_options = c("condensed", "responsive")) %>%
+      column_spec(1, border_right = F, width = '70%')
+  )
+})
+
 ```
 
 ### Variable Importance
 ```{r}
-# caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
+vi.caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
 
 htmlOutput("vi_table") 
 vi = reactive({read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
                                                     , header = T, stringsAsFactors = F)})
 # server component
 output$vi_table <- renderText({
-  kable(vi(), ) %>%
+  kable(vi(), caption = vi.caption) %>%
     kable_styling(
       font_size = 12,
       full_width = F,
