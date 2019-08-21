@@ -8,11 +8,13 @@ library(sf)
 # Make sure to polygonize FDAWs first...
 
 # List species folders
-dirs = list.dirs(path = "E:/Users/engelstad/USGS/data/20190723", full.names = T, recursive = F)
-# conus = readOGR("C:/Users/peder/Documents/GitHub/Repositories/inhabit_sandbox/CONUS_4269/CONUS_4269.shp")
-conus = readOGR("E:/Users/engelstad/GitHub/inhabit_sandbox/CONUS_4269/CONUS_4269.shp")
+# dirs = list.dirs(path = "E:/Users/engelstad/USGS/data/20190723", full.names = T, recursive = F)
+dirs = list.dirs(path = "C:/Users/peder/Documents/USGS/Data/", full.names = T, recursive = F)
+dirs[1]
+conus = readOGR("C:/Users/peder/Documents/GitHub/Repositories/inhabit_sandbox/CONUS_4269/CONUS_4269.shp")
+# conus = readOGR("E:/Users/engelstad/GitHub/inhabit_sandbox/CONUS_4269/CONUS_4269.shp")
 
-for(d in dirs[2:length(dirs)]){
+for(d in dirs[1]){
   
   # Process FDAW
   kde = readOGR(list.files(d, pattern = 'kde_tmp.shp', full.names = T))
@@ -38,6 +40,8 @@ for(d in dirs[2:length(dirs)]){
                                proj4string = crs('+proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs)'))
   
   pts = spTransform(pts, CRSobj = crs(conus))
-  pts.out = sf::st_intersection(sf::st_as_sf(pts), sf::st_as_sf(clip))
+  pts = sf::st_as_sf(pts)
+  clip = sf::st_as_sf(clip)
+  pts.out = sf::st_intersection(pts, clip)
   st_write(pts.out, dsn = paste0(d, "/pts.sqlite"), layer = "pts")
 }
