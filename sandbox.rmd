@@ -84,7 +84,7 @@ library(knitr)
 library(kableExtra)
 library(dplyr)
 
-img_uri <- function(x) { sprintf('<center><img src="%s" width="500"></center>', knitr::image_uri(x)) }
+img_uri <- function(x) { sprintf('<center><img src="%s" width="550"></center>', knitr::image_uri(x)) }
 
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
 
@@ -460,7 +460,7 @@ output$sc.table <- renderText({
 
 ### Variable Importance
 ```{r}
-vi.caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
+vi.caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted.<br><br>"
 
 htmlOutput("vi_table") 
 vi = reactive({
@@ -470,12 +470,13 @@ vi = reactive({
 })
 # server component
 output$vi_table <- renderText({
-  kable(vi(), caption = vi.caption) %>%
-    kable_styling(
-      font_size = 12,
-      full_width = F,
-      bootstrap_options = c("condensed", "responsive")
-    ) 
+  vi() %>%
+    mutate_if(is.numeric, round) %>%
+    mutate_if(is.numeric, function(x) {
+      cell_spec(x, color = "white", background = spec_color(1:10, end = 0.9, option = "B", direction = -1))
+    }) %>%
+    kable(caption = vi.caption, format = 'html', escape = F) %>%
+      kable_styling(font_size = 12, full_width = F, bootstrap_options = c("condensed", "responsive"))
 })
 ```
 
