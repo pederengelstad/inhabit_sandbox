@@ -359,8 +359,8 @@ Hash: eabda67321fe1d477ea641ddd5d84f00
 
 Package: rmarkdown
 Source: CRAN
-Version: 1.14
-Hash: 3ef48feba7356d078d9d2eb36e2c4bdd
+Version: 1.15
+Hash: 70ecbccb919ee0d1ce9c21b6072c1bc1
 Requires: base64enc, evaluate, htmltools, jsonlite, knitr, mime,
     stringr, tinytex, xfun, yaml
 

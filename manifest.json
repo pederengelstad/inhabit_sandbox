@@ -1698,8 +1698,8 @@
         "Package": "rmarkdown",
         "Type": "Package",
         "Title": "Dynamic Documents for R",
-        "Version": "1.14",
-        "Authors@R": "c(\n  person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n  person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\", comment = c(ORCID = \"0000-0003-0645-5666\")),\n  person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n  person(\"Javier\", \"Luraschi\", role = \"aut\", email = \"javier@rstudio.com\"),\n  person(\"Kevin\", \"Ushey\", role = \"aut\", email = \"kevin@rstudio.com\"),\n  person(\"Aron\", \"Atkins\", role = \"aut\", email = \"aron@rstudio.com\"),\n  person(\"Hadley\", \"Wickham\", role = \"aut\", email = \"hadley@rstudio.com\"),\n  person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n  person(\"Winston\", \"Chang\", role = \"aut\", email = \"winston@rstudio.com\"),\n  person(\"Richard\", \"Iannone\", role = \"aut\", email = \"rich@rstudio.com\", comment = c(ORCID = \"0000-0003-3925-190X\")),\n  #\n  # Contributors, ordered alphabetically by first name\n  person(\"Barret\", \"Schloerke\", role = \"ctb\"),\n  person(\"Christophe\", \"Dervieux\", role = \"ctb\"),\n  person(\"Frederik\", \"Aust\", role = \"ctb\", email = \"frederik.aust@uni-koeln.de\", comment = c(ORCID = \"0000-0003-4900-788X\")),\n  person(\"Jeff\", \"Allen\", role = \"ctb\", email = \"jeff@rstudio.com\"),\n  person(\"Malcolm\", \"Barrett\", role = \"ctb\"),\n  person(\"Rob\", \"Hyndman\", role = \"ctb\", email = \"Rob.Hyndman@monash.edu\"),\n  person(\"Romain\", \"Lesur\", role = \"ctb\"),\n  person(\"Roy\", \"Storey\", role = \"ctb\"),\n  person(\"Ruben\", \"Arslan\", role = \"ctb\", email = \"ruben.arslan@uni-goettingen.de\"),\n  #\n  # Copyright holders\n  person(family = \"RStudio, Inc.\", role = \"cph\"),\n  person(family = \"jQuery Foundation\", role = \"cph\",\n         comment = \"jQuery library\"),\n  person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n         comment = \"jQuery library; authors listed in inst/rmd/h/jquery-AUTHORS.txt\"),\n  person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n         comment = \"jQuery UI library; authors listed in inst/rmd/h/jqueryui-AUTHORS.txt\"),\n  person(\"Mark\", \"Otto\", role = \"ctb\",\n         comment = \"Bootstrap library\"),\n  person(\"Jacob\", \"Thornton\", role = \"ctb\",\n         comment = \"Bootstrap library\"),\n  person(family = \"Bootstrap contributors\", role = \"ctb\",\n         comment = \"Bootstrap library\"),\n  person(family = \"Twitter, Inc\", role = \"cph\",\n         comment = \"Bootstrap library\"),\n  person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n         comment = \"html5shiv library\"),\n  person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n         comment = \"Respond.js library\"),\n  person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n         comment = \"highlight.js library\"),\n  person(\"Greg\", \"Franko\", role = c(\"ctb\", \"cph\"),\n         comment = \"tocify library\"),\n  person(\"John\", \"MacFarlane\", role = c(\"ctb\", \"cph\"),\n         comment = \"Pandoc templates\"),\n  person(family = \"Google, Inc.\", role = c(\"ctb\", \"cph\"),\n         comment = \"ioslides library\"),\n  person(\"Dave\", \"Raggett\", role = \"ctb\",\n         comment = \"slidy library\"),\n  person(family = \"W3C\", role = \"cph\",\n         comment = \"slidy library\"),\n  person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n         comment = \"Font-Awesome\"),\n  person(\"Ben\", \"Sperry\", role = \"ctb\",\n         comment = \"Ionicons\"),\n  person(family = \"Drifty\", role = \"cph\",\n         comment = \"Ionicons\"),\n  person(\"Aidan\", \"Lister\", role = c(\"ctb\", \"cph\"), \n         comment = \"jQuery StickyTabs\")\n  )",
+        "Version": "1.15",
+        "Authors@R": "c(\n  person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n  person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\", comment = c(ORCID = \"0000-0003-0645-5666\")),\n  person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n  person(\"Javier\", \"Luraschi\", role = \"aut\", email = \"javier@rstudio.com\"),\n  person(\"Kevin\", \"Ushey\", role = \"aut\", email = \"kevin@rstudio.com\"),\n  person(\"Aron\", \"Atkins\", role = \"aut\", email = \"aron@rstudio.com\"),\n  person(\"Hadley\", \"Wickham\", role = \"aut\", email = \"hadley@rstudio.com\"),\n  person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n  person(\"Winston\", \"Chang\", role = \"aut\", email = \"winston@rstudio.com\"),\n  person(\"Richard\", \"Iannone\", role = \"aut\", email = \"rich@rstudio.com\", comment = c(ORCID = \"0000-0003-3925-190X\")),\n  #\n  # Contributors, ordered alphabetically by first name\n  person(\"Atsushi\", \"Yasumoto\", role = \"ctb\", comment = c(ORCID = \"0000-0002-8335-495X\")),\n  person(\"Barret\", \"Schloerke\", role = \"ctb\"),\n  person(\"Christophe\", \"Dervieux\", role = \"ctb\"),\n  person(\"Frederik\", \"Aust\", role = \"ctb\", email = \"frederik.aust@uni-koeln.de\", comment = c(ORCID = \"0000-0003-4900-788X\")),\n  person(\"Jeff\", \"Allen\", role = \"ctb\", email = \"jeff@rstudio.com\"),\n  person(\"Malcolm\", \"Barrett\", role = \"ctb\"),\n  person(\"Rob\", \"Hyndman\", role = \"ctb\", email = \"Rob.Hyndman@monash.edu\"),\n  person(\"Romain\", \"Lesur\", role = \"ctb\"),\n  person(\"Roy\", \"Storey\", role = \"ctb\"),\n  person(\"Ruben\", \"Arslan\", role = \"ctb\", email = \"ruben.arslan@uni-goettingen.de\"),\n  #\n  # Copyright holders\n  person(family = \"RStudio, Inc.\", role = \"cph\"),\n  person(family = \"jQuery Foundation\", role = \"cph\",\n         comment = \"jQuery library\"),\n  person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n         comment = \"jQuery library; authors listed in inst/rmd/h/jquery-AUTHORS.txt\"),\n  person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n         comment = \"jQuery UI library; authors listed in inst/rmd/h/jqueryui-AUTHORS.txt\"),\n  person(\"Mark\", \"Otto\", role = \"ctb\",\n         comment = \"Bootstrap library\"),\n  person(\"Jacob\", \"Thornton\", role = \"ctb\",\n         comment = \"Bootstrap library\"),\n  person(family = \"Bootstrap contributors\", role = \"ctb\",\n         comment = \"Bootstrap library\"),\n  person(family = \"Twitter, Inc\", role = \"cph\",\n         comment = \"Bootstrap library\"),\n  person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n         comment = \"html5shiv library\"),\n  person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n         comment = \"Respond.js library\"),\n  person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n         comment = \"highlight.js library\"),\n  person(\"Greg\", \"Franko\", role = c(\"ctb\", \"cph\"),\n         comment = \"tocify library\"),\n  person(\"John\", \"MacFarlane\", role = c(\"ctb\", \"cph\"),\n         comment = \"Pandoc templates\"),\n  person(family = \"Google, Inc.\", role = c(\"ctb\", \"cph\"),\n         comment = \"ioslides library\"),\n  person(\"Dave\", \"Raggett\", role = \"ctb\",\n         comment = \"slidy library\"),\n  person(family = \"W3C\", role = \"cph\",\n         comment = \"slidy library\"),\n  person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n         comment = \"Font-Awesome\"),\n  person(\"Ben\", \"Sperry\", role = \"ctb\",\n         comment = \"Ionicons\"),\n  person(family = \"Drifty\", role = \"cph\",\n         comment = \"Ionicons\"),\n  person(\"Aidan\", \"Lister\", role = c(\"ctb\", \"cph\"), \n         comment = \"jQuery StickyTabs\")\n  )",
         "Maintainer": "Yihui Xie <xie@yihui.name>",
         "Description": "Convert R Markdown documents into a variety of formats.",
         "Depends": "R (>= 3.0)",
@@ -1713,11 +1713,11 @@
         "Encoding": "UTF-8",
         "VignetteBuilder": "knitr",
         "NeedsCompilation": "no",
-        "Packaged": "2019-07-12 02:57:15 UTC; yihui",
-        "Author": "JJ Allaire [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Jonathan McPherson [aut],\n  Javier Luraschi [aut],\n  Kevin Ushey [aut],\n  Aron Atkins [aut],\n  Hadley Wickham [aut],\n  Joe Cheng [aut],\n  Winston Chang [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Barret Schloerke [ctb],\n  Christophe Dervieux [ctb],\n  Frederik Aust [ctb] (<https://orcid.org/0000-0003-4900-788X>),\n  Jeff Allen [ctb],\n  Malcolm Barrett [ctb],\n  Rob Hyndman [ctb],\n  Romain Lesur [ctb],\n  Roy Storey [ctb],\n  Ruben Arslan [ctb],\n  RStudio, Inc. [cph],\n  jQuery Foundation [cph] (jQuery library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/rmd/h/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/rmd/h/jqueryui-AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  Greg Franko [ctb, cph] (tocify library),\n  John MacFarlane [ctb, cph] (Pandoc templates),\n  Google, Inc. [ctb, cph] (ioslides library),\n  Dave Raggett [ctb] (slidy library),\n  W3C [cph] (slidy library),\n  Dave Gandy [ctb, cph] (Font-Awesome),\n  Ben Sperry [ctb] (Ionicons),\n  Drifty [cph] (Ionicons),\n  Aidan Lister [ctb, cph] (jQuery StickyTabs)",
+        "Packaged": "2019-08-21 00:08:48 UTC; yihui",
+        "Author": "JJ Allaire [aut],\n  Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),\n  Jonathan McPherson [aut],\n  Javier Luraschi [aut],\n  Kevin Ushey [aut],\n  Aron Atkins [aut],\n  Hadley Wickham [aut],\n  Joe Cheng [aut],\n  Winston Chang [aut],\n  Richard Iannone [aut] (<https://orcid.org/0000-0003-3925-190X>),\n  Atsushi Yasumoto [ctb] (<https://orcid.org/0000-0002-8335-495X>),\n  Barret Schloerke [ctb],\n  Christophe Dervieux [ctb],\n  Frederik Aust [ctb] (<https://orcid.org/0000-0003-4900-788X>),\n  Jeff Allen [ctb],\n  Malcolm Barrett [ctb],\n  Rob Hyndman [ctb],\n  Romain Lesur [ctb],\n  Roy Storey [ctb],\n  Ruben Arslan [ctb],\n  RStudio, Inc. [cph],\n  jQuery Foundation [cph] (jQuery library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/rmd/h/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/rmd/h/jqueryui-AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  Greg Franko [ctb, cph] (tocify library),\n  John MacFarlane [ctb, cph] (Pandoc templates),\n  Google, Inc. [ctb, cph] (ioslides library),\n  Dave Raggett [ctb] (slidy library),\n  W3C [cph] (slidy library),\n  Dave Gandy [ctb, cph] (Font-Awesome),\n  Ben Sperry [ctb] (Ionicons),\n  Drifty [cph] (Ionicons),\n  Aidan Lister [ctb, cph] (jQuery StickyTabs)",
         "Repository": "CRAN",
-        "Date/Publication": "2019-07-12 04:43:08 UTC",
-        "Built": "R 3.6.1; ; 2019-07-26 11:58:14 UTC; windows"
+        "Date/Publication": "2019-08-21 10:50:02 UTC",
+        "Built": "R 3.6.1; ; 2019-08-22 16:18:20 UTC; windows"
       }
     },
     "rstudioapi": {
@@ -2418,7 +2418,7 @@
       "checksum": "48695f70b8a1e68eceb09955b39bb489"
     },
     "mgmt/mgmt_areas.qpj": {
-      "checksum": "ec741be587ddb6f61e96e4dc9571a4ac"
+      "checksum": "316d3d44a419b1a961c5f36ef4022a83"
     },
     "mgmt/mgmt_areas.shp": {
       "checksum": "b888a8ef97ea1f9f98bfce87e347312b"
@@ -2616,7 +2616,7 @@
       "checksum": "90700d635b26fc3793f7ca10a4c772bd"
     },
     "packrat/desc/rmarkdown": {
-      "checksum": "b372e72e59e6bea037e212aa44e74d89"
+      "checksum": "471f78fc0f05158e78f11dfd9ea0c732"
     },
     "packrat/desc/rstudioapi": {
       "checksum": "c0fc4429f40daa9082b0c0bf59984706"
@@ -2694,43 +2694,55 @@
       "checksum": "2ec63996bbe4729841352eac641c7162"
     },
     "packrat/packrat.lock": {
-      "checksum": "9829f1e722e542ec802dc6e0fba339be"
+      "checksum": "11bac6a58d4d2e83ac93cb990c59a0d5"
     },
     "predictorInformation.csv": {
-      "checksum": "c21975d6392d8595ce3acca48b442b5d"
+      "checksum": "868829648e4aff25c2127d28fd0b68e2"
     },
     "sandbox.rmd": {
-      "checksum": "189a45cd8faf597e79cd57032c6aad6f"
+      "checksum": "18796b6c2db1045b6c0b3ec52228338a"
     },
     "sp_list.csv": {
-      "checksum": "36e5ae0c6db3e9930cfbc4e0f07f785c"
+      "checksum": "e49e037fee60f814e8885f9c7bb530db"
     },
     "species/amurpeppervine/amurpeppervine_zonal.csv": {
-      "checksum": "df05a9fbae35363fc72d7e21c8b28566"
+      "checksum": "95e8cad04b90ea9b307422a0e40c102d"
     },
-    "species/amurpeppervine/CovariateCorrelationOutputMDS_KDE_initial.csv": {
-      "checksum": "d56025a794271c13e86068450b9a5522"
+    "species/amurpeppervine/kde.dbf": {
+      "checksum": "226c09b6e2bdce6a7149c9bb2e27c497"
     },
-    "species/amurpeppervine/FDAW_amurpeppervineKDEbin_1_amurpeppervineKDEbin_1KDEadhoc_iso99_na.tif": {
-      "checksum": "d43bd034768728bb51609b30e6d3c3e5"
+    "species/amurpeppervine/kde.prj": {
+      "checksum": "48695f70b8a1e68eceb09955b39bb489"
+    },
+    "species/amurpeppervine/kde.shp": {
+      "checksum": "270ef6a077c9f7312971f5a45f83f439"
+    },
+    "species/amurpeppervine/kde.shx": {
+      "checksum": "15e2beb55a20214be940fab42c63f36b"
+    },
+    "species/amurpeppervine/pts.sqlite": {
+      "checksum": "95c5974db997ff1d6e4388088ff4ec7e"
     },
     "species/amurpeppervine/responsecurves.png": {
       "checksum": "5b6f1c7152d52055e37d3d3e6383a23b"
     },
     "species/bishopsgoutweed/bishopsgoutweed_zonal.csv": {
-      "checksum": "46980f7fdf4c6b865eec1d42520f5086"
+      "checksum": "b3e545f16fa6d1b0a4c0b395b4d1a94b"
+    },
+    "species/bishopsgoutweed/kde.cpg": {
+      "checksum": "ae3b3df9970b49b6523e608759bc957d"
     },
     "species/bishopsgoutweed/kde.dbf": {
-      "checksum": "a03901db262b8d6d27b174089f09d41c"
+      "checksum": "92e84936af5abfdaa2d3cceb7c32f3e3"
     },
     "species/bishopsgoutweed/kde.prj": {
       "checksum": "48695f70b8a1e68eceb09955b39bb489"
     },
     "species/bishopsgoutweed/kde.shp": {
-      "checksum": "852a13a078f2341b7669dce7a1f4e2c2"
+      "checksum": "ed85899020c4591f80aa641d135c3cad"
     },
     "species/bishopsgoutweed/kde.shx": {
-      "checksum": "d6bce3d3e103e9e7612e6f71f5eb4347"
+      "checksum": "c96339053c2f78d36aa099e1e398ecaa"
     },
     "species/bishopsgoutweed/pts.sqlite": {
       "checksum": "0f1603357c630042c83950fe7dd3433e"
@@ -2738,17 +2750,80 @@
     "species/bishopsgoutweed/responsecurves.png": {
       "checksum": "d1e3944447c44d5707fc8e5207f682e7"
     },
+    "species/burbuttercup/kde.dbf": {
+      "checksum": "31afade0da850bda3ab7f9de9b329278"
+    },
+    "species/burbuttercup/kde.prj": {
+      "checksum": "48695f70b8a1e68eceb09955b39bb489"
+    },
+    "species/burbuttercup/kde.shp": {
+      "checksum": "c672c2048211d5e9d2fa3573fb16af3d"
+    },
+    "species/burbuttercup/kde.shx": {
+      "checksum": "40c701bbede9da4fc760b14c8a76205d"
+    },
+    "species/burbuttercup/pts.sqlite": {
+      "checksum": "dae732fb0bdc890fd5516e53885f4489"
+    },
     "species/burbuttercup/responsecurves.png": {
       "checksum": "c3b70c0ed8898adee81102083d7aa964"
+    },
+    "species/burbuttercup/responsecurves.tif": {
+      "checksum": "b3fad62b7281e44b0917ff72ffee199e"
+    },
+    "species/chocolatevine/kde.dbf": {
+      "checksum": "31afade0da850bda3ab7f9de9b329278"
+    },
+    "species/chocolatevine/kde.prj": {
+      "checksum": "48695f70b8a1e68eceb09955b39bb489"
+    },
+    "species/chocolatevine/kde.shp": {
+      "checksum": "086cd3e8d4756e1c024f70e8e1173d14"
+    },
+    "species/chocolatevine/kde.shx": {
+      "checksum": "ed710e246d3fec6606a4549b8aa6e122"
+    },
+    "species/chocolatevine/pts.sqlite": {
+      "checksum": "5778f039fdcd86935d319bc8b8130d21"
     },
     "species/chocolatevine/responsecurves.png": {
       "checksum": "447662a5f55561e0e380deadf1865e89"
     },
     "species/fountaingrass/fountaingrass_zonal.csv": {
-      "checksum": "096d6f65be4a51ed4cfb7fd90ea331e9"
+      "checksum": "d792234f4a77d798fc267a33566b96ed"
+    },
+    "species/fountaingrass/kde.dbf": {
+      "checksum": "31afade0da850bda3ab7f9de9b329278"
+    },
+    "species/fountaingrass/kde.prj": {
+      "checksum": "48695f70b8a1e68eceb09955b39bb489"
+    },
+    "species/fountaingrass/kde.shp": {
+      "checksum": "28ab25da8ab14a34e179a95e0ae7426d"
+    },
+    "species/fountaingrass/kde.shx": {
+      "checksum": "9ef7ebc9e0cbb66561c30a17f19b22eb"
+    },
+    "species/fountaingrass/pts.sqlite": {
+      "checksum": "1afaa21c58b343073f4f376473c1e1b4"
     },
     "species/fountaingrass/responsecurves.png": {
       "checksum": "eeafded29ed0d9582d2fbce4f547a35c"
+    },
+    "species/medusahead/kde.dbf": {
+      "checksum": "31afade0da850bda3ab7f9de9b329278"
+    },
+    "species/medusahead/kde.prj": {
+      "checksum": "48695f70b8a1e68eceb09955b39bb489"
+    },
+    "species/medusahead/kde.shp": {
+      "checksum": "6f3a982898ecbfdb3caae60a7d344ca2"
+    },
+    "species/medusahead/kde.shx": {
+      "checksum": "d100a13b366076465fa4c23a1e8c6684"
+    },
+    "species/medusahead/responsecurves.tif": {
+      "checksum": "7b492e3a372696403a3d0b79021a007b"
     },
     "species/ravennagrass/responsecurves.png": {
       "checksum": "e7538f6eb18079b9f25eaaf945b81091"
@@ -2760,7 +2835,7 @@
       "checksum": "e729936bf5360b37a15365fc295a1901"
     },
     "species/redbrome/kde.qpj": {
-      "checksum": "438ddf574b9f8f2c41f761d7c4ecc05f"
+      "checksum": "f34dee5ac9bad1bc567ccb2246dc228e"
     },
     "species/redbrome/kde.shp": {
       "checksum": "ab7b8e610bd1f30d2c5c2099d28507b6"
@@ -2772,22 +2847,31 @@
       "checksum": "55c64b7fa163138dde469af5f1129b77"
     },
     "species/redbrome/redbrome_zonal.csv": {
-      "checksum": "cc32586897cf0e839f5cd4f315da7e45"
+      "checksum": "8ad9842ccc686231a58b22dbeba7602f"
     },
     "species/redbrome/responsecurves.png": {
       "checksum": "dac85bed411ed89fcc35e333f57690b6"
     },
     "species/redbrome/summary.csv": {
-      "checksum": "471424c4aca6f3389b8a1ad1453b8379"
+      "checksum": "5b8f716615e731f12a6f2932fec6879c"
     },
     "species/redbrome/Thumbs.db": {
       "checksum": "ffc8bdca2cfc4828c2aa63295d34d681"
     },
     "species/redbrome/vi_table.csv": {
-      "checksum": "5a02af7f1c3385a06d264a33f2f4f541"
+      "checksum": "d3660294e705c063761f0fa683696abe"
     },
     "species/rushskeletonweed/pts.sqlite": {
       "checksum": "8497d4903673f898f9b6a503d0d52724"
+    },
+    "species/wavyleafbasketgrass/responsecurves.png": {
+      "checksum": "c42f1d1005257126daad79b1eba49a0c"
+    },
+    "species/wavyleafbasketgrass/vi_table.csv": {
+      "checksum": "f673ddf8e546bc3745e2c00882da411b"
+    },
+    "species/wavyleafbasketgrass/wavyleafbasketgrass_zonal.csv": {
+      "checksum": "f09bb7989bc3c6ebf62ffa2e4970a921"
     },
     "states/cb_2017_us_state_500k_conus_simple.cpg": {
       "checksum": "ae3b3df9970b49b6523e608759bc957d"
@@ -2799,7 +2883,7 @@
       "checksum": "48695f70b8a1e68eceb09955b39bb489"
     },
     "states/cb_2017_us_state_500k_conus_simple.qpj": {
-      "checksum": "ec741be587ddb6f61e96e4dc9571a4ac"
+      "checksum": "316d3d44a419b1a961c5f36ef4022a83"
     },
     "states/cb_2017_us_state_500k_conus_simple.shp": {
       "checksum": "66b37f7e06a04d67de1a8f4a936cbcf9"

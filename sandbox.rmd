@@ -19,7 +19,7 @@ img {
     height: 100%;
 }
 
-.img-full {  max-width: 100%;  height: auto; } 
+<!-- .img-full {  max-width: 100%;  height: auto; }  -->
 
  /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -84,7 +84,10 @@ library(knitr)
 library(kableExtra)
 library(dplyr)
 
+img_uri <- function(x) { sprintf('<center><img src="%s" width="500"></center>', knitr::image_uri(x)) }
+
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
+
 pred.info = read.csv(file = "predictorInformation.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
 cred.table = read.csv(file = "CredTable.csv", header = T, stringsAsFactors = F, encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
 states = readOGR("states/cb_2017_us_state_500k_conus_simple.shp", GDAL1_integer64_policy = T)
@@ -140,7 +143,7 @@ sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
             , width = '95%'
-            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Red brome"
+            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Wavyleaf basketgrass"
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
 ```
@@ -154,7 +157,7 @@ sliderTextInput(inputId = "slider", label = "Choose your model threshold:"
 Restrict environmental conditions? <br>
 <button class="collapsible">More Information <img src="ibutton.png" width=10px></button>
 <div class="content">
-  <p>'If "yes", the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a>'</p>
+  <p>'If "yes", the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></p>
 </div>
 
 -----
@@ -300,50 +303,50 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 
 
 
-Model Summary
-=====================================
+<!-- Model Summary -->
+<!-- ===================================== -->
 
-Row {data-height: 33%}
--------------------------------------
-    
-### Number of Presence Points Used
-    
-```{r}
-```
- 
-### Model Thresholds
-    
-```{r}
+<!-- Row {data-height: 33%} -->
+<!-- ------------------------------------- -->
 
-``` 
+<!-- ### Number of Presence Points Used -->
 
-### Chart 3
-    
-```{r}
-renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1))
-```
+<!-- ```{r} -->
+<!-- ``` -->
 
-Row {data-height: 33%}
--------------------------------------
+<!-- ### Model Thresholds -->
 
-### Chart 4
+<!-- ```{r} -->
 
-```{r}
-renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1))
-```
+<!-- ```  -->
 
-Row {data-height: 33%}
--------------------------------------
-    
-### Chart 5
-    
-```{r}
-```
-    
-### Chart 6
+<!-- ### Chart 3 -->
 
-```{r}
-```
+<!-- ```{r} -->
+<!-- renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1)) -->
+<!-- ``` -->
+
+<!-- Row {data-height: 33%} -->
+<!-- ------------------------------------- -->
+
+<!-- ### Chart 4 -->
+
+<!-- ```{r} -->
+<!-- renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1)) -->
+<!-- ``` -->
+
+<!-- Row {data-height: 33%} -->
+<!-- ------------------------------------- -->
+
+<!-- ### Chart 5 -->
+
+<!-- ```{r} -->
+<!-- ``` -->
+
+<!-- ### Chart 6 -->
+
+<!-- ```{r} -->
+<!-- ``` -->
 
 Zonal Stats
 =====================================
@@ -439,27 +442,20 @@ fillPage(HTML(
 
 ### Variable Response Curves
 
-<br>
-
 These graphs plot the relative habitat suitability (y-axis) across the range of values for each predictor (x-axis). The red lines along the x-axis represent presence points with those values. Each line represents one model algorithm and background point generation method for a total of 10 lines possible; missing lines indicate the predictor was dropped from that model. The numbers in the top left of each graph represent the average relative importance of the predictor with the range across model algorithm/ background method combinations shown in parentheses. The graphs are arranged by relative importance, with the top left contributing most to models on average.
 
 ```{r}
-# img = reactive({paste0('<center><img src=\"/species/',species(),'/responsecurves.png\" width=\"600\"></center>',sep='')})
-# img = reactive({paste0('<img src="species/',species(),'/responsecurves.png">', sep='')})
- # paste('<center><img src="/species/','redbrome','/responsecurves.png" width="600"></center>',sep='')
-# renderText(print(img()))
 
-renderText({
-  HTML(
-    kable(x = data.frame(col = c('<center><img src="species/redbrome/responsecurves.png" width="600"></center>')),
-              escape = F, col.names = '', align = 'c') %>%
-      kable_styling(full_width = F,
-                    position = 'center',
-                    bootstrap_options = c("condensed", "responsive")) %>%
-      column_spec(1, border_right = F, width = '70%')
-  )
+rc = reactive({img_uri(paste0("species/",species(),"/responsecurves.png",sep=''))})
+htmlOutput("sc.table") 
+
+# server component
+output$sc.table <- renderText({
+  kable(data.frame(test = rc()), format = 'html', escape = F, col.names='') %>%
+    kable_styling(
+      full_width = F,
+      bootstrap_options = c("condensed", "responsive"))
 })
-
 ```
 
 ### Variable Importance
@@ -467,8 +463,11 @@ renderText({
 vi.caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted."
 
 htmlOutput("vi_table") 
-vi = reactive({read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
-                                                    , header = T, stringsAsFactors = F)})
+vi = reactive({
+  
+  read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
+      , header = T, stringsAsFactors = F,  encoding = "ISO-8859-1", fileEncoding = "ISO-8859-1")
+})
 # server component
 output$vi_table <- renderText({
   kable(vi(), caption = vi.caption) %>%
@@ -487,11 +486,14 @@ htmlOutput("source_table")
 
 # server component
 output$source_table <- renderText({
-  kable(pred.info[pred.info$name %in% vi()$predictor,], format = 'html', escape = F) %>%
+  kable(pred.info %>% 
+          inner_join(vi(), by = c('nameunits'='name')) %>%
+          select(name, units, description, source),
+        format = 'html', escape = F) %>%
     kable_styling(
       font_size = 12,
       full_width = F,
-      bootstrap_options = c("condensed")
+      bootstrap_options = c("condensed", "responsive")
     ) 
 })
 ```
@@ -500,20 +502,22 @@ output$source_table <- renderText({
 About
 =====================================
 
-Background
+# Background
 
 This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
 
 Sources for management polygons
 
 BLM - https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_Administrative_Units.zip
+
 EPMT -  
+
 FWS - https://ecos.fws.gov/ServCat/Reference/Profile/110959
+
 NPS - https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True
+
 US Counties - https://www.weather.gov/gis/Counties
 
-<!-- # Methods -->
-<!-- # Contact -->
 
 Feedback
 =====================================
