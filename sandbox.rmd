@@ -71,6 +71,9 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE)
 # .libPaths( c( "C:/LocalData/Source/RPackages",.libPaths()))
 
 library(leaflet)
@@ -143,7 +146,7 @@ sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
             , width = '95%'
-            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Wavyleaf basketgrass"
+            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Amur peppervine"
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
 ```
@@ -290,8 +293,10 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     if(!is.null(p)){
       leafletProxy("map") %>%
         clearGroup( 'pres_pts') %>%
-        addCircleMarkers(data = pres_pts(), group = 'pres_pts', fillColor = "#fd00ff"
-                         , radius = 3.5, fillOpacity = 1, color = '#5e0c5e', weight = 1
+        # addMarkers(clusterOptions = markerClusterOptions())
+        addCircleMarkers(data = pres_pts(), group = 'pres_pts', fillColor = "#000000"
+                         , radius = 4.5, fillOpacity = 1, color = '#fd00ff', opacity = 1, weight = 1
+                         # ,clusterOptions = markerClusterOptions(spiderfyOnMaxZoom = F,)
                          )
     } else {
         leafletProxy("map") %>%
@@ -348,7 +353,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 <!-- ```{r} -->
 <!-- ``` -->
 
-Zonal Stats
+Management Area Suitability Summary
 =====================================
 
 ```{r}
@@ -526,13 +531,115 @@ Feedback
 
 F.A.Q.
 =====================================
-1. What is species distribution modeling?
+<style type='text/css'>
+.accordionButton{
+    width:100%;
+    float:left;
+    background:#80C347;
+    border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+    padding:3px 0px;
+    }
+    
+.accordionButton span {
+    color:#FFFFFF;
+    padding-left:5px;
+    font-weight:bold;
+    }
+    
+.accordionContent {
+    width:100%;
+    float:left;
+    background:#FFFFFF;
+    }
+    
+.accordionContent p {
+    color:#333333;
+    font-size:14px;
+    padding-left:8px;
+    }
+    
+.on {
+    width:100%;
+    float:left;
+    background:#555555;
+    cursor:pointer;
+    }
+    
+.on span {color:#FFFFFF;}
 
-2. How far in can I zoom?
-The models are produced at a ~90m resolution. You can zoom in.
+.over {
+    width:100%;
+    float:left;
+    background:#555555;
+    cursor:pointer;
+    }
+    
+.over span {color:#FFFFFF;}
 
-3. Why are there areas of low model agreement  around some of the presence locations?
-The thresholds used to create the maps classified as suitable or unsuitable that are added together involve classifying some occurrence locations as unsuitable. How many are classified as unsuitable depends on the threshold method. For the thresholds, the occurrence locations used to create the models are ordered by their predicted values for each model. A certain percent starting from the bottom will be classified as unsuitable, such that with 100 presence points and a 1% threshold the presence point with the lowest predicted suitability would be classified as occurring in unsuitable habitat. At the other extreme a 90% threshold would classify 90 of the training presence points as unsuitable, focusing the map on only the highest relative suitability locations.
+.plusMinus {
+    font-weight:bold;
+    float:right;
+    padding-right:4px;
+    content:"+";
+    }
+    
+</style>
 
-4. What is the number of models included in the ensemble?
-The largest number in the legend indicates the number of models included in the ensemble. The maximum is 10 (5 model algorithms times 2 background generation methods).  
+<script>
+$(document).ready(function() {
+    $('.accordionButton').click(function() {
+        $('.accordionButton').removeClass('on');
+        $('.accordionContent').slideUp('normal');
+        $('.plusMinus').text('+');
+        if($(this).next().is(':hidden') == true) {
+            $(this).addClass('on');
+            $(this).next().slideDown('normal');
+            $(this).children('.plusMinus').text('-');
+         } 
+     });
+    $('.accordionButton').mouseover(function() {
+        $(this).addClass('over');
+    }).mouseout(function() {
+        $(this).removeClass('over');
+    });
+    $('.accordionContent').hide();
+    
+});
+</script>
+
+<div class="accordionButton">
+<span>1. What is species distribution modeling?</span><span class="plusMinus">+</span>
+</div>
+<div class="accordionContent">
+<p></p>
+</div>
+<br><br>
+
+<div class="accordionButton">
+<span>2. How far in can I zoom?</button></span><span class="plusMinus">+</span>
+</div>
+<div class="accordionContent">
+<p>The models are produced at a ~90m resolution. You can zoom in.</p>
+</div>
+<br><br>
+
+<div class="accordionButton">
+<span>3. Why are there areas of low model agreement  around some of the presence locations?
+</button></span><span class="plusMinus">+</span>
+</div>
+<div class="accordionContent">
+<p>The thresholds used to create the maps classified as suitable or unsuitable that are added together involve classifying some occurrence locations as unsuitable. How many are classified as unsuitable depends on the threshold method. For the thresholds, the occurrence locations used to create the models are ordered by their predicted values for each model. A certain percent starting from the bottom will be classified as unsuitable, such that with 100 presence points and a 1% threshold the presence point with the lowest predicted suitability would be classified as occurring in unsuitable habitat. At the other extreme a 90% threshold would classify 90 of the training presence points as unsuitable, focusing the map on only the highest relative suitability locations.
+</p>
+</div>
+<br><br>
+
+<div class="accordionButton">
+<span>4. What is the number of models included in the ensemble?</button></span><span class="plusMinus">+</span>
+</div>
+<div class="accordionContent">
+<p>
+  The largest number in the legend indicates the number of models included in the ensemble. The maximum is 10 (5 model algorithms times 2 background generation methods).  
+</p>
+</div>
+<br><br>
