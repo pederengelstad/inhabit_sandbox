@@ -478,7 +478,7 @@ output$vi_table <- renderText({
   vi() %>%
     select(-X) %>%
     mutate_if(is.numeric, round) %>%
-    mutate_if(is.numeric, cell_spec(.x, color = ifelse(.x < 0, "red"," black"))) %>%
+    # mutate_if(is.numeric, cell_spec(.x, color = ifelse(.x < 0, "red"," black"))) %>%
     # mutate_if(is.numeric, function(x) {
     #   cell_spec(x, color = "white", background = spec_color(1:10, end = 0.9, option = "B", direction = -1))
     # }) %>%
