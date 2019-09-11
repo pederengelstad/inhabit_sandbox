@@ -1,0 +1,19 @@
+predictorNameUnit,BRT KDE,glm KDE,mars KDE,Maxent KDE,rf KDE
+"Available Water Content (Mean Depth, cm) (m3/m3)",NA,4.810039834,3.889450624,2.647880481,0
+"Available Water Content (Variance in Depth, cm) (m3/m2)",NA,3.537927785,NA,-0.00607312,0
+Bare Ground Standard Deviation (st dev of percent cover),1.311078858,NA,NA,0,0
+Burn Frequency (years),NA,0.145628989,NA,0.267217296,0
+Depth To Restriction Layer (Mean) (cm),NA,1.366342571,1.024603977,0.953479898,0.09731413
+Evapotranspiration (Mar-Jun) (mm),NA,0.334090033,NA,0.959553018,0.136239782
+Human Influence Index (index of 0-64),NA,2.52280807,0.990899899,0.923114296,2.783184118
+Isothermality (Bio3) (percent),NA,5.388272583,2.210987529,2.79363537,0.48657065
+Landscape Condition Model (index of  0-1),58.0890179,45.50477577,76.8115942,68.0978987,91.65044764
+Mean Spring PET (Mar-Jun) (mm),7.619738752,1.340643337,NA,3.158022592,0.330868042
+Mean Tree Cover (percent),4.833091437,3.931982696,5.197168857,2.915097777,1.75165434
+Minimum Temperature Winter (degree C),9.980648283,3.782070502,NA,2.969755861,0.19462826
+Percent Calcium Carbonate In Soil (percent),7.227866473,0.205593866,1.988540613,3.091218268,0.09731413
+Percent Clay (0-5 cm) (percent),4.257377842,3.923416285,1.820020222,1.020284222,0.330868042
+Precipitation Of Driest Quarter (Bio17) (mm),NA,8.866235491,3.862487361,3.601360379,0.09731413
+Precipitation Seasonality (Cv) (Bio15) (percent),NA,6.99875787,2.204246714,1.858374833,0.253016738
+Remoteness (Night Lights) (brightness?),6.681180455,2.420011136,NA,2.034495324,1.712728688
+Temperature Annual Range (Bio7) (degree C),NA,4.921403178,NA,2.714684805,0.077851304
