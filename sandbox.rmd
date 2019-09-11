@@ -80,7 +80,7 @@ library(leaflet)
 library(flexdashboard)
 library(rgdal)
 library(shinyWidgets)
-# library(shinydashboard)
+library(formattable)
 library(DT)
 library(magrittr)
 library(knitr)
@@ -443,6 +443,21 @@ fillPage(HTML(
 ### Evaluation Statistics
 
 ```{r}
+eval = reactive({
+  
+  read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/eval.csv',sep='')
+      , header = T, stringsAsFactors = F)
+})
+
+htmlOutput("eval.table") 
+
+# server component
+output$eval.table <- renderText({
+  kable(data.frame(test = eval()), format = 'html', escape = F) %>%
+    kable_styling(
+      full_width = F,
+      bootstrap_options = c("condensed", "responsive"))
+})
 ```
 
 ### Variable Response Curves
@@ -467,24 +482,29 @@ output$sc.table <- renderText({
 ```{r}
 vi.caption = "Percent contribution of each environmental variable by model. Models included five algorithms (Boosted Regression Trees (BRT), generalized linear models (GLM), Multivariate adaptive regression splines (MARS), Maxent, and Random forests (RF)) with two background sample approaches (target guild (target) and kernel density estimation (KDE)). The top three predictor variables for each model are highlighted.<br><br>"
 
-htmlOutput("vi_table") 
+# htmlOutput("vi_table") 
 vi = reactive({
   
   read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
       , header = T, stringsAsFactors = F)
 })
+
+    
 # server component
-output$vi_table <- renderText({
-  vi() %>%
-    select(-X) %>%
-    mutate_if(is.numeric, round) %>%
-    # mutate_if(is.numeric, cell_spec(.x, color = ifelse(.x < 0, "red"," black"))) %>%
-    # mutate_if(is.numeric, function(x) {
-    #   cell_spec(x, color = "white", background = spec_color(1:10, end = 0.9, option = "B", direction = -1))
-    # }) %>%
-    kable(caption = vi.caption, format = 'html', escape = F) %>%
-      add_header_above() %>%
-      kable_styling(font_size = 12, full_width = F, bootstrap_options = c("condensed", "responsive"))
+renderFormattable({
+  formattable(vi() %>%
+                cbind(mean = rowMeans(vi()[,3:ncol(vi())], na.rm = T)) %>%
+                select(predictorNameUnit, mean, everything(), -X) %>%
+                mutate_if(is.numeric, round) %>%
+                arrange(desc(mean)),
+              align = c("l","c"), 
+              list(mean = color_bar("orange"), 
+                   brt.KDE = formatter("span", style = x ~ style(color = ifelse(rank(-x) <= 4, "green", "gray")), 
+                                       x ~ sprintf("%.2f", x, rank(-x))),
+                   brt.target = formatter("span", style = x ~ style(color = ifelse(rank(-x) <= 4, "green", "gray")), 
+                                       x ~ sprintf("%.2f", x, rank(-x)))                
+                   )
+  )
 })
 ```
 
