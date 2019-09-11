@@ -139,13 +139,13 @@ Inputs {.sidebar width=200px}
 <img class="img-responsive" src="logo.png" max-width=100%>
 <br />
 
-#### **DRAFT**
+### **DRAFT**
 
 ```{r}
 sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
-            , width = '95%'
+            # , width = '95%'
             , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Ravennagrass"
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
@@ -202,12 +202,49 @@ radioButtons(inputId = "pres_button",choices=c("yes","no"), selected = "no", lab
 radioButtons(inputId = "known_distro",choices=c("yes","no"), selected = "no", label='Display Known Distribution?', width = '100%')
 ```
 
+
+<!-- Inputs {.mobile} -->
+<!-- ======================================================================= -->
+<!-- <img class="img-responsive" src="logo.png" max-width=100%> -->
+<!-- <br /> -->
+
+<!-- #### **DRAFT** -->
+
+<!-- ```{r} -->
+<!-- sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F)) -->
+<!-- shiny::selectInput('sp_select', label = 'Species of interest:', choices = sp_list$common, selected = "Ravennagrass", -->
+<!--                       multiple=F, selectize = F) -->
+<!-- ``` -->
+
+<!-- ``` {r} -->
+<!-- sliderTextInput(inputId = "slider", label = "Choose your model threshold:" -->
+<!--                 , choices = list("MPP", "0.01", "0.1","MaxSSS") -->
+<!--                 , grid = T, hide_min_max = F, force_edges = T, width = '100%') -->
+<!-- ``` -->
+
+<!-- Restrict environmental conditions? <br> -->
+<!-- <button class="collapsible">More Information <img src="ibutton.png" width=10px></button> -->
+<!-- <div class="content"> -->
+<!--   <p>'If "yes", the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></p> -->
+<!-- </div> -->
+
+<!-- ----- -->
+<!-- ``` {r} -->
+<!-- radioButtons(inputId = "mess", label = NULL, choices = c("yes","no"), selected = "yes") -->
+<!-- ``` -->
+
+<!-- ----- -->
+<!-- ```{r} -->
+
+<!-- radioButtons(inputId = "pres_button",choices=c("yes","no"), selected = "no", label='Display Occurrence Points?', width = '100%') -->
+
+<!-- radioButtons(inputId = "known_distro",choices=c("yes","no"), selected = "no", label='Display Known Distribution?', width = '100%') -->
+<!-- ``` -->
+
 Map
 =====================================
 
 ```{r}
-# This will NOT run with versions of Shiny > 1.2.0 and I don't know why.
-
 shinyApp(ui = fillPage(tags$style(type = "text/css",
     ".half-fill { width: 50%; height: 100%; }",
     "#one { float: left; background-color: #ddddff; }",
@@ -446,14 +483,15 @@ fillPage(HTML(
 eval = reactive({
   
   read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/eval.csv',sep='')
-      , header = T, stringsAsFactors = F)
+      , header = T, stringsAsFactors = F) %>%
+    select(-X)
 })
 
 htmlOutput("eval.table") 
 
 # server component
 output$eval.table <- renderText({
-  kable(data.frame(test = eval()), format = 'html', escape = F) %>%
+  kable(eval(), format = 'html', escape = F) %>%
     kable_styling(
       full_width = F,
       bootstrap_options = c("condensed", "responsive"))
@@ -494,17 +532,16 @@ vi = reactive({
 renderFormattable({
   formattable(vi() %>%
                 cbind(mean = rowMeans(vi()[,3:ncol(vi())], na.rm = T)) %>%
-                select(predictorNameUnit, mean, everything(), -X) %>%
+                select(predictorNameUnit, mean, everything()) %>%
                 mutate_if(is.numeric, round) %>%
                 arrange(desc(mean)),
-              align = c("l","c"), 
-              list(mean = color_bar("orange"), 
-                   brt.KDE = formatter("span", style = x ~ style(color = ifelse(rank(-x) <= 4, "green", "gray")), 
-                                       x ~ sprintf("%.2f", x, rank(-x))),
-                   brt.target = formatter("span", style = x ~ style(color = ifelse(rank(-x) <= 4, "green", "gray")), 
-                                       x ~ sprintf("%.2f", x, rank(-x)))                
-                   )
-  )
+              align = c("l","l"), 
+              list(mean = color_bar("orange"),
+                   brt.KDE = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 4, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))))
+              )
+            
 })
 ```
 

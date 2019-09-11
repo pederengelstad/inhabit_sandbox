@@ -1,4 +1,4 @@
-predictorNameUnit,BRT KDE,BRT target,glm KDE,glm target,mars KDE,Maxent KDE,rf KDE
+predictorNameUnit,brt KDE,brt target,glm KDE,glm target,mars KDE,Maxent KDE,rf KDE
 "Available Water Content (Mean Depth, cm) (m3/m3)",NA,NA,1.833025662,1.886576721,NA,2.389493173,0.07074137
 Bare Ground Standard Deviation (st dev of percent cover),NA,NA,0.75141052,NA,1.631588256,2.846563296,0.226372383
 Burn Frequency (years),18.8852037,24.89700242,14.36520111,10.06174251,29.9345596,4.02105994,47.11375212
