@@ -88,6 +88,7 @@ library(kableExtra)
 library(dplyr)
 
 img_uri <- function(x) { sprintf('<center><img src="%s" width="525"></center>', knitr::image_uri(x)) }
+sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
 
 mgmt_areas = readOGR("mgmt/mgmt_areas.shp", GDAL1_integer64_policy = T, stringsAsFactors = F)
 
@@ -128,10 +129,11 @@ pres_pts = reactive({if(input$pres_button=="yes"){
   }
 })
 
-species = reactive({tolower(gsub(pattern = "\\s", '', gsub("'", replacement = '', x = input$sp_select)))})
+species = reactive({sp_list$lower[sp_list$common == input$sp_select]})
 
 tilesURL = reactive(
-    paste0("http://pederengelstad.github.io/",gsub(' ','',tolower(input$sp_select)),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
+    paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep='')
+    )
 ```
 
 Inputs {.sidebar width=200px}
@@ -142,7 +144,6 @@ Inputs {.sidebar width=200px}
 ### **DRAFT**
 
 ```{r}
-sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
             # , width = '95%'
@@ -539,7 +540,35 @@ renderFormattable({
               list(mean = color_bar("orange"),
                    brt.KDE = formatter("span", style = x ~ style(border = '5px solid white',
                                                                  color = ifelse(is.na(x),'#cccccc',NA),
-                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 4, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))))
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   brt.target = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   glm.KDE = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   glm.target = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   mars.KDE = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   mars.target = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   rf.KDE = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   rf.target = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   Maxent.KDE = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x)))),
+                   Maxent.target = formatter("span", style = x ~ style(border = '5px solid white',
+                                                                 color = ifelse(is.na(x),'#cccccc',NA),
+                                                                 'background-color' = ifelse(is.na(x),'white',ifelse(rank(-x) <= 3, "yellow", "white")), x ~ sprintf("%.2f", x, rank(-x))))
+                   )
               )
             
 })
@@ -568,7 +597,7 @@ output$source_table <- renderText({
 About
 =====================================
 
-# Background
+*Background*
 
 This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
 
