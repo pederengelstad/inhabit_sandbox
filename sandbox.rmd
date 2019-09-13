@@ -349,27 +349,23 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 <!-- Model Summary -->
 <!-- ===================================== -->
 
-<!-- Row {data-height: 33%} -->
+<!-- Row {data-height=30%} -->
 <!-- ------------------------------------- -->
 
 <!-- ### Number of Presence Points Used -->
 
 <!-- ```{r} -->
+<!-- flexdashboard::renderValueBox(flexdashboard::valueBox(value = 1, icon = 'fa-globe-americas',  -->
+<!--                                                       caption = tags$p("Number of Presence Points Used", style = "font-size: 300%;"))) -->
 <!-- ``` -->
 
-<!-- ### Model Thresholds -->
+<!-- ### Top Three Predictors -->
 
 <!-- ```{r} -->
-
-<!-- ```  -->
-
-<!-- ### Chart 3 -->
-
-<!-- ```{r} -->
-<!-- renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1)) -->
+<!-- shinydashboard::renderInfoBox(shinydashboard::infoBox(title = "Top Predictors", value = "1. One \n 2. Two")) -->
 <!-- ``` -->
 
-<!-- Row {data-height: 33%} -->
+<!-- Row {data-height=25%} -->
 <!-- ------------------------------------- -->
 
 <!-- ### Chart 4 -->
@@ -378,17 +374,10 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 <!-- renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1)) -->
 <!-- ``` -->
 
-<!-- Row {data-height: 33%} -->
-<!-- ------------------------------------- -->
-
 <!-- ### Chart 5 -->
 
 <!-- ```{r} -->
-<!-- ``` -->
-
-<!-- ### Chart 6 -->
-
-<!-- ```{r} -->
+<!-- renderGauge(flexdashboard::gauge(value = 10000, min = 0, max = 100000)) -->
 <!-- ``` -->
 
 Management Area Suitability Summary
