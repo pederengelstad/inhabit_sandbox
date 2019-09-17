@@ -146,7 +146,7 @@ Inputs {.sidebar width=200px}
 ```{r}
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
-            # , width = '95%'
+            , width = '95%'
             , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Ravennagrass"
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
