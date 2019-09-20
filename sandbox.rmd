@@ -13,11 +13,11 @@ output:
 
 <style type='text/css'>
 
-img {
-    max-width: 100%;
-    min-height: 100%;
-    height: 100%;
-}
+<!-- img { -->
+<!--     max-width: 100%; -->
+<!--     min-height: 100%; -->
+<!--     height: 100%; -->
+<!-- } -->
 
 <!-- .img-full {  max-width: 100%;  height: auto; }  -->
 
@@ -147,7 +147,7 @@ Inputs {.sidebar width=200px}
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
             , choices = sp_list$common
             , width = '95%'
-            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep='')), selected = "Ravennagrass"
+            , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep=''))
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
 ```
@@ -401,7 +401,8 @@ fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),
                                                     , header = T, stringsAsFactors = F) %>%
                                              select(-c(X, total_area_acre)) %>%
                                              mutate(Species = input$sp_select) %>%
-                                             filter(Admin %in% input$mgmt.admin),
+                                             filter(Admin %in% input$mgmt.admin) %>%
+                                             arrange(desc(perc_suit)),
               options = list(pageLength=50),
               callback = JS("var tips = ['','','',
                            'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
@@ -586,11 +587,17 @@ output$source_table <- renderText({
 About
 =====================================
 
+*Funding and Collaborators*
+
+Funding and support for INHABIT comes from USGS, U.S. Fish and Wildlife, Biodiversity Information Serving Our Nation (BISON), and the National Park Service.
+
 *Background*
 
-This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>
+This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>.
 
-Sources for management polygons
+**Data Sources**
+
+*Management polygons*
 
 BLM - https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_Administrative_Units.zip
 
