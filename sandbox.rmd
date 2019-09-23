@@ -141,7 +141,7 @@ Inputs {.sidebar width=200px}
 <img class="img-responsive" src="logo.png" max-width=100%>
 <br />
 
-### **DRAFT**
+### **DRAFT VERSION**
 
 ```{r}
 pickerInput(inputId = 'sp_select', label = 'Species of interest:'
@@ -292,10 +292,8 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     if(!is.null(p)){
       leafletProxy("map") %>%
         clearGroup( 'pres_pts') %>%
-        # addMarkers(clusterOptions = markerClusterOptions())
         addCircleMarkers(data = pres_pts(), group = 'pres_pts', fillColor = "#000000"
                          , radius = 4.5, fillOpacity = 1, color = '#fd00ff', opacity = 1, weight = 1
-                         # ,clusterOptions = markerClusterOptions(spiderfyOnMaxZoom = F,)
                          )
     } else {
         leafletProxy("map") %>%
