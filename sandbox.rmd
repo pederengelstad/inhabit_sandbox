@@ -203,45 +203,6 @@ radioButtons(inputId = "pres_button",choices=c("yes","no"), selected = "no", lab
 radioButtons(inputId = "known_distro",choices=c("yes","no"), selected = "no", label='Display Known Distribution?', width = '100%')
 ```
 
-
-<!-- Inputs {.mobile} -->
-<!-- ======================================================================= -->
-<!-- <img class="img-responsive" src="logo.png" max-width=100%> -->
-<!-- <br /> -->
-
-<!-- #### **DRAFT** -->
-
-<!-- ```{r} -->
-<!-- sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F)) -->
-<!-- shiny::selectInput('sp_select', label = 'Species of interest:', choices = sp_list$common, selected = "Ravennagrass", -->
-<!--                       multiple=F, selectize = F) -->
-<!-- ``` -->
-
-<!-- ``` {r} -->
-<!-- sliderTextInput(inputId = "slider", label = "Choose your model threshold:" -->
-<!--                 , choices = list("MPP", "0.01", "0.1","MaxSSS") -->
-<!--                 , grid = T, hide_min_max = F, force_edges = T, width = '100%') -->
-<!-- ``` -->
-
-<!-- Restrict environmental conditions? <br> -->
-<!-- <button class="collapsible">More Information <img src="ibutton.png" width=10px></button> -->
-<!-- <div class="content"> -->
-<!--   <p>'If "yes", the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></p> -->
-<!-- </div> -->
-
-<!-- ----- -->
-<!-- ``` {r} -->
-<!-- radioButtons(inputId = "mess", label = NULL, choices = c("yes","no"), selected = "yes") -->
-<!-- ``` -->
-
-<!-- ----- -->
-<!-- ```{r} -->
-
-<!-- radioButtons(inputId = "pres_button",choices=c("yes","no"), selected = "no", label='Display Occurrence Points?', width = '100%') -->
-
-<!-- radioButtons(inputId = "known_distro",choices=c("yes","no"), selected = "no", label='Display Known Distribution?', width = '100%') -->
-<!-- ``` -->
-
 Map
 =====================================
 
