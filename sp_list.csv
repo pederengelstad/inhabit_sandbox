@@ -1,17 +1,21 @@
-common,latin,lower
-Amur peppervine,Ampelopsis brevipedunculata,amurpeppervine
-Asian mustard,Brassica tournefortii,asianmustard
-Bishop's goutweed,Aegopodium podagraria,bishopsgoutweed
-Buffelgrass,Cenchrus ciliaris,buffelgrass
-Bur buttercup,Ranunculus testiculatus,burbuttercup
-Burning bush,Euonymus alatus,burningbush
-Chocolate vine,Akebia quinata,chocolatevine
-Coral ardisia,Ardisia crenata,coralardisia
-Fountaingrass,Pennisetum setaceum,fountaingrass
-Medusahead,Taeniatherum caput-medusae,medusahead
-Ravennagrass,Saccharum ravennae,ravennagrass
-Red brome,Bromus rubens,redbrome
-Rush skeletonweed,Chondrilla juncea,rushskeletonweed
-Russian knapweed,Rhaponticum repens,russianknapweed
-Ventenata,Ventenata dubia,ventenata
-Wavyleaf basketgrass,Oplismenus undulatifolius,wavyleafbasketgrass
+common,latin,lower,global,version
+Amur honeysuckle,Lonicera maackii,amurhoneysuckle,no,
+Amur peppervine,Ampelopsis brevipedunculata,amurpeppervine,no,
+Asian mustard,Brassica tournefortii,asianmustard,no,
+Bishop's goutweed,Aegopodium podagraria,bishopsgoutweed,no,
+Buffelgrass,Cenchrus ciliaris,buffelgrass,no,
+Bur buttercup,Ranunculus testiculatus,burbuttercup,no,
+Burning bush,Euonymus alatus,burningbush,no,
+Chocolate vine,Akebia quinata,chocolatevine,no,
+Coral ardisia,Ardisia crenata,coralardisia,no,
+Dalmation toadflax,Linaria dalmatica,dalmationtoadflax,no,
+Fountaingrass,Pennisetum setaceum,fountaingrass,no,
+Meadow hawkweed,Hieracium caespitosum,meadowhawkweed,no,
+Medusahead,Taeniatherum caput-medusae,medusahead,no,
+Ravennagrass,Saccharum ravennae,ravennagrass,no,
+Red brome,Bromus rubens,redbrome,no,
+Rush skeletonweed,Chondrilla juncea,rushskeletonweed,no,
+Russian knapweed,Rhaponticum repens,russianknapweed,no,
+Sulphur cinquefoil,Potentilla recta,sulphurcinquefoil,no,
+Ventenata,Ventenata dubia,ventenata,no,
+Wavyleaf basketgrass,Oplismenus undulatifolius,wavyleafbasketgrass,yes,
