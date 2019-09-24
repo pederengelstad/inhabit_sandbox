@@ -306,7 +306,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 
 
 
-<!-- Model Summary -->
+<!-- Static Maps -->
 <!-- ===================================== -->
 
 <!-- Row {data-height=30%} -->
@@ -315,14 +315,13 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 <!-- ### Number of Presence Points Used -->
 
 <!-- ```{r} -->
-<!-- flexdashboard::renderValueBox(flexdashboard::valueBox(value = 1, icon = 'fa-globe-americas',  -->
-<!--                                                       caption = tags$p("Number of Presence Points Used", style = "font-size: 300%;"))) -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png', width='50%', align='center'), deleteFile = F) -->
 <!-- ``` -->
 
 <!-- ### Top Three Predictors -->
 
 <!-- ```{r} -->
-<!-- shinydashboard::renderInfoBox(shinydashboard::infoBox(title = "Top Predictors", value = "1. One \n 2. Two")) -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
 <!-- ``` -->
 
 <!-- Row {data-height=25%} -->
@@ -331,13 +330,13 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 <!-- ### Chart 4 -->
 
 <!-- ```{r} -->
-<!-- renderGauge(flexdashboard::gauge(value = 0.96, min = 0, max = 1)) -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
 <!-- ``` -->
 
 <!-- ### Chart 5 -->
 
 <!-- ```{r} -->
-<!-- renderGauge(flexdashboard::gauge(value = 10000, min = 0, max = 100000)) -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
 <!-- ``` -->
 
 Management Area Suitability Summary
@@ -392,6 +391,14 @@ Model Details
 
 Column {.tabset}
 -------------------------------------
+
+<!-- ### Static Maps -->
+
+<!-- <center> -->
+<!-- ```{r} -->
+<!-- renderImage(list(src = './test.png', contentType = 'image/png', heigh='50%'), deleteFile = F) -->
+<!-- ``` -->
+<!-- </center> -->
 
 ### Credibility Assessment
 ```{r}
@@ -555,17 +562,34 @@ output$source_table <- renderText({
 About
 =====================================
 
-*Funding and Collaborators*
-
-Funding and support for INHABIT comes from USGS, U.S. Fish and Wildlife, Biodiversity Information Serving Our Nation (BISON), and the National Park Service.
-
-*Background*
+Funding for INHABIT comes from <a href="https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis" target="_blank">USGS Core Science Systems (CSS): Science Analytics and Synthesis (SAS)</a> and the U.S. Fish and Wildlife Service. Continued development is in partnership with the <a href="https://www.nps.gov/orgs/1103/epmt.htm" target="_blank">National Park Service's Exotic Plant Management Teams</a>.  INHABIT is also logistically supported by <a href="https://bison.usgs.gov/" target="_blank">Biodiversity Information Serving Our Nation (BISON)</a> and the <a href="https://itis.gov/" target="_blank">Integrated Taxonomic Information System (ITIS)</a>.
 
 This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>.
 
-**Data Sources**
+<br>
 
-*Management polygons*
+**Occurrence Data Sources**
+
+Biodiversity Information Serving Our Nation (BISON) - <a href="https://bison.usgs.gov/" target="_blank">bison.usgs.gov</a>
+
+Calflora - <a href="https://www.calflora.org/" target="_blank">www.calflora.org</a>
+
+Global Biodiversity Information Facility (GBIF) - <a href="https://www.gbif.org/" target="_blank">www.gbif.org</a>
+
+Early Detection & Distribution Mapping Systems (EDDMapS) - <a href="https://www.eddmaps.org" target="_blank">www.eddmaps.org</a>
+
+<br>
+
+**Plant Taxonomy Sources**
+
+Integrated Taxonomic Information System (ITIS) - <a href="https://itis.gov/" target="_blank">www.itis.gov</a>
+
+USDA Plants Database - <a href="https://plants.sc.egov.usda.gov/java/" target="_blank">plants.sc.egov.usda.gov</a>
+
+
+<br>
+
+**Management Polygons Sources**
 
 BLM - https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_Administrative_Units.zip
 

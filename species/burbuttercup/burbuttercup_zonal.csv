@@ -1,0 +1,379 @@
+"","Species","Park_Name","est_suit_area_acre","total_area_acre","perc_suit","Known_Presences","min_dist_miles"
+"1","burbuttercup","Steamtown National Historic Site",55,55,1,"0",169
+"2","burbuttercup","Little Bighorn Battlefield National Monument",779,780,1,"0",223
+"3","burbuttercup","Capulin Volcano National Monument",795,791,1,"0",62
+"4","burbuttercup","Wolf Trap National Park for the Performing Arts",137,134,1,"0",326
+"5","burbuttercup","Timpanogos Cave National Monument",254,250,1,"0",3
+"6","burbuttercup","Sunset Crater Volcano National Monument",3043,3040,1,"0",37
+"7","burbuttercup","Ford's Theatre National Historic Site",2,0,1,"0",319
+"8","burbuttercup","Brown v. Board of Education National Historic Site",2,2,1,"0",49
+"9","burbuttercup","Pipe Spring National Monument",43,40,1,"0",27
+"10","burbuttercup","El Morro National Monument",1279,1279,1,"0",81
+"11","burbuttercup","Andrew Johnson National Historic Site",17,16,1,"0",527
+"12","burbuttercup","Hovenweep National Monument",815,809,1,"0",8
+"13","burbuttercup","Fort Union National Monument",728,721,1,"0",46
+"14","burbuttercup","Manzanar National Historic Site",810,814,1,"0",77
+"15","burbuttercup","Bryce Canyon National Park",36008,35988,1,"0",11
+"16","burbuttercup","Boston African American National Historic Site",2,1,1,"0",70
+"17","burbuttercup","Navajo National Monument",364,360,1,"0",30
+"18","burbuttercup","Canyonlands National Park",333774,334254,1,"0",33
+"19","burbuttercup","White House",19,18,1,"0",319
+"20","burbuttercup","William Howard Taft National Historic Site",7,4,1,"0",358
+"21","burbuttercup","Fort Scott National Historic Site",17,17,1,"0",133
+"22","burbuttercup","Rainbow Bridge National Monument",163,160,1,"0",0
+"23","burbuttercup","Natural Bridges National Monument",7598,7610,1,"0",61
+"24","burbuttercup","Bent's Old Fort National Historic Site",829,830,1,"0",78
+"25","burbuttercup","Golden Spike National Historic Site",2657,2670,1,"0",2
+"26","burbuttercup","Montezuma Castle National Monument",1016,1012,1,"0",10
+"27","burbuttercup","Whitman Mission National Historic Site",139,139,1,"0",39
+"28","burbuttercup","World War II Memorial",10,9,1,"0",320
+"29","burbuttercup","Vietnam Veterans Memorial",2,2,1,"0",320
+"30","burbuttercup","Korean War Veterans Memorial",2,2,1,"0",320
+"31","burbuttercup","Martin Luther King, Jr., Memorial",5,3,1,"0",320
+"32","burbuttercup","Lincoln Memorial",10,7,1,"0",320
+"33","burbuttercup","Maggie L. Walker National Historic Site",2,1,1,"0",406
+"34","burbuttercup","Sand Creek Massacre National Historic Site",12531,12530,1,"0",18
+"35","burbuttercup","Scotts Bluff National Monument",3230,3217,1,"0",100
+"36","burbuttercup","Johnstown Flood National Memorial",182,180,1,"0",337
+"37","burbuttercup","Ronald Reagan Boyhood Home National Historic Site",2,1,1,"0",167
+"38","burbuttercup","Cesar E. Chavez National Monument",117,118,1,"0",9
+"39","burbuttercup","Niobrara National Scenic River",28968,29081,1,"0",125
+"40","burbuttercup","Boston National Historical Park",46,44,1,"0",70
+"41","burbuttercup","John Day Fossil Beds National Monument",14024,13990,1,"0",1
+"42","burbuttercup","Paterson Great Falls National Historical Park",55,51,1,"0",114
+"43","burbuttercup","Badlands National Park",242457,242740,1,"0",228
+"44","burbuttercup","Canyon de Chelly National Monument",88095,88230,1,"0",14
+"45","burbuttercup","Frederick Law Olmsted National Historic Site",7,7,1,"0",66
+"46","burbuttercup","Hampton National Historic Site",65,62,1,"0",277
+"47","burbuttercup","Colorado National Monument",20457,20449,1,"0",3
+"48","burbuttercup","World War I Memorial",2,2,1,"0",319
+"49","burbuttercup","Lewis and Clark National Historic Trail",84,80,1,"0",44
+"50","burbuttercup","Aztec Ruins National Monument",331,317,1,"0",17
+"51","burbuttercup","Zion National Park",148671,148712,1,"Yes (43)",0
+"52","burbuttercup","Lincoln Home National Historic Site",14,14,1,"0",95
+"53","burbuttercup","Dinosaur National Monument",210242,210405,1,"Yes (2)",0
+"54","burbuttercup","Homestead National Monument",216,214,1,"0",40
+"55","burbuttercup","Chaco Culture National Historical Park",34385,34376,1,"0",34
+"56","burbuttercup","Great Sand Dunes National Park",107433,107583,1,"0",82
+"57","burbuttercup","Black Canyon of the Gunnison National Park",31211,31229,1,"0",25
+"58","burbuttercup","Walnut Canyon National Monument",3232,3241,1,"0",28
+"59","burbuttercup","Nicodemus National Historic Site",10,5,1,"0",12
+"60","burbuttercup","Washita Battlefield National Historic Site",331,320,1,"0",146
+"61","burbuttercup","Petrified Forest National Park",222891,222963,1,"0",80
+"62","burbuttercup","Arches National Park",76481,76460,1,"0",8
+"63","burbuttercup","Fort Laramie National Historic Site",896,897,1,"0",115
+"64","burbuttercup","Mesa Verde National Park",53690,53689,1,"0",0
+"65","burbuttercup","Hubbell Trading Post National Historic Site",158,160,0.99,"0",45
+"66","burbuttercup","Alibates Flint Quarries National Monument",1356,1371,0.99,"0",192
+"67","burbuttercup","Martin Van Buren National Historic Site",295,297,0.99,"0",81
+"68","burbuttercup","Capitol Reef National Park",243171,244800,0.99,"0",39
+"69","burbuttercup","Minidoka National Historic Site",393,399,0.99,"0",13
+"70","burbuttercup","Craters of the Moon National Monument",52818,53390,0.99,"0",6
+"71","burbuttercup","Grant-Kohrs Ranch National Historic Site",1560,1576,0.99,"0",90
+"72","burbuttercup","Greenbelt Park",1131,1149,0.98,"0",309
+"73","burbuttercup","George Rogers Clark National Historical Park",24,24,0.98,"0",223
+"74","burbuttercup","Devils Tower National Monument",1325,1350,0.98,"0",235
+"75","burbuttercup","Valley Forge National Historical Park",3369,3451,0.98,"0",199
+"76","burbuttercup","Petroglyph National Monument",7030,7202,0.98,"0",49
+"77","burbuttercup","Fossil Butte National Monument",8108,8318,0.97,"0",25
+"78","burbuttercup","Ulysses S. Grant National Historic Site",10,10,0.97,"0",122
+"79","burbuttercup","City of Rocks National Reserve",14105,14538,0.97,"0",20
+"80","burbuttercup","Hagerman Fossil Beds National Monument",4267,4380,0.97,"0",4
+"81","burbuttercup","Dayton Aviation Heritage National Historical Park",110,114,0.97,"0",364
+"82","burbuttercup","Craters of the Moon National Preserve",677916,698969,0.97,"Yes (11)",0
+"83","burbuttercup","Fort Larned National Historic Site",678,705,0.96,"0",37
+"84","burbuttercup","El Malpais National Monument",109479,113580,0.96,"0",89
+"85","burbuttercup","Wilson's Creek National Battlefield",2317,2426,0.96,"0",211
+"86","burbuttercup","Lava Beds National Monument",44305,46813,0.95,"0",28
+"87","burbuttercup","Constitution Gardens",41,43,0.95,"0",320
+"88","burbuttercup","Charles Young Buffalo Soldiers National Monument",58,60,0.95,"0",382
+"89","burbuttercup","National Capital Parks",6848,7233,0.95,"0",297
+"90","burbuttercup","Bandelier National Monument",31503,33684,0.94,"Yes (1)",0
+"91","burbuttercup","Springfield Armory National Historic Site",50,54,0.93,"0",27
+"92","burbuttercup","Washington Monument",96,104,0.92,"0",319
+"93","burbuttercup","Bighorn Canyon National Recreation Area",110488,119830,0.92,"0",156
+"94","burbuttercup","Rock Creek Park",1615,1749,0.92,"0",315
+"95","burbuttercup","Monocacy National Battlefield",1476,1622,0.91,"0",310
+"96","burbuttercup","Gettysburg National Military Park",5576,6136,0.91,"0",282
+"97","burbuttercup","Devils Postpile National Monument",712,799,0.89,"0",28
+"98","burbuttercup","Manassas National Battlefield Park",4493,5125,0.88,"0",340
+"99","burbuttercup","Arlington House, The Robert E. Lee Memorial",14,16,0.88,"0",321
+"100","burbuttercup","Franklin Delano Roosevelt Memorial",7,8,0.88,"0",320
+"101","burbuttercup","Yucca House National Monument",31,36,0.87,"0",7
+"102","burbuttercup","Lowell National Historical Park",163,189,0.86,"0",75
+"103","burbuttercup","Gateway Arch National Park",168,194,0.86,"0",121
+"104","burbuttercup","Florissant Fossil Beds National Monument",5005,5994,0.84,"0",46
+"105","burbuttercup","Glen Canyon National Recreation Area",1048251,1250244,0.84,"0",0
+"106","burbuttercup","Pecos National Historical Park",5602,6695,0.84,"0",30
+"107","burbuttercup","Minuteman Missile National Historic Site",36,44,0.83,"0",261
+"108","burbuttercup","First State National Historical Park",963,1155,0.83,"0",217
+"109","burbuttercup","Lyndon Baines Johnson Memorial Grove on the Potomac",14,18,0.8,"0",321
+"110","burbuttercup","Curecanti National Recreation Area",33020,41364,0.8,"0",3
+"111","burbuttercup","National Mall",134,173,0.78,"0",319
+"112","burbuttercup","Harry S Truman National Historic Site",10,12,0.77,"0",108
+"113","burbuttercup","Fort Union Trading Post National Historic Site",340,444,0.77,"0",458
+"114","burbuttercup","George Washington Memorial Parkway",5101,6716,0.76,"0",320
+"115","burbuttercup","Cedar Breaks National Monument",4682,6125,0.76,"0",9
+"116","burbuttercup","Wind Cave National Park",25544,33928,0.75,"0",217
+"117","burbuttercup","Theodore Roosevelt National Park",52166,70463,0.74,"0",412
+"118","burbuttercup","Thomas Jefferson Memorial",14,20,0.73,"0",320
+"119","burbuttercup","Lake Meredith National Recreation Area",30056,41628,0.72,"0",180
+"120","burbuttercup","Nez Perce National Historical Park",2370,3449,0.69,"0",31
+"121","burbuttercup","Theodore Roosevelt Island National Memorial",69,100,0.69,"0",320
+"122","burbuttercup","Great Basin National Park",53372,77003,0.69,"0",20
+"123","burbuttercup","Salinas Pueblo Missions National Monument",743,1072,0.69,"0",87
+"124","burbuttercup","Hopewell Culture National Historical Park",1205,1790,0.67,"0",420
+"125","burbuttercup","Missouri National Recreation River",43821,68370,0.64,"Yes (1)",0
+"126","burbuttercup","Saratoga National Historical Park",2252,3554,0.63,"0",108
+"127","burbuttercup","Vanderbilt Mansion National Historic Site",129,211,0.61,"0",82
+"128","burbuttercup","Grand Canyon National Park",733212,1203128,0.61,"Yes (15)",0
+"129","burbuttercup","Valles Caldera National Preserve",52210,88957,0.59,"0",8
+"130","burbuttercup","Clara Barton National Historic Site",5,8,0.58,"0",320
+"131","burbuttercup","Frederick Douglass National Historic Site",5,8,0.57,"0",319
+"132","burbuttercup","Fort Washington Park",194,344,0.56,"0",328
+"133","burbuttercup","Pinnacles National Park",14415,26707,0.54,"0",55
+"134","burbuttercup","Fort Smith National Historic Site",38,71,0.54,"0",248
+"135","burbuttercup","George Washington Carver National Monument",113,211,0.53,"0",171
+"136","burbuttercup","Roger Williams National Memorial",2,5,0.53,"0",41
+"137","burbuttercup","Home of Franklin D. Roosevelt National Historic Site",446,899,0.5,"0",79
+"138","burbuttercup","Flight 93 National Memorial",1107,2264,0.49,"0",349
+"139","burbuttercup","Eisenhower National Historic Site",319,693,0.46,"0",287
+"140","burbuttercup","Manhattan Project National Historical Park",53,114,0.46,"0",3
+"141","burbuttercup","Piscataway Park",2025,4606,0.44,"0",328
+"142","burbuttercup","Mount Rushmore National Memorial",561,1274,0.44,"0",235
+"143","burbuttercup","Knife River Indian Villages National Historic Site",788,1772,0.44,"0",407
+"144","burbuttercup","George Washington Birthplace National Monument",290,658,0.44,"0",352
+"145","burbuttercup","Appomattox Court House National Historical Park",752,1779,0.42,"0",458
+"146","burbuttercup","Allegheny Portage Railroad National Historic Site",553,1311,0.42,"0",321
+"147","burbuttercup","Chiricahua National Monument",5161,12205,0.42,"0",181
+"148","burbuttercup","Friendship Hill National Historic Site",276,675,0.41,"0",406
+"149","burbuttercup","Wupatki National Monument",14450,35430,0.41,"0",47
+"150","burbuttercup","Pea Ridge National Military Park",1716,4276,0.4,"0",205
+"151","burbuttercup","Chickasaw National Recreation Area",3886,9874,0.39,"0",255
+"152","burbuttercup","Sequoia National Park",156022,406814,0.38,"0",42
+"153","burbuttercup","Adams National Historical Park",5,14,0.35,"0",68
+"154","burbuttercup","Fort McHenry National Monument and Historic Shrine",14,47,0.31,"0",284
+"155","burbuttercup","Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park",2911,9265,0.31,"0",365
+"156","burbuttercup","Booker T. Washington National Monument",74,244,0.3,"0",509
+"157","burbuttercup","Lake Roosevelt National Recreation Area",29613,100628,0.29,"0",3
+"158","burbuttercup","Minute Man National Historical Park",297,1024,0.29,"0",64
+"159","burbuttercup","Great Sand Dunes National Preserve",11549,41693,0.28,"0",86
+"160","burbuttercup","Sagamore Hill National Historic Site",22,83,0.26,"0",91
+"161","burbuttercup","Joshua Tree National Park",202831,792959,0.26,"0",20
+"162","burbuttercup","Saguaro National Park",23831,92480,0.26,"0",116
+"163","burbuttercup","Chesapeake and Ohio Canal National Historical Park",5501,20882,0.26,"0",319
+"164","burbuttercup","Hopewell Furnace National Historic Site",213,849,0.25,"0",208
+"165","burbuttercup","Cuyahoga Valley National Park",7902,32745,0.24,"0",452
+"166","burbuttercup","Death Valley National Park",748721,3399561,0.22,"0",28
+"167","burbuttercup","Coronado National Memorial",999,4811,0.21,"0",198
+"168","burbuttercup","Harpers Ferry National Historical Park",781,3713,0.21,"0",324
+"169","burbuttercup","Mojave National Preserve",309646,1587809,0.2,"0",1
+"170","burbuttercup","Fort Stanwix National Monument",2,17,0.14,"0",185
+"171","burbuttercup","Kings Canyon National Park",66396,458974,0.14,"0",60
+"172","burbuttercup","Petersburg National Battlefield",357,2783,0.13,"0",415
+"173","burbuttercup","Castle Mountains National Monument",2703,20871,0.13,"0",24
+"174","burbuttercup","Pennsylvania Avenue National Historic Site",2,19,0.13,"0",319
+"175","burbuttercup","Colonial National Historical Park",1119,8520,0.13,"0",396
+"176","burbuttercup","Cedar Creek and Belle Grove National Historical Park",400,3469,0.12,"0",360
+"177","burbuttercup","Fort Bowie National Historic Site",125,998,0.12,"0",171
+"178","burbuttercup","Jewel Cave National Monument",153,1274,0.12,"0",214
+"179","burbuttercup","Buffalo National River",11058,93546,0.12,"0",252
+"180","burbuttercup","Thomas Edison National Historical Park",2,21,0.11,"0",123
+"181","burbuttercup","Catoctin Mountain Park",623,5742,0.11,"0",301
+"182","burbuttercup","Lincoln Boyhood National Memorial",19,200,0.1,"0",267
+"183","burbuttercup","Lake Mead National Recreation Area",153911,1494424,0.1,"0",4
+"184","burbuttercup","Tuzigoot National Monument",74,813,0.09,"0",14
+"185","burbuttercup","Prince William Forest Park",1263,13813,0.09,"0",345
+"186","burbuttercup","New Bedford Whaling National Historical Park",2,31,0.08,"0",66
+"187","burbuttercup","Upper Delaware Scenic and Recreational River",4505,57157,0.08,"0",123
+"188","burbuttercup","Yosemite National Park",56510,745915,0.08,"0",8
+"189","burbuttercup","Tallgrass Prairie National Preserve",855,10897,0.08,"0",40
+"190","burbuttercup","Guilford Courthouse National Military Park",17,224,0.07,"0",566
+"191","burbuttercup","Richmond National Battlefield Park",580,8204,0.07,"0",388
+"192","burbuttercup","Ozark National Scenic Riverway",5485,82333,0.07,"0",187
+"193","burbuttercup","Appalachian National Scenic Trail",13298,234414,0.06,"0",54
+"194","burbuttercup","Yellowstone National Park",130854,2199496,0.06,"0",61
+"195","burbuttercup","Saint-Gaudens National Historic Site",12,188,0.06,"0",123
+"196","burbuttercup","Independence National Historical Park",2,43,0.06,"0",194
+"197","burbuttercup","Antietam National Battlefield",151,3253,0.05,"0",316
+"198","burbuttercup","Keweenaw National Historical Park",84,1862,0.05,"0",501
+"199","burbuttercup","Rocky Mountain National Park",12764,267044,0.05,"Yes (1)",0
+"200","burbuttercup","Blue Ridge Parkway",3644,90527,0.04,"0",431
+"201","burbuttercup","Cowpens National Battlefield",36,846,0.04,"0",615
+"202","burbuttercup","Big Hole National Battlefield",38,977,0.04,"0",21
+"203","burbuttercup","Gila Cliff Dwellings National Monument",19,605,0.03,"0",184
+"204","burbuttercup","Guadalupe Mountains National Park",2212,87226,0.03,"0",285
+"205","burbuttercup","Morristown National Historical Park",43,1691,0.03,"0",131
+"206","burbuttercup","Delaware Water Gap National Recreation Area",2085,71041,0.03,"0",126
+"207","burbuttercup","Tule Springs Fossil Beds National Monument",613,22644,0.03,"0",10
+"208","burbuttercup","New River Gorge National River",1157,70388,0.02,"0",516
+"209","burbuttercup","Shenandoah National Park",3019,193280,0.02,"0",363
+"210","burbuttercup","Grand Teton National Park",5712,310020,0.02,"0",17
+"211","burbuttercup","Fire Island National Seashore",165,19658,0.01,"0",79
+"212","burbuttercup","Gauley River National Recreation Area",60,11159,0.01,"0",505
+"213","burbuttercup","Sleeping Bear Dunes National Lakeshore",381,70225,0.01,"0",428
+"214","burbuttercup","Cumberland Gap National Historical Park",127,24856,0.01,"0",469
+"215","burbuttercup","Cape Cod National Seashore",314,44310,0.01,"0",99
+"216","burbuttercup","Harriet Tubman Underground Railroad National Historical Park",256,25543,0.01,"0",308
+"217","burbuttercup","White Sands National Monument",1507,145489,0.01,"0",212
+"218","burbuttercup","Ebey's Landing National Historical Reserve",0,18134,0,"0",113
+"219","burbuttercup","Lewis and Clark National Historical Park",0,3674,0,"0",150
+"220","burbuttercup","Olympic National Park",0,914822,0,"0",114
+"221","burbuttercup","Santa Monica Mountains National Recreation Area",144,153809,0,"0",39
+"222","burbuttercup","Acadia National Park",0,38791,0,"0",236
+"223","burbuttercup","Amistad National Recreation Area",0,57567,0,"0",503
+"224","burbuttercup","Assateague Island National Seashore",19,48738,0,"0",292
+"225","burbuttercup","Big Cypress National Preserve",0,729526,0,"0",1140
+"226","burbuttercup","Big South Fork National River and Recreation Area",69,122507,0,"0",425
+"227","burbuttercup","Bluestone National Scenic River",14,4340,0,"0",533
+"228","burbuttercup","Cape Hatteras National Seashore",0,31093,0,"0",464
+"229","burbuttercup","Cape Lookout National Seashore",0,27945,0,"0",529
+"230","burbuttercup","Chattahoochee River National Recreation Area",0,8696,0,"0",575
+"231","burbuttercup","Chickamauga and Chattanooga National Military Park",31,8229,0,"0",478
+"232","burbuttercup","Cumberland Island National Seashore",0,36431,0,"0",849
+"233","burbuttercup","Everglades National Park",0,1538658,0,"0",1160
+"234","burbuttercup","Fort Raleigh National Historic Site",0,158,0,"0",464
+"235","burbuttercup","Great Smoky Mountains National Park",144,518497,0,"0",504
+"236","burbuttercup","Isle Royale National Park",0,549739,0,"0",510
+"237","burbuttercup","Obed Wild and Scenic River",0,5324,0,"0",441
+"238","burbuttercup","Poverty Point National Monument",0,910,0,"0",505
+"239","burbuttercup","Redwood National Park",0,115642,0,"0",78
+"240","burbuttercup","Shiloh National Battlefield",0,4083,0,"0",390
+"241","burbuttercup","Timucuan Ecological and Historic Preserve",0,45696,0,"0",864
+"242","burbuttercup","Vicksburg National Military Park",0,1649,0,"0",540
+"243","burbuttercup","Castillo de San Marcos National Monument",0,20,0,"0",916
+"244","burbuttercup","Tupelo National Battlefield",0,1,0,"0",444
+"245","burbuttercup","Brices Cross Roads National Battlefield Site",0,1,0,"0",427
+"246","burbuttercup","Point Reyes National Seashore",0,71866,0,"0",128
+"247","burbuttercup","Fort Sumter National Monument",0,232,0,"0",769
+"248","burbuttercup","Tonto National Monument",0,1122,0,"0",30
+"249","burbuttercup","Ninety Six National Historic Site",2,963,0,"0",654
+"250","burbuttercup","Charles Pinckney National Historic Site",0,33,0,"0",763
+"251","burbuttercup","Carter G. Woodson National Historic Site",0,0,0,"0",318
+"252","burbuttercup","Boston Harbor Islands National Recreation Area",0,1595,0,"0",70
+"253","burbuttercup","Mary McLeod Bethune Council House National Historic Site",0,0,0,"0",319
+"254","burbuttercup","Saint Paul's Church National Historic Site",0,6,0,"0",102
+"255","burbuttercup","Castle Clinton National Monument",0,1,0,"0",118
+"256","burbuttercup","Effigy Mounds National Monument",0,2486,0,"0",215
+"257","burbuttercup","Ice Age National Scenic Trail",0,158,0,"0",243
+"258","burbuttercup","Abraham Lincoln Birthplace National Historical Park",0,339,0,"0",345
+"259","burbuttercup","Dry Tortugas National Park",0,65579,0,"0",1201
+"260","burbuttercup","Fort Frederica National Monument",0,282,0,"0",835
+"261","burbuttercup","John D. Rockefeller, Jr., Memorial Parkway",0,23623,0,"0",54
+"262","burbuttercup","Chamizal National Memorial",0,55,0,"0",292
+"263","burbuttercup","Canaveral National Seashore",0,58461,0,"0",986
+"264","burbuttercup","African Burial Ground National Monument",0,0,0,"0",117
+"265","burbuttercup","Cabrillo National Monument",0,160,0,"0",43
+"266","burbuttercup","Tuskegee Airmen National Historic Site",0,89,0,"0",630
+"267","burbuttercup","Natchez National Historical Park",0,108,0,"0",571
+"268","burbuttercup","Edgar Allan Poe National Historic Site",0,1,0,"0",197
+"269","burbuttercup","Mammoth Cave National Park",26,51696,0,"0",335
+"270","burbuttercup","Eugene O'Neill National Historic Site",0,13,0,"0",94
+"271","burbuttercup","Thomas Stone National Historic Site",0,328,0,"0",338
+"272","burbuttercup","Cane River Creole National Historical Park",0,206,0,"0",521
+"273","burbuttercup","Grand Portage National Monument",0,708,0,"0",506
+"274","burbuttercup","Whiskeytown-Shasta-Trinity National Recreation Area",0,42139,0,"0",40
+"275","burbuttercup","Fort Point National Historic Site",0,25,0,"0",114
+"276","burbuttercup","Salem Maritime National Historic Site",0,9,0,"0",84
+"277","burbuttercup","Moores Creek National Battlefield",0,91,0,"0",615
+"278","burbuttercup","Horseshoe Bend National Military Park",0,2079,0,"0",595
+"279","burbuttercup","Fort Matanzas National Monument",0,274,0,"0",929
+"280","burbuttercup","Channel Islands National Park",84,245690,0,"0",34
+"281","burbuttercup","Jean Lafitte National Historical Park and Preserve",0,21717,0,"0",612
+"282","burbuttercup","Rosie the Riveter/World War II Home Front National Historical Park",0,149,0,"0",111
+"283","burbuttercup","Thaddeus Kosciuszko National Memorial",0,0,0,"0",198
+"284","burbuttercup","Perry's Victory and International Peace Memorial",0,27,0,"0",445
+"285","burbuttercup","James A. Garfield National Historic Site",0,8,0,"0",442
+"286","burbuttercup","Hohokam Pima National Monument",0,1688,0,"0",58
+"287","burbuttercup","Gulf Islands National Seashore",0,130415,0,"0",713
+"288","burbuttercup","Pipestone National Monument",0,287,0,"0",105
+"289","burbuttercup","Biscayne National Park",0,173840,0,"0",1208
+"290","burbuttercup","Arkansas Post National Memorial",0,763,0,"0",432
+"291","burbuttercup","John Muir National Historic Site",0,343,0,"0",105
+"292","burbuttercup","Fort Vancouver National Historic Site",0,208,0,"0",94
+"293","burbuttercup","John Fitzgerald Kennedy National Historic Site",0,0,0,"0",67
+"294","burbuttercup","Fort Pulaski National Monument",0,5417,0,"0",802
+"295","burbuttercup","Eleanor Roosevelt National Historic Site",0,177,0,"0",80
+"296","burbuttercup","Theodore Roosevelt Birthplace National Historic Site",0,0,0,"0",116
+"297","burbuttercup","Wright Brothers National Memorial",0,429,0,"0",457
+"298","burbuttercup","Selma to Montgomery National Historic Trail",0,20,0,"0",618
+"299","burbuttercup","Kings Mountain National Military Park",0,3930,0,"0",632
+"300","burbuttercup","Women's Rights National Historical Park",0,8,0,"0",233
+"301","burbuttercup","Longfellow House-Washington's Headquarters National Historic Site",0,2,0,"0",69
+"302","burbuttercup","Russell Cave National Monument",0,289,0,"0",471
+"303","burbuttercup","Muir Woods National Monument",0,555,0,"0",121
+"304","burbuttercup","Herbert Hoover National Historic Site",0,188,0,"0",122
+"305","burbuttercup","Governors Island National Monument",0,23,0,"0",119
+"306","burbuttercup","Agate Fossil Beds National Monument",0,3045,0,"0",139
+"307","burbuttercup","San Francisco Maritime National Historical Park",0,99,0,"0",112
+"308","burbuttercup","Palo Alto Battlefield National Historical Park",0,3414,0,"0",839
+"309","burbuttercup","Marsh-Billings-Rockefeller National Historical Park",0,646,0,"0",134
+"310","burbuttercup","Little River Canyon National Preserve",0,15416,0,"0",505
+"311","burbuttercup","First Ladies National Historic Site",0,0,0,"0",452
+"312","burbuttercup","Fort Necessity National Battlefield",0,916,0,"0",389
+"313","burbuttercup","Saugus Iron Works National Historic Site",0,13,0,"0",77
+"314","burbuttercup","Casa Grande Ruins National Monument",0,473,0,"0",68
+"315","burbuttercup","Kennesaw Mountain National Battlefield Park",0,2899,0,"0",569
+"316","burbuttercup","De Soto National Memorial",0,30,0,"0",1025
+"317","burbuttercup","Andersonville National Historic Site",0,521,0,"0",689
+"318","burbuttercup","Ocmulgee National Monument",0,690,0,"0",668
+"319","burbuttercup","Martin Luther King, Jr., National Historic Site",0,39,0,"0",589
+"320","burbuttercup","Oregon Caves National Monument and Preserve",0,4560,0,"0",46
+"321","burbuttercup","General Grant National Memorial",0,1,0,"0",111
+"322","burbuttercup","Golden Gate National Recreation Area",0,82468,0,"0",96
+"323","burbuttercup","Port Chicago Naval Magazine National Memorial",0,6,0,"0",105
+"324","burbuttercup","Weir Farm National Historic Site",0,69,0,"0",71
+"325","burbuttercup","Theodore Roosevelt Inaugural National Historic Site",0,1,0,"0",328
+"326","burbuttercup","Lassen Volcanic National Park",204,107511,0,"0",8
+"327","burbuttercup","Fort Donelson National Battlefield",0,1301,0,"0",311
+"328","burbuttercup","Jimmy Carter National Historic Site",0,72,0,"0",691
+"329","burbuttercup","San Juan Island National Historical Park",0,2142,0,"0",138
+"330","burbuttercup","Gateway National Recreation Area",0,27159,0,"0",114
+"331","burbuttercup","Mount Rainier National Park",0,236442,0,"0",35
+"332","burbuttercup","Hamilton Grange National Memorial",0,2,0,"0",110
+"333","burbuttercup","Waco Mammoth National Monument",0,107,0,"0",450
+"334","burbuttercup","Tuskegee Institute National Historic Site",0,62,0,"0",631
+"335","burbuttercup","Fort Caroline National Memorial",0,140,0,"0",881
+"336","burbuttercup","Saint Croix Island International Historic Site",0,7,0,"0",343
+"337","burbuttercup","Lower Saint Croix National Scenic Riverway",0,11306,0,"0",259
+"338","burbuttercup","Statue Of Liberty National Monument",0,69,0,"0",119
+"339","burbuttercup","Natchez Trace Parkway",0,52841,0,"0",373
+"340","burbuttercup","Pullman National Monument",0,0,0,"0",229
+"341","burbuttercup","Belmont-Paul Women's Equality National Monument",0,0,0,"0",318
+"342","burbuttercup","North Cascades National Park",0,501391,0,"0",74
+"343","burbuttercup","Stonewall National Monument",0,5,0,"0",116
+"344","burbuttercup","Voyageurs National Park",0,204710,0,"0",458
+"345","burbuttercup","Congaree National Park",0,26408,0,"0",716
+"346","burbuttercup","Federal Hall National Memorial",0,1,0,"0",118
+"347","burbuttercup","Lake Chelan National Recreation Area",7,62904,0,"0",61
+"348","burbuttercup","Carl Sandburg Home National Historic Site",0,266,0,"0",583
+"349","burbuttercup","Lyndon B. Johnson National Historical Park",0,1568,0,"0",533
+"350","burbuttercup","Carlsbad Caverns National Park",0,46798,0,"0",278
+"351","burbuttercup","Organ Pipe Cactus National Monument",0,330696,0,"0",143
+"352","burbuttercup","Crater Lake National Park",2,182555,0,"0",33
+"353","burbuttercup","Pictured Rocks National Lakeshore",84,73651,0,"0",523
+"354","burbuttercup","Apostle Islands National Lakeshore",0,72778,0,"0",408
+"355","burbuttercup","Glacier National Park",1383,1008117,0,"0",208
+"356","burbuttercup","Captain John Smith National Historic Trail",0,263,0,"0",390
+"357","burbuttercup","New Orleans Jazz National Historical Park",0,5,0,"0",709
+"358","burbuttercup","Reconstruction Era National Monument",0,17,0,"0",795
+"359","burbuttercup","Freedom Riders National Monument",0,8,0,"0",550
+"360","burbuttercup","Birmingham Civil Rights National Monument",0,1,0,"0",534
+"361","burbuttercup","Stones River National Battlefield",0,721,0,"0",399
+"362","burbuttercup","Big Thicket National Preserve",0,113142,0,"0",555
+"363","burbuttercup","Saint Croix National Scenic Riverway",48,69079,0,"0",281
+"364","burbuttercup","Rio Grande Wild and Scenic River",0,22060,0,"0",480
+"365","burbuttercup","San Antonio Missions National Historical Park",0,943,0,"0",596
+"366","burbuttercup","River Raisin National Battlefield Park",0,42,0,"0",424
+"367","burbuttercup","Katahdin Woods And Waters National Monument",0,89564,0,"0",336
+"368","burbuttercup","Ross Lake National Recreation Area",0,116792,0,"0",93
+"369","burbuttercup","Big Bend National Park",0,810893,0,"0",471
+"370","burbuttercup","Mississippi National River and Recreation Area",0,53831,0,"0",234
+"371","burbuttercup","Little Rock Central High School National Historic Site",0,29,0,"0",359
+"372","burbuttercup","Fort Davis National Historic Site",0,518,0,"0",398
+"373","burbuttercup","Fort Monroe National Monument",0,368,0,"0",404
+"374","burbuttercup","Tumacacori National Historical Park",0,363,0,"0",172
+"375","burbuttercup","Hot Springs National Park",0,5466,0,"0",342
+"376","burbuttercup","President William Jefferson Clinton Birthplace Home National Historic Site",0,1,0,"0",378
+"377","burbuttercup","Padre Island National Seashore",0,130558,0,"0",735
+"378","burbuttercup","Indiana Dunes National Lakeshore",55,15931,0,"0",228

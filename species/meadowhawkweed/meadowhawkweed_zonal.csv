@@ -1,0 +1,62 @@
+"","Species","Admin","Unit","est_suit_area_acre","total_area_acre","perc_suit","Known_Presences","min_dist_miles"
+"1","meadowhawkweed","BLM","Boise District Office",0,12476806,0,"Yes (1)",0
+"2","meadowhawkweed","BLM","West Desert",0,22058534,0,"Yes (5)",0
+"3","meadowhawkweed","BLM","Idaho Falls District Office",0,18237976,0,"0",9
+"4","meadowhawkweed","BLM","Roseburg District Office",0,2690213,0,"0",57
+"5","meadowhawkweed","BLM","High Desert District",0,25349045,0,"0",22
+"6","meadowhawkweed","BLM","North Central Montana District Office",0,27943288,0,"Yes (2)",0
+"7","meadowhawkweed","BLM","Nw Oregon District Office",0,11107437,0,"Yes (51)",0
+"8","meadowhawkweed","BLM","Western Montana District Office",0,29542704,0,"Yes (1204)",0
+"9","meadowhawkweed","BLM","Burns District Office",0,5771475,0,"0",19
+"10","meadowhawkweed","BLM","Carson City District",0,8943177,0,"0",245
+"11","meadowhawkweed","BLM","Battle Mountain District",0,13487090,0,"0",127
+"12","meadowhawkweed","BLM","Winnemucca District",0,11321783,0,"0",170
+"13","meadowhawkweed","BLM","Northern California District",0,25799100,0,"0",172
+"14","meadowhawkweed","BLM","High Plains District",0,70447274,0,"0",70
+"15","meadowhawkweed","BLM","Northwest District Office",0,12914979,0,"0",121
+"16","meadowhawkweed","BLM","Twin Falls District Office",0,9049768,0,"0",94
+"17","meadowhawkweed","BLM","Elko District",0,12225080,0,"0",106
+"18","meadowhawkweed","BLM","Gila District Office",0,22174577,0,"0",222
+"19","meadowhawkweed","BLM","Farmington District Office",0,23359098,0,"0",215
+"20","meadowhawkweed","BLM","Lakeview District Office",0,9125689,0,"0",76
+"21","meadowhawkweed","BLM","Northeastern States District Office",0,470278322,0,"Yes (133)",0
+"22","meadowhawkweed","BLM","Vale District Office",0,15222990,0,"Yes (575)",0
+"23","meadowhawkweed","BLM","Spokane District Office",0,45535045,0,"Yes (759)",0
+"24","meadowhawkweed","BLM","Rocky Mountain District Office",0,43012513,0,"0",239
+"25","meadowhawkweed","BLM","Wind River Bighorn Basin District",0,16307924,0,"Yes (36)",0
+"26","meadowhawkweed","BLM","Phoenix District Office",0,33183750,0,"0",98
+"27","meadowhawkweed","BLM","Canyon Country",0,7441948,0,"0",100
+"28","meadowhawkweed","BLM","Las Cruces District Office",0,16040602,0,"0",392
+"29","meadowhawkweed","BLM","Central California District",0,44587440,0,"0",256
+"30","meadowhawkweed","BLM","Green River",0,9229924,0,"0",29
+"31","meadowhawkweed","BLM","Coos Bay District Office",0,3066521,0,"0",68
+"32","meadowhawkweed","BLM","Southern Nevada District",0,9910954,0,"0",82
+"33","meadowhawkweed","BLM","Color Country",0,13718194,0,"Yes (1)",0
+"34","meadowhawkweed","BLM","Albuquerque District Office",0,18192033,0,"0",272
+"35","meadowhawkweed","BLM","Medford District Office",0,3057476,0,"0",109
+"36","meadowhawkweed","BLM","Arizona Strip District Office",0,5049201,0,"0",52
+"37","meadowhawkweed","BLM","California Desert District",0,32715963,0,"0",194
+"38","meadowhawkweed","BLM","Colorado River District Office",0,12837842,0,"0",121
+"39","meadowhawkweed","BLM","Coeur D'alene District Office",0,13798609,0,"Yes (2666)",0
+"40","meadowhawkweed","BLM","Prineville District Office",0,13040676,0,"Yes (3)",0
+"41","meadowhawkweed","BLM","Pecos District Office",0,20229604,0,"0",448
+"42","meadowhawkweed","BLM","Ely District",0,12876221,0,"0",51
+"43","meadowhawkweed","BLM","Eastern Montana/Daks District Office",0,131224179,0,"Yes (8)",0
+"44","meadowhawkweed","BLM","Grand Staircase Escalante Nat Monument",0,1881970,0,"0",44
+"45","meadowhawkweed","BLM","Southeastern States  District Office",0,347054542,0,"Yes (6)",0
+"46","meadowhawkweed","BLM","Southwest District Office",0,10688655,0,"0",141
+"47","meadowhawkweed","EPMT","Southeast Coast",0,44612659,0,"0",89
+"48","meadowhawkweed","EPMT","Southeast",0,68436190,0,"Yes (4)",0
+"49","meadowhawkweed","EPMT","North Coast/Cascades",0,69548751,0,"Yes (3429)",0
+"50","meadowhawkweed","EPMT","Heartland",0,156900528,0,"Yes (4)",0
+"51","meadowhawkweed","EPMT","California",0,68159651,0,"0",177
+"52","meadowhawkweed","EPMT","Lake Mead",0,87904597,0,"Yes (2)",0
+"53","meadowhawkweed","EPMT","Florida/Caribbean",0,37151752,0,"0",363
+"54","meadowhawkweed","EPMT","Northern Great Plains",0,62794147,0,"0",209
+"55","meadowhawkweed","EPMT","Northeast",0,44544974,0,"Yes (43)",0
+"56","meadowhawkweed","EPMT","Great Lakes",0,61766763,0,"Yes (21)",0
+"57","meadowhawkweed","EPMT","National Capital Region",0,2953143,0,"Yes (2)",0
+"58","meadowhawkweed","EPMT","Mid-Atlantic",0,33307472,0,"Yes (4)",0
+"59","meadowhawkweed","EPMT","Southwest",0,212434430,0,"0",71
+"60","meadowhawkweed","EPMT","Gulf Coast",0,61613355,0,"0",332
+"61","meadowhawkweed","EPMT","Northern Rocky Mountain",0,178895171,0,"Yes (355)",0
