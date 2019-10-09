@@ -440,7 +440,7 @@ fillPage(HTML(
 ```{r}
 eval = reactive({
   
-  read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/eval.csv',sep='')
+  read.csv(paste0("species/",species(),'/eval.csv',sep='')
       , header = T, stringsAsFactors = F) %>%
     select(-X)
 })
@@ -481,7 +481,7 @@ vi.caption = "Percent contribution of each environmental variable by model. Mode
 # htmlOutput("vi_table") 
 vi = reactive({
   
-  read.csv(paste0("species/",gsub(' ','',tolower(input$sp_select)),'/vi_table.csv',sep='')
+  read.csv(paste0("species/",species(),'/vi_table.csv',sep='')
       , header = T, stringsAsFactors = F)
 })
 
