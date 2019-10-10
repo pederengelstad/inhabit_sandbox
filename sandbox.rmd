@@ -133,8 +133,14 @@ pres_pts = reactive({if(input$pres_button=="yes"){
 species = reactive({sp_list$lower[sp_list$common == input$sp_select]})
 
 tilesURL = reactive(
-    paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep='')
-    )
+    paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
+
+ExtentVersion = reactive(
+  if(sp_list$global[sp_list$lower==species()]=="yes"){
+    paste0("Extent: Global, Version: 1.0", sep='')
+  } else {
+    paste0("Extent: CONUS,  Version: 1.0", sep='')
+  })
 ```
 
 Inputs {.sidebar width=200px}
@@ -145,7 +151,7 @@ Inputs {.sidebar width=200px}
 ### **DRAFT VERSION**
 
 ```{r}
-pickerInput(inputId = 'sp_select', label = 'Species of interest:'
+pickerInput(inputId = 'sp_select', label = 'Species of interest:',selected = 'Amur peppervine'
             , choices = sp_list$common
             , width = '95%'
             , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep=''))
@@ -301,22 +307,39 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
           clearGroup('pres_pts')
       }
   })
+  
+      # Update extent name and version number
+  observe({
+
+    extVer = HTML(ExtentVersion())
+
+    if(!is.null(extVer)){
+      leafletProxy("map") %>%
+        clearControls() %>%
+        addControl(html = extVer, position = 'bottomleft', layerId = 'extVer')
+    } else {
+        leafletProxy("map") %>%
+        clearControls()
+      }
+  })
 })
 ```
 
 
 
-<!-- Static Maps -->
-<!-- ===================================== -->
+Static Maps
+=====================================
 
-<!-- Row {data-height=30%} -->
-<!-- ------------------------------------- -->
+Row {data-height=30%}
+-------------------------------------
 
-<!-- ### Number of Presence Points Used -->
+### Number of Presence Points Used
 
-<!-- ```{r} -->
-<!-- renderImage(list(src = './test2.png', contentType = 'image/png', width='50%', align='center'), deleteFile = F) -->
-<!-- ``` -->
+```{r}
+renderImage(list(src = './test2.png', contentType = 'image/png', width='50%', align='center'), deleteFile = F)
+renderText(print(sp_list$global[sp_list$lower==species()]))
+
+```
 
 <!-- ### Top Three Predictors -->
 
