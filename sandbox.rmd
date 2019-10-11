@@ -283,12 +283,6 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
   observe({
 
     d = distro_shp() 
-    
-    # if(d!=1){
-    #   leafletProxy("map") %>%
-    #     clearGroup( 'distro') %>%
-    #     addPolygons(data = distro_shp(), group = 'distro', color = "#1400F2", fill = 0, weight = 3, opacity = 1)
-    # }
 
     if(!is.null(d)){
       leafletProxy("map") %>%
