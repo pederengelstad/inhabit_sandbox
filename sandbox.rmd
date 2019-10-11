@@ -142,6 +142,11 @@ pres_pts = reactive({
 
 species = reactive({sp_list$lower[sp_list$common == input$sp_select]})
 
+# when we're ready to make the switch, this will be the new tilesURL reactive:
+
+# tilesURL = reactive(
+#     paste0("https://prod-inhabit-cache.s3-us-west-2.amazonaws.com",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
+
 tilesURL = reactive(
     paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
 ```
@@ -330,40 +335,40 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 
 
 
-Static Maps
-=====================================
+<!-- Static Maps -->
+<!-- ===================================== -->
 
-Row {data-height=30%}
--------------------------------------
+<!-- Row {data-height=30%} -->
+<!-- ------------------------------------- -->
 
-### Number of Presence Points Used
+<!-- ### Number of Presence Points Used -->
 
-```{r}
-renderImage(list(src = './test2.png', contentType = 'image/png', width='90%', align='center'), deleteFile = F)
-```
+<!-- ```{r} -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png', width='90%', align='center'), deleteFile = F) -->
+<!-- ``` -->
 
-### Top Three Predictors
+<!-- ### Top Three Predictors -->
 
-```{r}
-renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F)
-```
+<!-- ```{r} -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
+<!-- ``` -->
 
-Row {data-height=25%}
--------------------------------------
+<!-- Row {data-height=25%} -->
+<!-- ------------------------------------- -->
 
-### Chart 4
+<!-- ### Chart 4 -->
 
-```{r}
-renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F)
-```
+<!-- ```{r} -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
+<!-- ``` -->
 
-### Chart 5
+<!-- ### Chart 5 -->
 
-```{r}
-renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F)
-```
+<!-- ```{r} -->
+<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
+<!-- ``` -->
 
-Management Area Suitability Summary
+Suitability Summary Table
 =====================================
 
 ```{r}

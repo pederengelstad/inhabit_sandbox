@@ -5,8 +5,8 @@ account: engelstad
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1061478
-bundleId: 2488883
+bundleId: 2492072
 url: https://engelstad.shinyapps.io/sandbox/
-when: 1570738615.44251
+when: 1570817289.61687
 asMultiple: FALSE
 asStatic: FALSE
