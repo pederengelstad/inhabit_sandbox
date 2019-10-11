@@ -98,11 +98,20 @@ cred.table = read.csv(file = "CredTable.csv", header = T, stringsAsFactors = F, 
 states = readOGR("states/cb_2017_us_state_500k_conus_simple.shp", GDAL1_integer64_policy = T)
 
 #Reactive elements
-distro_shp = reactive({if(input$known_distro=="yes"){
-  kde_poly = readOGR(paste0("species/",species(),'/kde.shp',sep=''), verbose = F)
-} else {
-    kde_poly = NULL
-  }})
+distro_shp = reactive({
+  if(input$known_distro=="yes"){
+    if(file.exists(paste0("species/",species(),'/kde.shp',sep=''))){
+      readOGR(paste0("species/",species(),'/kde.shp',sep=''), verbose = F)
+    }
+  }
+})
+
+ExtentVersion = reactive(
+  if(sp_list$global[sp_list$lower==species()]=="yes"){
+    paste0("Extent: Global, Version: 1.0", sep='')
+  } else {
+    paste0("Extent: CONUS,  Version: 1.0", sep='')
+  })
 
 mess = reactive(
   if(input$mess=='yes'){
@@ -123,10 +132,11 @@ model = reactive(
     "MaxSensSpec"
   })
 
-pres_pts = reactive({if(input$pres_button=="yes"){
-  species_pts = readOGR(paste0("species/",species(),'/pts.sqlite',sep=''), verbose = F)
-} else {
-    species_pts = NULL
+pres_pts = reactive({
+  if(input$pres_button=="yes"){
+    if(file.exists(paste0("species/",species(),'/pts.sqlite',sep=''))){
+      readOGR(paste0("species/",species(),'/pts.sqlite',sep=''), verbose = F)
+    }
   }
 })
 
@@ -134,13 +144,6 @@ species = reactive({sp_list$lower[sp_list$common == input$sp_select]})
 
 tilesURL = reactive(
     paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
-
-ExtentVersion = reactive(
-  if(sp_list$global[sp_list$lower==species()]=="yes"){
-    paste0("Extent: Global, Version: 1.0", sep='')
-  } else {
-    paste0("Extent: CONUS,  Version: 1.0", sep='')
-  })
 ```
 
 Inputs {.sidebar width=200px}
@@ -279,7 +282,13 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
   # Toggle KDE on and off
   observe({
 
-    d = distro_shp()
+    d = distro_shp() 
+    
+    # if(d!=1){
+    #   leafletProxy("map") %>%
+    #     clearGroup( 'distro') %>%
+    #     addPolygons(data = distro_shp(), group = 'distro', color = "#1400F2", fill = 0, weight = 3, opacity = 1)
+    # }
 
     if(!is.null(d)){
       leafletProxy("map") %>%
@@ -315,11 +324,11 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 
     if(!is.null(extVer)){
       leafletProxy("map") %>%
-        clearControls() %>%
+        removeControl(layerId = 'extVer') %>%
         addControl(html = extVer, position = 'bottomleft', layerId = 'extVer')
     } else {
         leafletProxy("map") %>%
-        clearControls()
+          removeControl(layerId = 'extVer')
       }
   })
 })
@@ -336,31 +345,29 @@ Row {data-height=30%}
 ### Number of Presence Points Used
 
 ```{r}
-renderImage(list(src = './test2.png', contentType = 'image/png', width='50%', align='center'), deleteFile = F)
-renderText(print(sp_list$global[sp_list$lower==species()]))
-
+renderImage(list(src = './test2.png', contentType = 'image/png', width='90%', align='center'), deleteFile = F)
 ```
 
-<!-- ### Top Three Predictors -->
+### Top Three Predictors
 
-<!-- ```{r} -->
-<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
-<!-- ``` -->
+```{r}
+renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F)
+```
 
-<!-- Row {data-height=25%} -->
-<!-- ------------------------------------- -->
+Row {data-height=25%}
+-------------------------------------
 
-<!-- ### Chart 4 -->
+### Chart 4
 
-<!-- ```{r} -->
-<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
-<!-- ``` -->
+```{r}
+renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F)
+```
 
-<!-- ### Chart 5 -->
+### Chart 5
 
-<!-- ```{r} -->
-<!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
-<!-- ``` -->
+```{r}
+renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F)
+```
 
 Management Area Suitability Summary
 =====================================
