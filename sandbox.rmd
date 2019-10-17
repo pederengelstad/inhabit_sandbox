@@ -228,7 +228,6 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     "#one { float: left; background-color: #ddddff; }",
     "#two { float: right; background-color: #ccffcc; }"
   ),  
-  actionButton("button", "Change style!"),
     leafletOutput("map", height="100%")
     ),
   
