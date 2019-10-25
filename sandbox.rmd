@@ -428,15 +428,15 @@ Model Details
 Column {.tabset}
 -------------------------------------
 
-### Static Maps
+<!-- ### Static Maps -->
 
-The map displayed below is a PNG of the entire selected 
+<!-- The map displayed below is a PNG of the entire selected  -->
 
-<center>
-```{r}
-renderImage(list(src = paste0('./species/',speces(),'/ensemble_10th_color.PNG'), contentType = 'image/png', heigh='50%'), deleteFile = F)
-```
-</center>
+<!-- <center> -->
+<!-- ```{r} -->
+<!-- renderImage(list(src = paste0('./species/',species(),'/ensemble_10th_color.PNG'), contentType = 'image/png', heigh='50%'), deleteFile = F) -->
+<!-- ``` -->
+<!-- </center> -->
 
 ### Credibility Assessment
 ```{r}
