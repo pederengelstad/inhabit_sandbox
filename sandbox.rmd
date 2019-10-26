@@ -77,7 +77,6 @@ knitr::opts_chunk$set(
 # .libPaths( c( "C:/LocalData/Source/RPackages",.libPaths()))
 
 library(leaflet)
-library(mapview)
 library(flexdashboard)
 library(rgdal)
 library(shinyWidgets)
@@ -186,7 +185,7 @@ radioButtons(inputId = "mess", label = NULL, choices = c("yes","no"), selected =
 ```
 
 -----
-Choose your agency of interest, then select from the drop down:
+Click management categories to toggle them on and off (by default, all are turned on), then select from the box below:
 ```{r}
 
 checkboxGroupButtons(inputId = "mgmt.admin", direction = 'vertical', 
@@ -228,7 +227,6 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     "#one { float: left; background-color: #ddddff; }",
     "#two { float: right; background-color: #ccffcc; }"
   ),  
-  actionButton("button", "Change style!"),
     leafletOutput("map", height="100%")
     ),
   
@@ -394,17 +392,24 @@ fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),
                                              filter(Admin %in% input$mgmt.admin) %>%
                                              arrange(desc(perc_suit)),
               options = list(pageLength=50),
-              callback = JS("var tips = ['','','',
-                           'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
-                           'The percent of the park area that is classified as suitable',
-                           'Indicates if presence locations from the park were available for model development.',
-                           'The minimum distance from the park boundary to a known occurrence used in model development.'],
-                              header = table.columns().header();
-                                for (var i = 0; i < tips.length; i++) {
-                                  $(header[i]).attr('title', tips[i]);
-                                }"),
+              # callback = JS("var tips = ['','','',
+              #              'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
+              #              'The percent of the park area that is classified as suitable',
+              #              'Indicates if presence locations from the park were available for model development.',
+              #              'The minimum distance from the park boundary to a known occurrence used in model development.'],
+              #                 header = table.columns().header();
+              #                   for (var i = 0; i < tips.length; i++) {
+              #                     $(header[i]).attr('title', tips[i]);
+              #                   }"),
               fillContainer = getOption("DT.fillContainer", TRUE),
-              caption = HTML('This the summary information by the selected management agencies (with more species data to be added in the future). "Known presence" indicates whether or not the selected secies has known occurrences within management unit and, if so, how many were included during model development. "Established suitable area" is the total acreage of suitable habitat based on the 0.01 threshold map (see slider in sidebar) based on the number of pixels where >= 50% of the models indicated suitability. "Percent of Park" is the percent of the park area that is classified as suitable. "Minimum distance to Occurrence" is the minimum distance from the park boundary to a known occurrence used in model development.'),
+              caption = HTML('This summary information is filtered by the selected management categories (see sidebar). More species data will be added in the future. Please leave <a href="#section-feedback">feedback</a> if your species of interest or management unit is not listed. 
+              
+               <br><br> "Known presence" indicates whether or not the selected secies has has been found within management unit (1980-present). If so,                           the number of individual records included during model development are indicated in parentheses. 
+              
+               <br><br>   "Established suitable area" is the total acreage of suitable habitat using the 0.01 threshold map (see slider in                                          sidebar) summarizing the number of pixels where >= 50% of the models estimate suitability. "Percent of Park" is                                          the percent of the park area that is classified as suitable. 
+                             
+               <br><br>  "Minimum distance to Occurrence" is the linear distance from the park boundary to the closest known occurrence                                           used in model development.'),
+              
               colnames = c("Species",
                            "Admin",
                            "Management Unit",
@@ -425,9 +430,11 @@ Column {.tabset}
 
 <!-- ### Static Maps -->
 
+<!-- The map displayed below is a PNG of the entire selected  -->
+
 <!-- <center> -->
 <!-- ```{r} -->
-<!-- renderImage(list(src = './test.png', contentType = 'image/png', heigh='50%'), deleteFile = F) -->
+<!-- renderImage(list(src = paste0('./species/',species(),'/ensemble_10th_color.PNG'), contentType = 'image/png', heigh='50%'), deleteFile = F) -->
 <!-- ``` -->
 <!-- </center> -->
 
@@ -595,7 +602,7 @@ About
 
 Funding for INHABIT comes from <a href="https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis" target="_blank">USGS Core Science Systems (CSS): Science Analytics and Synthesis (SAS)</a> and the U.S. Fish and Wildlife Service. Continued development is in partnership with the <a href="https://www.nps.gov/orgs/1103/epmt.htm" target="_blank">National Park Service's Invasive Plant Management Teams</a>.  INHABIT is also logistically supported by <a href="https://bison.usgs.gov/" target="_blank">Biodiversity Information Serving Our Nation (BISON)</a> and the <a href="https://itis.gov/" target="_blank">Integrated Taxonomic Information System (ITIS)</a>.
 
-This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling</a>.
+This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling (SAHM)</a>.
 
 <br>
 
