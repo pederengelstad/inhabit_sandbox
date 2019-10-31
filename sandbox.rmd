@@ -302,7 +302,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     # Toggle training points on and off
   observe({
 
-    p = pres_pts()
+    p = pres_pts() 
 
     if(!is.null(p)){
       leafletProxy("map") %>%
