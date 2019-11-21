@@ -212,10 +212,38 @@ observeEvent(input$mgmt.admin, {
   if('U.S. Counties' %in% input$mgmt.admin) new.list = c(new.list,mgmt_areas$name[mgmt_areas$cat == 'County'])
   updateSelectInput(session, inputId = 'mgmt', choices = sort(new.list))
 })
+```
 
-radioButtons(inputId = "pres_button",choices=c("yes","no"), selected = "no", label='Display Occurrence Points?', width = '100%')
+```{r}
+radioGroupButtons(
+   inputId = "pres_button",
+   label = HTML("Display Occurrence Points?
+                <br>
+                <em><font size=-2>Warning: Large datasets may be slow to load!</font></em>"),
+   choices = c("yes","no"),
+   selected = 'no',
+   individual = TRUE,
+   width = '100%',
+   checkIcon = list(
+      yes = tags$i(class = "fa fa-check-circle",
+    style = "color: black"),
+   no = tags$i(class = "fa fa-circle-o",
+    style = "color: black; opacity: 0.5"))
+)
 
-radioButtons(inputId = "known_distro",choices=c("yes","no"), selected = "no", label='Display Known Distribution?', width = '100%')
+radioGroupButtons(
+   inputId = "known_distro",
+   label = HTML("Display Known Distribution?"),
+   choices = c("yes","no"),
+   selected = 'no',
+   individual = TRUE,
+   width = '100%',
+   checkIcon = list(
+      yes = tags$i(class = "fa fa-check-circle",
+    style = "color: black"),
+   no = tags$i(class = "fa fa-circle-o",
+    style = "color: black; opacity: 0.5"))
+)
 ```
 
 Map
@@ -377,7 +405,7 @@ downloadBttn(outputId = 'dl.dt', label = 'Download Data for Selected Species & A
 
 output$dl.dt = downloadHandler(filename = 'DataSummaryExport.csv',
                                content = function(file){
-                                 write.csv(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
+                                 write.csv(read.csv(paste0("species/",species(),'/',species(),'_zonal','.csv',sep='')
                                                     , header = T, stringsAsFactors = F) %>%
                                              select(-c(X, total_area_acre)) %>%
                                              mutate(Species = input$sp_select) %>%
