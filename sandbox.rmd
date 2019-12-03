@@ -524,7 +524,6 @@ output$eval.table <- renderText({
 
 ### Variable Response Curves
 
-These graphs plot the relative habitat suitability (y-axis) across the range of values for each predictor (x-axis). The red lines along the x-axis represent presence points with those values. Each line represents one model algorithm and background point generation method for a total of 10 lines possible; missing lines indicate the predictor was dropped from that model. The numbers in the top left of each graph represent the average relative importance of the predictor with the range across model algorithm/ background method combinations shown in parentheses. The graphs are arranged by relative importance, with the top left contributing most to models on average.
 
 ```{r}
 
@@ -533,10 +532,16 @@ htmlOutput("sc.table")
 
 # server component
 output$sc.table <- renderText({
-  kable(data.frame(test = rc()), format = 'html', escape = F, col.names='') %>%
+  kable(data.frame(caption = "<font size=+1>These graphs plot the relative habitat suitability (y-axis) across the range of values for each predictor (x-axis). The red lines along the x-axis represent presence points with those values. Each line represents one model algorithm and background point generation method for a total of 10 lines possible; missing lines indicate the predictor was dropped from that model. The numbers in the top left of each graph represent the average relative importance of the predictor with the range across model algorithm/ background method combinations shown in parentheses. The graphs are arranged by relative importance, with the top left contributing most to models on average.</font>", test = rc()), 
+        format = 'html', 
+        escape = F, 
+        col.names=c('','')
+  ) %>%
     kable_styling(
       full_width = F,
-      bootstrap_options = c("condensed", "responsive"))
+      bootstrap_options = c("condensed", "responsive")) %>%
+    column_spec(1, width = "30%") %>%
+    row_spec(1, hline_after = F)
 })
 ```
 
