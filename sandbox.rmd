@@ -1,14 +1,15 @@
 ---
-title: 'INHABIT'
-logo: usgs.png
+title: "INHABIT"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
 resource_files:
 - mgmt
 - states
 - species
+- logo.png
 runtime: shiny
-output:
-  flexdashboard::flex_dashboard:
-    orientation: rows
+logo: usgs.png
 ---
 
 <style type='text/css'>
@@ -49,6 +50,18 @@ output:
   font-size: 10px;
 } 
 
+.js-irs-0 .irs-bar {
+border-top-color: #000000;
+border-bottom-color: #000000;
+opacity: 0;
+
+} 
+
+.js-irs-0 .irs-bar-edge {
+border-color: #000000;
+opacity: 0;
+}
+
 </style>
 
 <script>
@@ -74,7 +87,6 @@ for (i = 0; i < coll.length; i++) {
 knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE)
-# .libPaths( c( "C:/LocalData/Source/RPackages",.libPaths()))
 
 library(leaflet)
 library(flexdashboard)
@@ -86,6 +98,7 @@ library(magrittr)
 library(knitr)
 library(kableExtra)
 library(dplyr)
+library(stringr)
 
 img_uri <- function(x) { sprintf('<center><img src="%s" width="525"></center>', knitr::image_uri(x)) }
 sp_list = as.list(read.csv('sp_list.csv', header = T, stringsAsFactors = F))
@@ -168,9 +181,11 @@ pickerInput(inputId = 'sp_select', label = 'Species of interest:',selected = 'Am
 ```
 
 ``` {r}
-sliderTextInput(inputId = "slider", label = "Choose your model threshold:"
+sliderTextInput(inputId = "slider", label = div(style='width:225px;', 
+                            div(style='float:left; font-size: 75%;', 'More Inclusive'), 
+                            div(style='float:right; font-size: 75%;', 'More Conservative')),
                 , choices = list("MPP", "0.01", "0.1","MaxSSS")
-                , grid = T, hide_min_max = F, force_edges = T, width = '100%')
+                , grid = T, hide_min_max = T, force_edges = T, width = '100%')
 ```
 
 Restrict environmental conditions? <br>
@@ -181,7 +196,19 @@ Restrict environmental conditions? <br>
 
 -----
 ``` {r}
-radioButtons(inputId = "mess", label = NULL, choices = c("yes","no"), selected = "yes")
+radioGroupButtons(
+   inputId = "mess",
+   label = NULL,
+   choices = c("yes","no"),
+   selected = 'yes',
+   individual = TRUE,
+   width = '100%',
+   checkIcon = list(
+      yes = tags$i(class = "fa fa-check-circle",
+    style = "color: black"),
+   no = tags$i(class = "fa fa-circle-o",
+    style = "color: black; opacity: 0.5"))
+)
 ```
 
 -----
@@ -506,19 +533,48 @@ fillPage(HTML(
 ```{r}
 eval = reactive({
   
-  read.csv(paste0("species/",species(),'/eval.csv',sep='')
-      , header = T, stringsAsFactors = F) %>%
-    select(-X)
+  tryCatch({
+    read.csv(paste0("species/",species(),'/eval.csv',sep=''), header = F, stringsAsFactors = F)
+  }, error = function(x){
+    return("Evaluation statistics not yet formatted.")
+  })
 })
 
 htmlOutput("eval.table") 
 
 # server component
 output$eval.table <- renderText({
-  kable(eval(), format = 'html', escape = F) %>%
-    kable_styling(
-      full_width = F,
-      bootstrap_options = c("condensed", "responsive"))
+  
+  csv = eval()
+  
+  tryCatch(
+    {
+      if(any(grep(csv$V2, pattern = "Model*", value = T) %in% 'Model Name')){
+        csv = filter(csv, V2 != 'Model')
+      } else {
+        csv = mutate_all(csv, funs(str_replace(., "Model", "Model Name")))
+      }
+      
+      csv = csv %>%
+        dplyr::select(-V1) %>%
+        mutate_all(funs(str_replace(., "(_kde)|(_target)", "")))
+      
+      mod.name = unique(unlist(csv[(csv$V2 == "Model Name"), 3:ncol(csv)]))
+      head.vec = c(1, rep(2, length(mod.name)))
+      names(head.vec) = c("Model Name", unlist(mod.name))
+      
+      kable(csv %>% slice(2:n()), format = 'html', escape = F, col.names = c(rep('',ncol(csv)))) %>%
+        add_header_above(bold = T, header = head.vec, line = F, line_sep = 0, align = 'c', color = 'black') %>%
+        column_spec(c(seq(2,length(mod.name)*2, by = 2)), border_left = T, extra_css = "background-color: #f6f6f6;") %>%
+        row_spec(1, align = 'c', extra_css = "background-color: #ffffff; color: black; border-bottom: 1pt solid black;") %>%
+        kable_styling(
+          full_width = F,
+          bootstrap_options = c("condensed", "responsive"))
+    
+    }, error = function(x){
+        return("Evaluation statistics not yet formatted.")
+      }
+  )
 })
 ```
 
