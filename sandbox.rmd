@@ -296,7 +296,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
                 , colors = c('#6e001c','#800026','#bd0026','#e31a1c'
                              ,'#fc4e2a','#fd8d3c','#feb24c'
                              ,'#fed976','#ffeda0','#fffFcc','','#505CA3','','#9DBFD6','','#A0ADB2'),
-                labels = c("High","","","","","","","","", "Low",'','Zero Agreement','','Env. Dissimilar','','No Data'), 
+                labels = c("High","","","","","","","","", "Low",'','No Suitability','','Env. Dissimilar','','No Data'), 
                 title = "Model Agreement", 
                 opacity = 1.5,
                 labFormat = ) %>%
