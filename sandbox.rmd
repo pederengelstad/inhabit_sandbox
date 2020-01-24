@@ -1,5 +1,5 @@
 ---
-title: "INHABIT"
+title: INHABIT
 output:
   flexdashboard::flex_dashboard:
     orientation: rows
@@ -88,16 +88,16 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE)
 
-library(leaflet)
+library(dplyr)
+library(DT)
 library(flexdashboard)
+library(formattable)
+library(kableExtra)
+library(knitr)
+library(leaflet)
+library(magrittr)
 library(rgdal)
 library(shinyWidgets)
-library(formattable)
-library(DT)
-library(magrittr)
-library(knitr)
-library(kableExtra)
-library(dplyr)
 library(stringr)
 
 img_uri <- function(x) { sprintf('<center><img src="%s" width="525"></center>', knitr::image_uri(x)) }
@@ -158,7 +158,7 @@ species = reactive({sp_list$lower[sp_list$common == input$sp_select]})
 # when we're ready to make the switch, this will be the new tilesURL reactive:
 
 # tilesURL = reactive(
-#     paste0("https://prod-inhabit-cache.s3-us-west-2.amazonaws.com",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
+#     paste0("https://dev-csasl-inhabit.s3-us-west-2.amazonaws.com/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
 
 tilesURL = reactive(
     paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
@@ -194,10 +194,12 @@ Restrict environmental conditions? <br>
   <p>If "yes", the map will only display areas where environmental characteristics are inside the range of the values used to develop the model. For example, a location with a minimum winter temperature of 12 C would be outside the range of -10 to 10 C used in model development. <a href="https://doi.org/10.1111/j.2041-210X.2010.00036.x" target="_blank">(Elith et al 2011)</a></p>
 </div>
 
------
+<br>
+
 ``` {r}
 radioGroupButtons(
    inputId = "mess",
+   justified = T,
    label = NULL,
    choices = c("yes","no"),
    selected = 'yes',
@@ -250,6 +252,7 @@ radioGroupButtons(
    choices = c("yes","no"),
    selected = 'no',
    individual = TRUE,
+   justified = T,
    width = '100%',
    checkIcon = list(
       yes = tags$i(class = "fa fa-check-circle",
@@ -264,6 +267,7 @@ radioGroupButtons(
    choices = c("yes","no"),
    selected = 'no',
    individual = TRUE,
+   justified = T,
    width = '100%',
    checkIcon = list(
       yes = tags$i(class = "fa fa-check-circle",
@@ -288,6 +292,29 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
   server = function(input, output, session) {
 
   output$map = renderLeaflet({
+    
+# url = 'https://www.sciencebase.gov/catalogMaps/mapping/ows/5e20c7e5e4b0ecf25c65af7e?version%3D1.3.0'
+# leaflet(options = leafletOptions(maxZoom = 10, preferCanvas = T)) %>%
+#   addProviderTiles(providers$CartoDB.DarkMatter, group = "Light", options = providerTileOptions(opacity = 0.8)) %>%
+#   fitBounds(lat1 = 48.808461, lng1 = -123.967893, lat2 = 24.848766, lng2 = -68.816526) %>%
+#   addPolygons(data = states, fill = 0, weight = 1.35, group = "states", color = 'white') %>%
+#       addLegend(position = "topright"
+#                 , colors = c('#6e001c','#800026','#bd0026','#e31a1c'
+#                              ,'#fc4e2a','#fd8d3c','#feb24c'
+#                              ,'#fed976','#ffeda0','#fffFcc','','#505CA3','','#9DBFD6','','#A0ADB2'),
+#                 labels = c("High","","","","","","","","", "Low",'','No Suitability','','Env. Dissimilar','','No Data'),
+#                 title = "Model Agreement",
+#                 opacity = 1.5,
+#                 labFormat = ) %>%
+#       addLegend(position = "bottomright"
+#             , colors = c('#00E30B','#1400F2','#fd00ff')
+#             , labels = c("Mgmt Area", "Known Distro","Occ Points"),
+#             title = "Data Legend", opacity = 1) %>%
+#       addScaleBar(position = 'bottomleft', options = scaleBarOptions(maxWidth = 200)) %>%
+#   addWMSTiles(baseUrl = url,
+#               layers = 'ensemble_1st_3857',
+#               options = WMSTileOptions(transparent = T, version = "1.3.0", format = "image/png", crs = "EPSG:3857"))
+    
     leaflet(options = leafletOptions(maxZoom = 10, preferCanvas = T)) %>% #Canvas helps draw vector graphics faster
       addProviderTiles(providers$CartoDB.DarkMatter, group = "Light", options = providerTileOptions(opacity = 0.8)) %>%
       fitBounds(lat1 = 48.808461, lng1 = -123.967893, lat2 = 24.848766, lng2 = -68.816526) %>%
@@ -296,17 +323,17 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
                 , colors = c('#6e001c','#800026','#bd0026','#e31a1c'
                              ,'#fc4e2a','#fd8d3c','#feb24c'
                              ,'#fed976','#ffeda0','#fffFcc','','#505CA3','','#9DBFD6','','#A0ADB2'),
-                labels = c("High","","","","","","","","", "Low",'','No Suitability','','Env. Dissimilar','','No Data'), 
-                title = "Model Agreement", 
+                labels = c("High","","","","","","","","", "Low",'','No Suitability','','Env. Dissimilar','','No Data'),
+                title = "Model Agreement",
                 opacity = 1.5,
                 labFormat = ) %>%
-      addLegend(position = "bottomright" 
+      addLegend(position = "bottomright"
             , colors = c('#00E30B','#1400F2','#fd00ff')
-            , labels = c("Mgmt Area", "Known Distro","Occ Points"), 
+            , labels = c("Mgmt Area", "Known Distro","Occ Points"),
             title = "Data Legend", opacity = 1) %>%
       addScaleBar(position = 'bottomleft', options = scaleBarOptions(maxWidth = 200))
     })
-  
+
   observe({
     conus_tile_url = tilesURL
     if(!is.null(conus_tile_url)){
@@ -342,7 +369,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
   # Toggle KDE on and off
   observe({
 
-    d = distro_shp() 
+    d = distro_shp()
 
     if(!is.null(d)){
       leafletProxy("map") %>%
@@ -357,7 +384,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
     # Toggle training points on and off
   observe({
 
-    p = pres_pts() 
+    p = pres_pts()
 
     if(!is.null(p)){
       leafletProxy("map") %>%
@@ -370,7 +397,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
           clearGroup('pres_pts')
       }
   })
-  
+
       # Update extent name and version number
   observe({
 
@@ -385,6 +412,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
           removeControl(layerId = 'extVer')
       }
   })
+  
 })
 ```
 
@@ -440,30 +468,31 @@ output$dl.dt = downloadHandler(filename = 'DataSummaryExport.csv',
                                  }
                                )
 
-fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep='')
-                                                    , header = T, stringsAsFactors = F) %>%
-                                             select(-c(X, total_area_acre)) %>%
-                                             mutate(Species = input$sp_select) %>%
-                                             filter(Admin %in% input$mgmt.admin) %>%
-                                             arrange(desc(perc_suit)),
+# fillPage(
+output$summary_table <- DT::renderDataTable(
+    DT::datatable(read.csv(paste0("species/",species(),'/',species(),'_zonal.csv',sep=''), header = T, stringsAsFactors = F) %>%
+                   select(-c(X, total_area_acre)) %>%
+                   mutate(Species = input$sp_select) %>%
+                   filter(Admin %in% input$mgmt.admin) %>%
+                   arrange(desc(perc_suit)),
               options = list(pageLength=50),
-              # callback = JS("var tips = ['','','',
-              #              'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
-              #              'The percent of the park area that is classified as suitable',
-              #              'Indicates if presence locations from the park were available for model development.',
-              #              'The minimum distance from the park boundary to a known occurrence used in model development.'],
-              #                 header = table.columns().header();
-              #                   for (var i = 0; i < tips.length; i++) {
-              #                     $(header[i]).attr('title', tips[i]);
-              #                   }"),
+              callback = JS("var tips = ['','','',
+                           'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
+                           'The percent of the park area that is classified as suitable',
+                           'Indicates if presence locations from the park were available for model development.',
+                           'The minimum distance from the park boundary to a known occurrence used in model development.'],
+                              header = table.columns().header();
+                                for (var i = 0; i < tips.length; i++) {
+                                  $(header[i]).attr('title', tips[i]);
+                                }"),
               fillContainer = getOption("DT.fillContainer", TRUE),
-              caption = HTML('This summary information is filtered by the selected management categories (see sidebar). More species data will be added in the future. Please leave <a href="#section-feedback">feedback</a> if your species of interest or management unit is not listed. 
-              
-               <br><br> "Known presence" indicates whether or not the selected secies has has been found within management unit (1980-present). If so,                           the number of individual records included during model development are indicated in parentheses. 
-              
-               <br><br>   "Established suitable area" is the total acreage of suitable habitat using the 0.01 threshold map (see slider in                                          sidebar) summarizing the number of pixels where >= 50% of the models estimate suitability. "Percent of Park" is                                          the percent of the park area that is classified as suitable. 
-                             
-               <br><br>  "Minimum distance to Occurrence" is the linear distance from the park boundary to the closest known occurrence                                           used in model development.'),
+              # caption = HTML('This summary information is filtered by the selected management categories (see sidebar). More species data will be added in the future. Please leave <a href="#section-feedback">feedback</a> if your species of interest or management unit is not listed. 
+              # 
+              #  <br><br> "Known presence" indicates whether or not the selected secies has has been found within management unit (1980-present). If so,                           the number of individual records included during model development are indicated in parentheses. 
+              # 
+              #  <br><br>   "Established suitable area" is the total acreage of suitable habitat using the 0.01 threshold map (see slider in                                          sidebar) summarizing the number of pixels where >= 50% of the models estimate suitability. "Percent of Park" is                                          the percent of the park area that is classified as suitable. 
+              #                
+              #  <br><br>  "Minimum distance to Occurrence" is the linear distance from the park boundary to the closest known occurrence                                           used in model development.'),
               
               colnames = c("Species",
                            "Admin",
@@ -474,7 +503,12 @@ fillPage(DT::renderDataTable(DT::datatable(read.csv(paste0("species/",species(),
                            "Minimum Distance to Occurrence (Miles)"),
               rownames = FALSE) %>%
               formatStyle(columns = c(1:7), 'text-align' = 'center') %>%
-              DT::formatPercentage(columns = 5)))
+              DT::formatPercentage(columns = 5)
+    )
+
+DT::dataTableOutput("summary_table", height = '100px')
+
+
 ```
 
 Model Details
@@ -492,41 +526,6 @@ Column {.tabset}
 <!-- renderImage(list(src = paste0('./species/',species(),'/ensemble_10th_color.PNG'), contentType = 'image/png', heigh='50%'), deleteFile = F) -->
 <!-- ``` -->
 <!-- </center> -->
-
-### Credibility Assessment
-```{r}
-caption = 'Model credibility reflects both input data attributes and methodological decisions. 
-          For each major element of the model development and delivery process, we provide an overview 
-          of problematic (red), acceptable (yellow), and ideal (green) practices. Source: <a href="https://doi.org/10.1093/biosci/biz045" target="_blank">Sofaer et al., 2019</a>'
-fillPage(HTML(
-  
-  kable(cred.table, row.names = F
-        , col.names = c('','','Interpret With Caution',colnames(cred.table[4:6]))
-        , caption = caption
-        , format = 'html'
-        , escape = F) %>%
-  kable_styling(position = "center"
-                , full_width = T
-                , bootstrap_options = c("condensed","bordered", "responsive"), font_size = 10) %>%
-  row_spec(row = 0:nrow(cred.table)) %>%
-           # , extra_css = c('border: 1px solid black;')) 
-  column_spec(1
-              # , width = '2cm'
-              , extra_css = 'webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);') %>%
-  column_spec(2:6,
-              # width = '5cm',
-              extra_css = 'vertical-align: middle;') %>%
-  column_spec(1,
-              # border_right = '1px solid black',
-              extra_css = 'text-orientation: upgright;') %>%
-  column_spec(2:6, color = 'black') %>%
-  column_spec(3, background = '#FB8686') %>%
-  column_spec(4, background = '#F4FDAD') %>%
-  column_spec(5, background = '#71F453') %>%
-  collapse_rows(1:2)  
-  )
-)
-```
 
 ### Evaluation Statistics
 
@@ -658,7 +657,7 @@ renderFormattable({
 })
 ```
 
-### Variable Source
+### Variable Sources
 
 ```{r}
 htmlOutput("source_table") 
@@ -685,59 +684,56 @@ output$source_table <- renderText({
 })
 ```
 
+### Credibility Assessment
+```{r}
+caption = 'This template for model credibility reflects both input data attributes and methodological decisions. 
+          For each major element of the model development and delivery process, we provide an overview 
+          of problematic (red), acceptable (yellow), and ideal (green) practices. Source: <a href="https://doi.org/10.1093/biosci/biz045" target="_blank">Sofaer et al., 2019</a>'
+fillPage(HTML(
+  
+  kable(cred.table, row.names = F
+        , col.names = c('','','Interpret With Caution',colnames(cred.table[4:6]))
+        , caption = caption
+        , format = 'html'
+        , escape = F) %>%
+  kable_styling(position = "center"
+                , full_width = T
+                , bootstrap_options = c("condensed","bordered", "responsive"), font_size = 10) %>%
+  row_spec(row = 0:nrow(cred.table)) %>%
+           # , extra_css = c('border: 1px solid black;')) 
+  column_spec(1
+              # , width = '2cm'
+              , extra_css = 'webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg);') %>%
+  column_spec(2:6,
+              # width = '5cm',
+              extra_css = 'vertical-align: middle;') %>%
+  column_spec(1,
+              # border_right = '1px solid black',
+              extra_css = 'text-orientation: upgright;') %>%
+  column_spec(2:6, color = 'black') %>%
+  column_spec(3, background = '#FB8686') %>%
+  column_spec(4, background = '#F4FDAD') %>%
+  column_spec(5, background = '#71F453') %>%
+  collapse_rows(1:2)  
+  )
+)
+```
 
 About
 =====================================
-
-Funding for INHABIT comes from <a href="https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis" target="_blank">USGS Core Science Systems (CSS): Science Analytics and Synthesis (SAS)</a> and the U.S. Fish and Wildlife Service. Continued development is in partnership with the <a href="https://www.nps.gov/orgs/1103/epmt.htm" target="_blank">National Park Service's Invasive Plant Management Teams</a>.  INHABIT is also logistically supported by <a href="https://bison.usgs.gov/" target="_blank">Biodiversity Information Serving Our Nation (BISON)</a> and the <a href="https://itis.gov/" target="_blank">Integrated Taxonomic Information System (ITIS)</a>.
-
-This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling (SAHM)</a>.
-
-<br>
-
-**Occurrence Data Sources**
-
-Biodiversity Information Serving Our Nation (BISON) - <a href="https://bison.usgs.gov/" target="_blank">bison.usgs.gov</a>
-
-Calflora - <a href="https://www.calflora.org/" target="_blank">www.calflora.org</a>
-
-Global Biodiversity Information Facility (GBIF) - <a href="https://www.gbif.org/" target="_blank">www.gbif.org</a>
-
-Early Detection & Distribution Mapping Systems (EDDMapS) - <a href="https://www.eddmaps.org" target="_blank">www.eddmaps.org</a>
-
-<br>
-
-**Plant Taxonomy Sources**
-
-Integrated Taxonomic Information System (ITIS) - <a href="https://itis.gov/" target="_blank">www.itis.gov</a>
-
-USDA Plants Database - <a href="https://plants.sc.egov.usda.gov/java/" target="_blank">plants.sc.egov.usda.gov</a>
+This tool is designed to display spatial and aspatial outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling (SAHM)</a>.
 
 
-<br>
-
-**Management Polygons Sources**
-
-BLM - https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_Administrative_Units.zip
-
-FWS - https://ecos.fws.gov/ServCat/Reference/Profile/110959
-
-NPS - https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True
-
-US Counties - https://www.weather.gov/gis/Counties
+For technical feedback, please contact Peder Engelstad: [peder.engelstad@colostate.edu](mailto:peder.engelstad@colostate.edu)
 
 
-Feedback
-=====================================
-<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSc5TVLYur7zjC2ikJlrrJho07frcdUgcc2dIMjRDj7Q2ieK1w/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" align="center">Loading.</iframe>
-
-F.A.Q.
-=====================================
+**F.A.Q.**
+<!-- This first one is where we set the default bar color -->
 <style type='text/css'>
 .accordionButton{
     width:100%;
     float:left;
-    background:#80C347;
+    background:#2B5F91;
     border-bottom: 1px solid #FFFFFF;
     cursor: pointer;
     padding:3px 0px;
@@ -811,23 +807,73 @@ $(document).ready(function() {
 </script>
 
 <div class="accordionButton">
-<span>1. What is species distribution modeling?</span><span class="plusMinus">+</span>
+  <span>How is this project funded?</span><span class="plusMinus">+</span>
 </div>
 <div class="accordionContent">
-<p></p>
+<p>
+Funding for INHABIT comes from <a href="https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis" target="_blank">USGS Core Science Systems (CSS): Science Analytics and Synthesis (SAS)</a> and the U.S. Fish and Wildlife Service. Continued development is in partnership with the <a href="https://www.nps.gov/orgs/1103/epmt.htm" target="_blank">National Park Service's Invasive Plant Management Teams</a>.  INHABIT is also logistically supported by <a href="https://bison.usgs.gov/" target="_blank">Biodiversity Information Serving Our Nation (BISON)</a> and the <a href="https://itis.gov/" target="_blank">Integrated Taxonomic Information System (ITIS)</a>.
+</p>
 </div>
 <br><br>
 
 <div class="accordionButton">
-<span>2. How far in can I zoom?</button></span><span class="plusMinus">+</span>
+  <span>What data sources were used for building the models?</span><span class="plusMinus">+</span>
 </div>
 <div class="accordionContent">
-<p>The models are produced at a ~90m resolution. You can zoom in.</p>
+<p>
+**Occurrence Data Sources**
+
+Biodiversity Information Serving Our Nation (BISON) - <a href="https://bison.usgs.gov/" target="_blank">bison.usgs.gov</a>
+
+Calflora - <a href="https://www.calflora.org/" target="_blank">www.calflora.org</a>
+
+Global Biodiversity Information Facility (GBIF) - <a href="https://www.gbif.org/" target="_blank">www.gbif.org</a>
+
+Early Detection & Distribution Mapping Systems (EDDMapS) - <a href="https://www.eddmaps.org" target="_blank">www.eddmaps.org</a>
+
+<br>
+
+**Plant Taxonomy Sources**
+
+Integrated Taxonomic Information System (ITIS) - <a href="https://itis.gov/" target="_blank">www.itis.gov</a>
+
+USDA Plants Database - <a href="https://plants.sc.egov.usda.gov/java/" target="_blank">plants.sc.egov.usda.gov</a>
+
+
+<br>
+
+**Management Polygons Sources**
+
+BLM - https://gis.blm.gov/EGISDownload/LayerPackages/BLM_National_Administrative_Units.zip
+
+FWS - https://ecos.fws.gov/ServCat/Reference/Profile/110959
+
+NPS - https://irma.nps.gov/DataStore/Reference/Profile/2224545?lnv=True
+
+US Counties - https://www.weather.gov/gis/Counties
+
+</p>
 </div>
 <br><br>
 
+<!-- <div class="accordionButton"> -->
+<!-- <span>1. What is species distribution modeling?</span><span class="plusMinus">+</span> -->
+<!-- </div> -->
+<!-- <div class="accordionContent"> -->
+<!-- <p></p> -->
+<!-- </div> -->
+<!-- <br><br> -->
+
+<!-- <div class="accordionButton"> -->
+<!-- <span>How far in can I zoom?</button></span><span class="plusMinus">+</span> -->
+<!-- </div> -->
+<!-- <div class="accordionContent"> -->
+<!-- <p>The models are produced at a ~90m resolution. You can zoom in.</p> -->
+<!-- </div> -->
+<!-- <br><br> -->
+
 <div class="accordionButton">
-<span>3. Why are there areas of low model agreement  around some of the presence locations?
+<span>Why are there areas of low model agreement  around some of the presence locations?
 </button></span><span class="plusMinus">+</span>
 </div>
 <div class="accordionContent">
@@ -837,11 +883,15 @@ $(document).ready(function() {
 <br><br>
 
 <div class="accordionButton">
-<span>4. What is the number of models included in the ensemble?</button></span><span class="plusMinus">+</span>
+<span>How many models are included in the ensemble?</button></span><span class="plusMinus">+</span>
 </div>
 <div class="accordionContent">
 <p>
-  The largest number in the legend indicates the number of models included in the ensemble. The maximum is 10 (5 model algorithms times 2 background generation methods).  
+  The largest number in the legend indicates the number of models included in the ensemble. The maximum is 10 (5 model algorithms times 2 background generation methods). The total number will equal the number of models show on the Evaluation Statistics page under the <a href="#section-model-details">Model Details</a> tab.
 </p>
 </div>
 <br><br>
+
+Feedback
+=====================================
+<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSc5TVLYur7zjC2ikJlrrJho07frcdUgcc2dIMjRDj7Q2ieK1w/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" align="center">Loading.</iframe>
