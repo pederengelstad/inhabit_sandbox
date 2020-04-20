@@ -2,10 +2,10 @@ Package: tinytex
 Type: Package
 Title: Helper Functions to Install and Maintain 'TeX Live', and Compile
         'LaTeX' Documents
-Version: 0.18
+Version: 0.21
 Authors@R: c(
   person("Yihui", "Xie", role = c("aut", "cre", "cph"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
-  person(family = "RStudio, Inc.", role = "cph"),
+  person(family = "RStudio, PBC", role = "cph"),
   person("Fernando", "Cagua", role = "ctb"),
   person("Ethan", "Heinzen", role = "ctb"),
   person()
@@ -22,14 +22,14 @@ URL: https://github.com/yihui/tinytex
 BugReports: https://github.com/yihui/tinytex/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 NeedsCompilation: no
-Packaged: 2019-12-10 19:38:11 UTC; yihui
+Packaged: 2020-03-31 04:10:37 UTC; yihui
 Author: Yihui Xie [aut, cre, cph] (<https://orcid.org/0000-0003-0645-5666>),
-  RStudio, Inc. [cph],
+  RStudio, PBC [cph],
   Fernando Cagua [ctb],
   Ethan Heinzen [ctb]
 Maintainer: Yihui Xie <xie@yihui.name>
 Repository: CRAN
-Date/Publication: 2019-12-10 21:30:02 UTC
-Built: R 3.6.1; ; 2019-12-16 16:51:18 UTC; windows
+Date/Publication: 2020-03-31 04:50:03 UTC
+Built: R 3.6.2; ; 2020-03-31 19:36:41 UTC; windows

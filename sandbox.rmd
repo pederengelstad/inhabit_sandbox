@@ -156,29 +156,32 @@ pres_pts = reactive({
 species = reactive({sp_list$lower[sp_list$common == input$sp_select]})
 
 # when we're ready to make the switch, this will be the new tilesURL reactive:
+tiles_basepath = readLines('./tilespath.txt')
+tilesURL = reactive(
+    paste0(tiles_basepath,species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
 
 # tilesURL = reactive(
-#     paste0("https://dev-csasl-inhabit.s3-us-west-2.amazonaws.com/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
-
-tilesURL = reactive(
-    paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
+    # paste0("http://pederengelstad.github.io/",species(),'/',model(),"/",mess(),"/{z}/{x}/{y}.png",sep=''))
 ```
 
 Inputs {.sidebar width=200px}
 =======================================================================
 <img class="img-responsive" src="logo.png" max-width=100%>
-<br />
 
 ### **DRAFT VERSION**
+<font size=-1.75>Please note: data in this app is under <font color='red'>active development</font>. Our apologies but select species may be missing data. Please check back often for updates</font>
+<br>
 
 ```{r}
-pickerInput(inputId = 'sp_select', label = 'Species of interest:',selected = 'Amur peppervine'
+pickerInput(inputId = 'sp_select', label = 'Select a species of interest:',selected = 'Amur peppervine'
             , choices = sp_list$common
             , width = '95%'
             , choicesOpt = list(subtext = paste0("(", sp_list$latin, ')', sep=''))
             , options = list(title = "i.e. Fountaingrass OR Pennisetum", `live-search`=T)
 )
 ```
+
+Choose a model threshold:
 
 ``` {r}
 sliderTextInput(inputId = "slider", label = div(style='width:225px;', 
@@ -263,7 +266,7 @@ radioGroupButtons(
 
 radioGroupButtons(
    inputId = "known_distro",
-   label = HTML("Display Known Distribution?"),
+   label = HTML("Display Occurence Point Range?"),
    choices = c("yes","no"),
    selected = 'no',
    individual = TRUE,
@@ -279,41 +282,18 @@ radioGroupButtons(
 
 Map
 =====================================
-
 ```{r}
 shinyApp(ui = fillPage(tags$style(type = "text/css",
     ".half-fill { width: 50%; height: 100%; }",
     "#one { float: left; background-color: #ddddff; }",
     "#two { float: right; background-color: #ccffcc; }"
-  ),  
+  ),
     leafletOutput("map", height="100%")
     ),
   
   server = function(input, output, session) {
 
   output$map = renderLeaflet({
-    
-# url = 'https://www.sciencebase.gov/catalogMaps/mapping/ows/5e20c7e5e4b0ecf25c65af7e?version%3D1.3.0'
-# leaflet(options = leafletOptions(maxZoom = 10, preferCanvas = T)) %>%
-#   addProviderTiles(providers$CartoDB.DarkMatter, group = "Light", options = providerTileOptions(opacity = 0.8)) %>%
-#   fitBounds(lat1 = 48.808461, lng1 = -123.967893, lat2 = 24.848766, lng2 = -68.816526) %>%
-#   addPolygons(data = states, fill = 0, weight = 1.35, group = "states", color = 'white') %>%
-#       addLegend(position = "topright"
-#                 , colors = c('#6e001c','#800026','#bd0026','#e31a1c'
-#                              ,'#fc4e2a','#fd8d3c','#feb24c'
-#                              ,'#fed976','#ffeda0','#fffFcc','','#505CA3','','#9DBFD6','','#A0ADB2'),
-#                 labels = c("High","","","","","","","","", "Low",'','No Suitability','','Env. Dissimilar','','No Data'),
-#                 title = "Model Agreement",
-#                 opacity = 1.5,
-#                 labFormat = ) %>%
-#       addLegend(position = "bottomright"
-#             , colors = c('#00E30B','#1400F2','#fd00ff')
-#             , labels = c("Mgmt Area", "Known Distro","Occ Points"),
-#             title = "Data Legend", opacity = 1) %>%
-#       addScaleBar(position = 'bottomleft', options = scaleBarOptions(maxWidth = 200)) %>%
-#   addWMSTiles(baseUrl = url,
-#               layers = 'ensemble_1st_3857',
-#               options = WMSTileOptions(transparent = T, version = "1.3.0", format = "image/png", crs = "EPSG:3857"))
     
     leaflet(options = leafletOptions(maxZoom = 10, preferCanvas = T)) %>% #Canvas helps draw vector graphics faster
       addProviderTiles(providers$CartoDB.DarkMatter, group = "Light", options = providerTileOptions(opacity = 0.8)) %>%
@@ -451,7 +431,7 @@ shinyApp(ui = fillPage(tags$style(type = "text/css",
 <!-- renderImage(list(src = './test2.png', contentType = 'image/png'), deleteFile = F) -->
 <!-- ``` -->
 
-Suitability Summary Table
+Management Area Table
 =====================================
 
 ```{r}
@@ -475,7 +455,9 @@ output$summary_table <- DT::renderDataTable(
                    mutate(Species = input$sp_select) %>%
                    filter(Admin %in% input$mgmt.admin) %>%
                    arrange(desc(perc_suit)),
-              options = list(pageLength=50),
+                  escape = F,
+              options = list(pageLength=50, autowidth=T,
+                             columnDefs = list(list(width = '20px', targets = c(1,4)))),
               callback = JS("var tips = ['','','',
                            'The number of acres suitable when suitability values between 0 and 1 were transformed to unsuitable and suitable categories by allowing 1% of the known locations to be classified as unsuitable.',
                            'The percent of the park area that is classified as suitable',
@@ -486,7 +468,7 @@ output$summary_table <- DT::renderDataTable(
                                   $(header[i]).attr('title', tips[i]);
                                 }"),
               fillContainer = getOption("DT.fillContainer", TRUE),
-              # caption = HTML('This summary information is filtered by the selected management categories (see sidebar). More species data will be added in the future. Please leave <a href="#section-feedback">feedback</a> if your species of interest or management unit is not listed. 
+              caption = HTML('This summary information is filtered by the selected management categories (see sidebar). Mouseover the column titles for expanded definitions. Please <a href="#section-feedback">let us know</a> if your species of interest or management unit is not listed.'),
               # 
               #  <br><br> "Known presence" indicates whether or not the selected secies has has been found within management unit (1980-present). If so,                           the number of individual records included during model development are indicated in parentheses. 
               # 
@@ -500,10 +482,11 @@ output$summary_table <- DT::renderDataTable(
                            "Estimated Suitable Area (Acres)",
                            "Percent of Park Area",
                            "Known Presence? (Count)",
-                           "Minimum Distance to Occurrence (Miles)"),
+                           "Min. Distance to <br> Known Occurrence (Miles)"),
               rownames = FALSE) %>%
               formatStyle(columns = c(1:7), 'text-align' = 'center') %>%
-              DT::formatPercentage(columns = 5)
+              DT::formatPercentage(columns = 5) %>%
+              DT::formatCurrency(columns = c('est_suit_area_acre','min_dist_miles'), currency = "", interval = 3, mark = ",", digits = 0)
     )
 
 DT::dataTableOutput("summary_table", height = '100px')
@@ -511,10 +494,10 @@ DT::dataTableOutput("summary_table", height = '100px')
 
 ```
 
-Model Details
+Model Statistics
 =====================================
 
-Column {.tabset}
+Row {.tabset}
 -------------------------------------
 
 <!-- ### Static Maps -->
@@ -721,7 +704,7 @@ fillPage(HTML(
 
 About
 =====================================
-This tool is designed to display spatial and aspatial outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling (SAHM)</a>.
+This tool is designed to display outputs from models of exotic species as completed by USGS FORT utilizing the <a href="https://pubs.er.usgs.gov/publication/fs20143007" target="_blank">Software for Assisted Habitat Modeling (SAHM)</a> following the methods described by <a href="https://doi.org/10.1371/journal.pone.0229253" target="_blank">Young et al, (2020)</a>.
 
 
 For technical feedback, please contact Peder Engelstad: [peder.engelstad@colostate.edu](mailto:peder.engelstad@colostate.edu)
@@ -811,7 +794,7 @@ $(document).ready(function() {
 </div>
 <div class="accordionContent">
 <p>
-Funding for INHABIT comes from <a href="https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis" target="_blank">USGS Core Science Systems (CSS): Science Analytics and Synthesis (SAS)</a> and the U.S. Fish and Wildlife Service. Continued development is in partnership with the <a href="https://www.nps.gov/orgs/1103/epmt.htm" target="_blank">National Park Service's Invasive Plant Management Teams</a>.  INHABIT is also logistically supported by <a href="https://bison.usgs.gov/" target="_blank">Biodiversity Information Serving Our Nation (BISON)</a> and the <a href="https://itis.gov/" target="_blank">Integrated Taxonomic Information System (ITIS)</a>.
+Funding to support INHABIT has come from <a href="https://www.usgs.gov/core-science-systems/science-analytics-and-synthesis" target="_blank">USGS Core Science Systems (CSS): Science Analytics and Synthesis (SAS)</a>, the <a href="https://www.usgs.gov/ecosystems/invasive-species-program" target="_blank">USGS Invasive Species Program</a> and the U.S. Fish and Wildlife Service. Continued development is in partnership with the <a href="https://www.nps.gov/orgs/1103/epmt.htm" target="_blank">National Park Service's Invasive Plant Management Teams</a>.  INHABIT is also logistically supported by <a href="https://bison.usgs.gov/" target="_blank">Biodiversity Information Serving Our Nation (BISON)</a> and the <a href="https://itis.gov/" target="_blank">Integrated Taxonomic Information System (ITIS)</a>.
 </p>
 </div>
 <br><br>

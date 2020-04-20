@@ -33,6 +33,6 @@ Author: Brian Ripley [aut, cre, cph],
   David Firth [ctb]
 Maintainer: Brian Ripley <ripley@stats.ox.ac.uk>
 Repository: CRAN
-Date/Publication: 2019-12-20 09:20:35 UTC
-Built: R 3.6.2; x86_64-w64-mingw32; 2020-01-01 22:39:41 UTC; windows
+Date/Publication: 2019-12-20 09:21:25 UTC
+Built: R 3.6.3; x86_64-w64-mingw32; 2020-02-29 09:40:01 UTC; windows
 Archs: i386, x64
